@@ -1,12 +1,12 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
+  <div class="nav">
+    {{msg}}
   </div>
 </template>
 
 <script>
 export default {
-  name: 'LandingPage',
+  name: 'navigation',
   props: {
     msg: String
   }
@@ -15,7 +15,9 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
-h3 {
-  margin: 40px 0 0;
-}
+  .nav{
+    background: yellow;
+    width: 100vw;
+    height: 100px;
+  }
 </style>
