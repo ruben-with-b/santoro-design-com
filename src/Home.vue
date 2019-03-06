@@ -1,7 +1,7 @@
 <template>
   <div id="home">
-    <Navigation msg="Navigation"/>
-    <img alt="Vue logo" src="./assets/santoro-logo.png">
+    <Navigation/>
+    <img alt="Vue logo" src="./assets/santoro-logo-short.png">
     <LandingPage msg="Home"/>
     <button class="button is-primary">Send</button>
   </div>
@@ -10,6 +10,7 @@
 <script>
 import LandingPage from './components/LandingPage.vue'
 import Navigation from './components/Navigation.vue'
+
 
 export default {
   name: 'home',
@@ -28,6 +29,5 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #000;
-  margin-top: 60px;
 }
 </style>
