@@ -2,6 +2,31 @@
 //font-family: 'Quattrocento Sans', sans-serif;
 $primary: blue;
 
+.nav-border{
+    width: 100vw;
+    height: 2px;
+    background: url(./nav-line.png) no-repeat center center;
+    background-size: cover;
+}
+
+.body-bg{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.body-bg::before{
+    content: ' ';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    opacity: 0.1;
+    background: url(./bg-bw.png) no-repeat 20% 100%;
+    background-size: cover;
+}
+
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display|Quattrocento+Sans');
 @import "~bulma/bulma";
 // @import "~minireset.css/minireset.css";

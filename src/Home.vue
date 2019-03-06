@@ -1,9 +1,12 @@
 <template>
   <div id="home">
     <Navigation/>
-    <img alt="Vue logo" src="./assets/santoro-logo-short.png">
-    <LandingPage msg="Home"/>
-    <button class="button is-primary">Send</button>
+    <div class="nav-border"></div>
+    <div class="body-bg">
+      <img alt="Santoro logo" src="./assets/santoro-logo-short.png">
+      <LandingPage msg="Home"/>
+      <button class="button is-primary">Send</button>
+    </div>
   </div>
 </template>
 
@@ -30,4 +33,5 @@ export default {
   text-align: center;
   color: #000;
 }
+
 </style>
