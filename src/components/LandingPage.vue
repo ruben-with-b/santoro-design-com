@@ -1,7 +1,10 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-  </div>
+  <section class="section">
+      <div class="container">
+        <h1>{{ msg }}</h1>
+        <h1 class="title is-1 not-bold">Legen Sie einen guten Auftritt hin!</h1>
+      </div>
+  </section>
 </template>
 
 <script>
@@ -15,7 +18,11 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
-h3 {
-  margin: 40px 0 0;
+.not-bold{
+  font-weight: 400;
+}
+.title{
+  letter-spacing: 2px;
+  line-height: 1.6;
 }
 </style>

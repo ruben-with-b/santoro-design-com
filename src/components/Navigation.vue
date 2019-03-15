@@ -1,13 +1,13 @@
 <template>
   <div class="nav">
     <nav class="navbar" role="navigation" aria-label="main navigation">
-      <div class="navbar-brand">
+      <div class="navbar-brand navbar-santoro">
         <a class="navbar-item logo" href="#">
           <icon-base width="65" height="65" viewBox="0 0 140 140" icon-name="logo">
             <icon-logo />
           </icon-base>
         </a>
-        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <a role="button" class="navbar-burger burger-santoro" aria-label="menu" aria-expanded="false">
           <icon-base width="35" height="35" viewBox="0 0 364 263.67" icon-name="menu">
             <icon-menu-de />
           </icon-base>
@@ -37,16 +37,16 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
- .navbar-brand{
+ .navbar-santoro{
     margin: 0 15px;
 }
- .navbar-burger {
+ .burger-santoro {
     display: flex;
     align-items: center;
     height: 6.25rem;
 }
 
-.navbar-burger:hover {
+.burger-santoro:hover {
   background-color: unset;
 }
 </style>

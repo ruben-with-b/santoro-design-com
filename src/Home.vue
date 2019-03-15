@@ -3,9 +3,7 @@
     <Navigation/>
     <div class="nav-border"></div>
     <div class="body-bg">
-      <img alt="Santoro logo" src="./assets/santoro-logo-short.png">
       <LandingPage msg="Home"/>
-      <button class="button is-primary">Send</button>
     </div>
   </div>
 </template>
@@ -27,11 +25,7 @@ export default {
 <style lang="scss">
 
 #home {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #000;
+  
 }
 
 </style>
