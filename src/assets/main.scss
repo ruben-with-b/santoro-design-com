@@ -1,12 +1,15 @@
 // COLOR
 $primary: hsl(0, 0%, 4%);
+$footer-background-color:  hsl(0, 0%, 4%); 
 
 // FONT
 // custom fonts
-$family-primary: 'Playfair Display', serif;
-$family-secondary: 'Quattrocento Sans', sans-serif;
+$family-primary: 'Quattrocento Sans', sans-serif;
+$family-secondary: 'Playfair Display', serif;
 // custom pref
 $title-color: $primary;
+//$size-5: 1.2rem;
+$footer-padding: 1rem 1.5rem 1rem;
 
 // NAVI
 .nav-border{
