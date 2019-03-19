@@ -1,5 +1,6 @@
 // COLOR
 $primary: hsl(0, 0%, 4%);
+$secondary: hsl(0, 0%, 100%);
 $footer-background-color:  hsl(0, 0%, 4%); 
 
 // FONT
@@ -10,6 +11,30 @@ $family-secondary: 'Playfair Display', serif;
 $title-color: $primary;
 //$size-5: 1.2rem;
 $footer-padding: 1rem 1.5rem 1rem;
+
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Quattrocento+Sans');
+@import "~bulma/bulma";
+
+// BUTTONS
+.button-santoro{
+    background-color: unset;
+    border: none;
+    border-radius: 0px;
+}
+
+.button-santoro.is-hovered::after, .button-santoro:hover::after{
+    content: '';
+    position: absolute;
+    top: 25px;
+    right: 12px;
+    width: 35px;
+    height: 10px;
+    border-bottom: 4px double $primary;
+}
+
+.next-to-icon{
+    margin-left: 10px;
+}
 
 // NAVI
 .nav-border{
@@ -38,5 +63,3 @@ $footer-padding: 1rem 1.5rem 1rem;
     background-size: cover;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Quattrocento+Sans');
-@import "~bulma/bulma";

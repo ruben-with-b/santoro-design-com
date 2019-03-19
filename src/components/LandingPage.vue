@@ -12,8 +12,13 @@
         So einfach ist das!
       </p>
       <div class="columns is-mobile">
-        <div class="column is-4 is-offset-8">
-          <a class="button is-primary">Leistungen</a>
+        <div class="column is-4 is-offset-6">
+          <a class="button button-santoro is-secondary is-family-secondary" href="#">
+            <icon-base width="25" height="25" viewBox="0 0 616.49 167.02" icon-name="arrow">
+              <icon-arrow />
+            </icon-base>
+            <span class="has-text-black next-to-icon">Leistungen</span>
+          </a>
         </div>
       </div>
     </div>
@@ -21,10 +26,17 @@
 </template>
 
 <script>
+import IconBase from '../components/IconBase.vue'
+import IconArrow from '../components/icons/IconArrow.vue'
+
 export default {
   name: 'LandingPage',
   props: {
     msg: String
+  },
+  components: {
+    IconBase,
+    IconArrow
   }
 }
 </script>
@@ -35,7 +47,12 @@ export default {
   font-weight: 400;
 }
 .title{
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   line-height: 1.5;
+}
+
+.button.is-family-secondary{
+  letter-spacing: 0.6px;
+  margin: 40px 0 0 0;
 }
 </style>
