@@ -14,9 +14,11 @@
       <div class="columns is-mobile">
         <div class="column is-4 is-offset-6">
           <a class="button button-santoro is-secondary is-family-secondary" href="#">
-            <icon-base width="25" height="25" viewBox="0 0 616.49 167.02" icon-name="arrow">
-              <icon-arrow />
-            </icon-base>
+            <div class="arrow-mask">  
+              <icon-base class="santoro-arrow" width="25" height="25" viewBox="0 0 616.49 167.02" icon-name="arrow">
+                <icon-arrow />
+              </icon-base>
+            </div>
             <span class="has-text-black next-to-icon">Leistungen</span>
           </a>
         </div>
@@ -55,4 +57,5 @@ export default {
   letter-spacing: 0.6px;
   margin: 40px 0 0 0;
 }
+
 </style>
