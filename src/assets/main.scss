@@ -1,6 +1,8 @@
 // COLOR
 $primary: hsl(0, 0%, 4%);
 $secondary: hsl(0, 0%, 100%);
+$orange: #F69F19;
+
 $footer-background-color:  hsl(0, 0%, 4%); 
 
 // FONT
@@ -45,7 +47,7 @@ $footer-padding: 1rem 1.5rem 1rem;
     width: 0px;
     height: 10px;
     border-bottom: 4px double $primary;
-    transition: all 500ms ease-out;
+    transition: all 200ms ease-out;
 }
 
 .button-santoro.is-hovered::after,
@@ -77,6 +79,22 @@ $footer-padding: 1rem 1.5rem 1rem;
 }
 
 // BODY
+
+.santoro-breadcrumb,
+.santoro-breadcrumb-mobile{
+    margin-bottom: 30px;
+}
+
+.santoro-breadcrumb-mobile::after{
+    content: '';
+    position: absolute;
+    top: 13px;
+    left: 90px;
+    background: $primary;
+    width: 70%;
+    height: 1px;
+}
+
 .body-bg{
     width: 100%;
     height: 100%;
@@ -93,6 +111,26 @@ $footer-padding: 1rem 1.5rem 1rem;
     opacity: 0.1;
     background: url(./bg-bw.png) no-repeat 20% 100%;
     background-size: cover;
+}
+
+// HEADLINES
+.title-o-underline::after{
+    content: ' ';
+    display: block;
+    position: relative;
+    top: -26px;
+    right: -73px;
+    width: 230px;
+    height: 17px;
+    opacity: 0.8;
+    background: $orange;
+    z-index: -1;
+}
+
+// PARAGRAPHS
+
+.p-after-h{
+    margin-top: 30px;
 }
 
 

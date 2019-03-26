@@ -1,9 +1,10 @@
 <template>
   <section class="section">
     <div class="container">
-      <h1 class="is-family-secondary">{{ msg }}</h1>
-      <h1 class="title is-1 is-family-secondary not-bold">Legen Sie einen guten Auftritt hin!</h1>
-      <p class="is-family-primary has-text-black">
+      <h1 class="is-family-secondary santoro-breadcrumb-mobile is-hidden-desktop">{{ msg }}</h1>
+      <h1 class="is-family-secondary santoro-breadcrumb is-hidden-touch">{{ msg }}</h1>
+      <h1 class="title is-1 is-family-secondary not-bold">Legen Sie einen guten <span class="title-o-underline">Auftritt hin!</span></h1>
+      <p class="is-family-primary has-text-black p-after-h">
         Mit einer sauberen Webseite sind Sie und Ihre Informationen auffindbar.
         <br><br>
         Ein unverwechselbarer und wiedererkennbarer Look verpasst Ihnen endlich
