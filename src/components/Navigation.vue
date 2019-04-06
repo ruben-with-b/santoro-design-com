@@ -2,16 +2,16 @@
   <div class="nav">
     <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-brand navbar-santoro">
-        <a class="navbar-item logo" href="#">
+        <router-link to="/" class="navbar-item logo">
           <icon-base width="65" height="65" viewBox="0 0 140 140" icon-name="logo">
             <icon-logo />
           </icon-base>
-        </a>
-        <a role="button" class="navbar-burger burger-santoro" aria-label="menu" aria-expanded="false">
+        </router-link>
+        <router-link to="/menu" class="navbar-burger burger-santoro" aria-label="menu" aria-expanded="false">
           <icon-base width="35" height="35" viewBox="0 0 364 263.67" icon-name="menu">
             <icon-menu-de />
           </icon-base>
-        </a>
+        </router-link>
       </div>
     </nav>
   </div>
