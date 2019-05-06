@@ -46,13 +46,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
-.not-bold{
-  font-weight: 400;
-}
-.title{
-  letter-spacing: 1px;
-  line-height: 1.5;
-}
+
 
 .button.is-family-secondary{
   letter-spacing: 0.6px;

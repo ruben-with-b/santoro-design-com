@@ -127,6 +127,14 @@ $footer-padding: 1rem 1.5rem 1rem;
     z-index: -1;
 }
 
+.title.not-bold{
+    font-weight: 400;
+  }
+  .title{
+    letter-spacing: 1px;
+    line-height: 1.5;
+  }
+
 // PARAGRAPHS
 
 .p-after-h{
