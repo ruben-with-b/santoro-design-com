@@ -42,9 +42,9 @@
 </template>
 
 <script>
-import IconBase from '../components/IconBase.vue'
-import IconLogo from '../components/icons/IconLogo.vue'
-import IconArrowBack from '../components/icons/IconArrowBack.vue'
+import IconBase from './components/IconBase.vue'
+import IconLogo from './components/icons/IconLogo.vue'
+import IconArrowBack from './components/icons/IconArrowBack.vue'
 
 export default {
   name: 'Menu',
