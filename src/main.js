@@ -4,8 +4,10 @@ import App from './App.vue'
 import Home from './Home.vue'
 import Menu from './Menu.vue'
 import About from './About.vue'
+import VShowSlide from 'v-show-slide'
 
 Vue.use(VueRouter);
+Vue.use(VShowSlide)
 Vue.config.productionTip = false
 
 require("./assets/main.scss")

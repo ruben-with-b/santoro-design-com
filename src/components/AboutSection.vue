@@ -15,6 +15,14 @@
         </icon-base>
         <h4 class="title is-4 is-family-secondary not-bold">Unser Projekt</h4>
       </div>
+      <ul v-show-slide="featuresOpen" class="features">
+      <li>Aliquam lorem</li>
+      <li>Praesent porttitor nulla vitae posuere</li>
+      <li>Suspendisse nisl elit rhoncus</li>
+      <li>Donec mi odio faucibus</li>
+      <li>Curabitur suscipit suscipit</li>
+    </ul>
+    <button @click="toggleFeatures" class="toggle-features">{{ featuresOpen ? 'Hide Features' : 'View Features' }}</button>
       <!--
       <p class="is-family-primary has-text-black p-after-h">
         Mit einer sauberen Webseite sind Sie und Ihre Informationen auffindbar.
@@ -54,7 +62,17 @@ export default {
   components: {
     IconBase,
     IconShortArrow,
-    IconArrow
+    //IconArrow
+  },
+  data () {
+    return {
+      featuresOpen: false
+    }
+  },
+  methods: {
+    toggleFeatures () {
+      this.featuresOpen = !this.featuresOpen
+    }
   }
 }
 </script>
