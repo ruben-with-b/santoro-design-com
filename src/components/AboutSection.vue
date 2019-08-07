@@ -3,26 +3,8 @@
     <div class="container">
       <h1 class="is-family-secondary santoro-breadcrumb-mobile is-hidden-desktop">{{ msg }}</h1>
       <h1 class="is-family-secondary santoro-breadcrumb is-hidden-touch">{{ msg }}</h1>
-      <div class="is-flex">
-        <icon-base width="45" height="45" viewBox="0 0 616.49 167.02" icon-name="short-arrow">
-          <icon-short-arrow />
-        </icon-base>
-        <h4 class="title is-4 is-family-secondary not-bold">Meine Person</h4>
-      </div>
-      <div class="is-flex">
-        <icon-base width="45" height="45" viewBox="0 0 616.49 167.02" icon-name="short-arrow">
-          <icon-short-arrow />
-        </icon-base>
-        <h4 class="title is-4 is-family-secondary not-bold">Unser Projekt</h4>
-      </div>
-      <ul v-show-slide="featuresOpen" class="features">
-      <li>Aliquam lorem</li>
-      <li>Praesent porttitor nulla vitae posuere</li>
-      <li>Suspendisse nisl elit rhoncus</li>
-      <li>Donec mi odio faucibus</li>
-      <li>Curabitur suscipit suscipit</li>
-    </ul>
-    <button @click="toggleFeatures" class="toggle-features">{{ featuresOpen ? 'Hide Features' : 'View Features' }}</button>
+      <Person/>
+      <Project/>
       <!--
       <p class="is-family-primary has-text-black p-after-h">
         Mit einer sauberen Webseite sind Sie und Ihre Informationen auffindbar.
@@ -50,19 +32,17 @@
 </template>
 
 <script>
-import IconBase from '../components/IconBase.vue'
-import IconArrow from '../components/icons/IconArrow.vue'
-import IconShortArrow from '../components/icons/IconShortArrow.vue'
+import Person from '../components/Person.vue'
+import Project from '../components/Project.vue'
 
 export default {
-  name: 'LandingPage',
+  name: 'AboutSection',
   props: {
     msg: String
   },
   components: {
-    IconBase,
-    IconShortArrow,
-    //IconArrow
+    Person,
+    Project
   },
   data () {
     return {
@@ -72,6 +52,8 @@ export default {
   methods: {
     toggleFeatures () {
       this.featuresOpen = !this.featuresOpen
+      let arrow = document.querySelector('.acc-arrow')
+      arrow.classList.toggle('up')
     }
   }
 }
@@ -79,11 +61,5 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
-
-
-.button.is-family-secondary{
-  letter-spacing: 0.6px;
-  margin: 40px 0 0 0;
-}
 
 </style>
