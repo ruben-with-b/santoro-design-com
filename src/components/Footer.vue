@@ -4,7 +4,7 @@
       <p class="is-size-7 has-text-white ">
         &#169; 2019 <span class="is-uppercase">Santoro</span> Design
         <button class="scroll-top-button is-pulled-right"
-        @click="scrollToTop(0, 1500, 'easeInOutQuint')">
+        @click="scrollToTop()">
           <icon-base class="acc-arrow" width="15" height="15" viewBox="0 0 25.12 45" icon-name="short-arrow">
             <icon-short-arrow/>
           </icon-base>
