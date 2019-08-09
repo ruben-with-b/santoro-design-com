@@ -5,12 +5,15 @@ import Home from './Home.vue'
 import Menu from './Menu.vue'
 import About from './About.vue'
 import VShowSlide from 'v-show-slide'
+import smoothscroll from 'smoothscroll-polyfill';
 
-Vue.use(VueRouter);
+
+Vue.use(VueRouter)
 Vue.use(VShowSlide)
 Vue.config.productionTip = false
 
 require("./assets/main.scss")
+smoothscroll.polyfill()
 
 const routes = [
   { path: '/',

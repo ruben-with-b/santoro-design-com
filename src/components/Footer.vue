@@ -3,7 +3,8 @@
     <div class="content">
       <p class="is-size-7 has-text-white ">
         &#169; 2019 <span class="is-uppercase">Santoro</span> Design
-        <button class="scroll-top-button is-pulled-right" @click="scrollToTop">
+        <button class="scroll-top-button is-pulled-right"
+        @click="scrollToTop(0, 1500, 'easeInOutQuint')">
           <icon-base class="acc-arrow" width="15" height="15" viewBox="0 0 25.12 45" icon-name="short-arrow">
             <icon-short-arrow/>
           </icon-base>
@@ -25,11 +26,9 @@ export default {
   },
   methods: {
     scrollToTop () {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
+      window.scroll({ top: 0, left: 0, behavior: 'smooth' })
     }
   }
-
 }
 </script>
 
