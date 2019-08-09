@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="is-flex toggle-features cursor-pointer" @click="toggleFeatures">
-            <icon-base class="acc-arrow-2" width="45" height="45" viewBox="0 0 616.49 167.02" icon-name="short-arrow">
+            <icon-base class="acc-arrow-2" width="15" height="15" viewBox="0 0 25.12 45" icon-name="short-arrow">
                 <icon-short-arrow />
             </icon-base>
             <h4 class="title is-4 is-family-secondary not-bold is-inline-block">Unser Projekt</h4>
@@ -52,6 +52,7 @@ export default {
 .acc-arrow-2{
   transform: rotate(90deg);
   transition: 0.55s;
+  margin: 10px 15px 0 0;
 }
 
 .up{

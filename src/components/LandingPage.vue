@@ -14,14 +14,14 @@
       </p>
       <div class="columns is-mobile">
         <div class="column is-4 is-offset-6">
-          <a class="button button-santoro is-secondary is-family-secondary" href="#">
+          <router-link to="/services" class="menu-link button button-santoro is-secondary is-family-secondary">
             <div class="arrow-mask">  
-              <icon-base class="santoro-arrow" width="25" height="25" viewBox="0 0 616.49 167.02" icon-name="arrow">
+              <icon-base class="santoro-arrow" width="1" height="1" viewBox="0 0 616.49 167.02" icon-name="arrow">
                 <icon-arrow />
               </icon-base>
             </div>
             <span class="has-text-black next-to-icon">Leistungen</span>
-          </a>
+          </router-link>
         </div>
       </div>
     </div>
@@ -46,11 +46,5 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
-
-
-.button.is-family-secondary{
-  letter-spacing: 0.6px;
-  margin: 40px 0 0 0;
-}
 
 </style>

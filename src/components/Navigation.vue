@@ -3,7 +3,7 @@
     <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-brand navbar-santoro">
         <router-link to="/" class="navbar-item logo">
-          <icon-base width="65" height="65" viewBox="0 0 140 140" icon-name="logo">
+          <icon-base width="55" height="55" viewBox="0 0 140 140" icon-name="logo">
             <icon-logo />
           </icon-base>
         </router-link>
