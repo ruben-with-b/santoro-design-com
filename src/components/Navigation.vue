@@ -7,7 +7,7 @@
             <icon-logo />
           </icon-base>
         </router-link>
-        <router-link to="/menu" class="navbar-burger burger-santoro" aria-label="menu" aria-expanded="false">
+        <router-link to="/menu" class="burger-santoro" aria-label="menu" aria-expanded="false">
           <icon-base width="35" height="35" viewBox="0 0 364 263.67" icon-name="menu">
             <icon-menu-de />
           </icon-base>
@@ -39,11 +39,18 @@ export default {
 <style lang="scss" scoped>
  .navbar-santoro{
     margin: 0 15px;
+    justify-content: space-between;
 }
  .burger-santoro {
-    display: flex;
-    align-items: center;
-    height: 6.25rem;
+  display: flex;
+  color: #0a0a0a;
+  align-items: center;
+  height: 6.25rem;
+  padding: 0.5rem 0.35rem;
+}
+
+.logo{
+  padding: 0.5rem 0.35rem;
 }
 
 .burger-santoro:hover {
