@@ -3,17 +3,16 @@
     <div class="container">
       <h1 class="is-family-secondary santoro-breadcrumb-mobile is-hidden-desktop">{{ msg }}</h1>
       <h1 class="is-family-secondary santoro-breadcrumb is-hidden-touch">{{ msg }}</h1>
-      <h1 class="title is-1 is-family-secondary not-bold">Legen Sie einen guten <span class="title-o-underline">Auftritt hin!</span></h1>
+      <h1 class="title is-1 is-family-secondary not-bold title-o-underline">Legen Sie einen guten Auftritt hin!</h1>
       <p class="is-family-primary has-text-black p-after-h">
         Mit einer sauberen Webseite sind Sie und Ihre Informationen auffindbar.
-        <br><br>
         Ein unverwechselbarer und wiedererkennbarer Look verpasst Ihnen endlich
         ein respektables Erscheinungsbild.
         <br><br>
         So einfach ist das!
       </p>
       <div class="columns is-mobile">
-        <div class="column is-4 is-offset-6">
+        <div class="column is-4 is-offset-6-mobile is-offset-8-tablet is-offset-5-desktop">
           <router-link to="/services" class="menu-link button button-santoro is-secondary is-family-secondary">
             <div class="arrow-mask">  
               <icon-base class="santoro-arrow" width="1" height="1" viewBox="0 0 616.49 167.02" icon-name="arrow">

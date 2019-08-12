@@ -26,6 +26,10 @@ line, circle{
   stroke-miterlimit: 10;
 }
 
+// line, circle, path{
+//   shape-rendering: geometricPrecision;
+// }
+
 circle{
   stroke-width: 0.41px;
 }
