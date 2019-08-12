@@ -99,6 +99,10 @@ button{
     background-size: cover;
 }
 
+.navbar-item:hover{
+    color: unset !important
+}
+
 // BODY
 body{
     scroll-behavior: smooth;

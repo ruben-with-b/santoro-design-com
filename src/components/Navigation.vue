@@ -1,18 +1,21 @@
 <template>
   <div class="nav">
-    <nav class="navbar" role="navigation" aria-label="main navigation">
-      <div class="navbar-brand navbar-santoro">
-        <router-link to="/" class="navbar-item logo">
-          <icon-base width="55" height="55" viewBox="0 0 140 140" icon-name="logo">
-            <icon-logo />
-          </icon-base>
-        </router-link>
-        <router-link to="/menu" class="burger-santoro" aria-label="menu" aria-expanded="false">
-          <icon-base width="35" height="35" viewBox="0 0 364 263.67" icon-name="menu">
-            <icon-menu-de />
-          </icon-base>
-        </router-link>
-      </div>
+    <nav class="navbar navbar-brand navbar-santoro" role="navigation" aria-label="main navigation">
+      <router-link to="/" class="navbar-item logo is-hidden-desktop">
+        <icon-base width="55" height="55" viewBox="0 0 140 140" icon-name="logo">
+          <icon-logo />
+        </icon-base>
+      </router-link>
+      <router-link to="/" class="navbar-item logo logo-long is-hidden-touch">
+        <icon-base width="155" height="auto" viewBox="0 0 220 30" icon-name="logo">
+          <icon-logo-long />
+        </icon-base>
+      </router-link>
+      <router-link to="/menu" class="burger-santoro" aria-label="menu" aria-expanded="false">
+        <icon-base width="35" height="35" viewBox="0 0 364 263.67" icon-name="menu">
+          <icon-menu-de />
+        </icon-base>
+      </router-link>
     </nav>
   </div>
 </template>
@@ -20,6 +23,7 @@
 <script>
 import IconBase from '../components/IconBase.vue'
 import IconLogo from '../components/icons/IconLogo.vue'
+import IconLogoLong from '../components/icons/IconLogoLong.vue'
 import IconMenuDe from '../components/icons/IconMenuDe.vue'
 
 export default {
@@ -30,6 +34,7 @@ export default {
   components: {
     IconBase,
     IconLogo,
+    IconLogoLong,
     IconMenuDe
   }
 }
@@ -51,6 +56,11 @@ export default {
 
 .logo{
   padding: 0.5rem 0.35rem;
+  color: #0a0a0a;
+}
+
+.logo-long{
+  margin: 0 auto;
 }
 
 .burger-santoro:hover {
