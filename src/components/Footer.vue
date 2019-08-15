@@ -3,7 +3,7 @@
     <div class="content">
       <p class="is-size-7 has-text-white ">
         &#169; 2019 <span class="is-uppercase">Santoro</span> Design
-        <button class="scroll-top-button is-pulled-right is-family-secondary"
+        <button v-show="scrolled" class="scroll-top-button is-pulled-right is-family-secondary"
         @click="scrollToTop()">
           <span class="is-hidden-mobile">nach oben &nbsp; &nbsp;</span>
           <icon-base class="acc-arrow" width="15" height="15" viewBox="0 0 25.12 45" icon-name="short-arrow">
@@ -25,7 +25,24 @@ export default {
     IconBase,
     IconShortArrow
   },
+  data() {
+    return {
+      scrolled: false
+    }
+  },
+  mounted () {
+    window.addEventListener('scroll', this.checkScroll);
+  },
+  beforeDestroy () {
+    window.removeEventListener('scroll', this.checkScroll)
+  },
   methods: {
+    checkScroll () {
+      if (document.body.scrollTop > 100 ||
+        document.documentElement.scrollTop > 100) {
+      this.scrolled = true
+    }
+    },
     scrollToTop () {
       window.scroll({ top: 0, left: 0, behavior: 'smooth' })
     }
