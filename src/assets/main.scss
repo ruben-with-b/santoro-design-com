@@ -113,6 +113,20 @@ button{
     color: unset !important
 }
 
+.menu-item-1, .menu-item-2{
+    transition: all 0.3s;
+}
+
+.burger-santoro.is-hovered > svg > g > g > .menu-item-1,
+.burger-santoro:hover > svg > g > g > .menu-item-1{
+    transform: translateY(60px);
+}
+
+.burger-santoro.is-hovered > svg > g > g > .menu-item-2,
+.burger-santoro:hover > svg > g > g > .menu-item-2{
+    transform: translateY(-40px);
+}
+
 // BODY
 body{
     scroll-behavior: smooth;

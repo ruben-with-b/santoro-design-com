@@ -61,7 +61,7 @@ export default {
 
 <style lang="scss" scoped>
 .container-menu{
-  background: hsl(0, 0%, 4%);
+  background: #0a0a0a;
   margin: 0;
   width: 100vw;
   height: 98vh;
@@ -103,7 +103,7 @@ a.navbar-item.is-active,
     background: #F69F19;
     z-index: 0;
     transform: scaleX(0.0);
-    transition: all .3s ease-in-out 0s;
+    transition: all .3s ease-in-out;
 }
 
 .router-link-active.menu-link::after{
