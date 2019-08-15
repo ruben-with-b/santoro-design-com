@@ -64,11 +64,11 @@ export default {
   background: #0a0a0a;
   margin: 0;
   width: 100vw;
-  height: 98vh;
+  height: 100vh;
 }
 
 .container-navigation-menu{
-    margin: 9em auto;
+    margin: 11em auto 0 auto;
 }
 
 .title{
@@ -79,7 +79,7 @@ export default {
 .back-button{
   position: absolute;
   left: 0px;
-  margin: 30px;
+  margin: 3em;
   transform: rotate(180deg);
 }
 
@@ -93,17 +93,30 @@ a.navbar-item.is-active,
 
 .router-link-active.menu-link::after,
 .menu-link::after{
-    content: ' ';
+    content: '';
     display: block;
     position: relative;
-    top: -37px;
+    top: -33px;
     height: 12px;
     margin-bottom: -12px;
-    opacity: 0.6;
+    opacity: 0.75;
     background: #F69F19;
     z-index: 0;
     transform: scaleX(0.0);
     transition: all .3s ease-in-out;
+}
+
+.menu-link::after{
+    opacity: 0.25;
+    background: #FFF;
+    z-index: 0;
+    transform: scaleX(0.0);
+    transition: all .3s ease-in-out;
+}
+
+.menu-link:hover::after{
+    content: '';
+    transform: scaleX(1.0);
 }
 
 .router-link-active.menu-link::after{
@@ -132,19 +145,6 @@ a.navbar-item.is-active,
 .menu-link.ml-four:hover:after{
     width: 90%;
     left: 5%;
-}
-
-.menu-link:hover::after{
-    content: ' ';
-    display: block;
-    position: relative;
-    top: -37px;
-    height: 12px;
-    margin-bottom: -12px;
-    opacity: 0.6;
-    background: #F69F19;
-    z-index: 0;
-    transform: scaleX(1.0);
 }
 
 .footer-menu{

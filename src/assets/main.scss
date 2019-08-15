@@ -191,10 +191,17 @@ body{
 // HEADLINES
 
 .title-o-underline{
+    opacity: 0;
+    animation: appearHeadl 2s $bezier-1 forwards;
     @include desktop{
         font-size: 3.5em !important;
     }
 }
+
+@keyframes appearHeadl{
+    100% { opacity: 1; }
+}
+
 .title-o-underline::after{
     content: ' ';
     display: block;
@@ -206,7 +213,7 @@ body{
     opacity: 0.75;
     background: $orange;
     z-index: -1;
-    animation: smallLine 1.6s $bezier-1 1s forwards;
+    animation: smallLine 1.6s $bezier-1 0.5s forwards;
     @include tablet{
         right: -12em;
     }
@@ -230,9 +237,9 @@ body{
 .p-after-h{
     margin-top: 3em;
     font-size: $size-5;
-    transform:  translateX(-13px);
+    transform:  translateY(-13px);
     opacity: 0;
-    animation: appearPara 1.6s $bezier-1 1s forwards;
+    animation: appearPara 1.6s $bezier-1 0.5s forwards;
     @include tablet{
         font-size: 1.3em;
         width: 60%;
@@ -244,7 +251,7 @@ body{
 
 @keyframes appearPara {
     100% {
-        transform:  translateX(0px);
+        transform:  translateY(0px);
         opacity: 1;
     }
 }
