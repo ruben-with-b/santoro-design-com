@@ -7,7 +7,7 @@
         </icon-base>
       </router-link>
       <router-link to="/" class="navbar-item logo logo-long is-hidden-touch">
-        <icon-base width="155" height="auto" viewBox="0 0 220 30" icon-name="logo">
+        <icon-base width="155" height="84" viewBox="0 0 220 30" icon-name="logo">
           <icon-logo-long />
         </icon-base>
       </router-link>

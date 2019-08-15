@@ -46,10 +46,4 @@ export default {
   color: #F69F19;
 }
 
-.scroll-top-button{
-  font-size: 1em;
-  cursor: pointer;
-  transition: all 0.3s;
-}
-
 </style>

@@ -12,7 +12,7 @@
         So einfach ist das!
       </p>
       <div class="columns is-mobile">
-        <div class="column is-4 is-offset-6-mobile is-offset-8-tablet is-offset-5-desktop">
+        <div class="column is-4 is-offset-6-mobile is-offset-8-tablet is-offset-7-desktop">
           <router-link to="/services" class="menu-link button button-santoro is-secondary is-family-secondary">
             <div class="arrow-mask">  
               <icon-base class="santoro-arrow" width="1" height="1" viewBox="0 0 616.49 167.02" icon-name="arrow">
