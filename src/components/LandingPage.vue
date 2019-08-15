@@ -4,7 +4,7 @@
       <h1 class="is-family-secondary santoro-breadcrumb-mobile is-hidden-desktop">{{ msg }}</h1>
       <h1 class="is-family-secondary santoro-breadcrumb is-hidden-touch">{{ msg }}</h1>
       <h1 class="title is-1 is-family-secondary not-bold title-o-underline">Legen Sie einen guten Auftritt hin!</h1>
-      <p class="is-family-primary has-text-black p-after-h">
+      <p class="is-family-primary has-text-black p-after-h p-anim">
         Mit einer sauberen Webseite sind Sie und Ihre Informationen auffindbar.
         Ein unverwechselbarer und wiedererkennbarer Look verpasst Ihnen endlich
         ein respektables Erscheinungsbild.

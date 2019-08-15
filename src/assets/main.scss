@@ -16,6 +16,12 @@ $title-color: $primary;
 //$size-5: 1.2rem;
 $footer-padding: 1rem 1.5rem 1rem;
 
+// ANIMATION
+
+// orange underline
+
+$bezier-1: cubic-bezier(0.22, 0.61, 0.36, 1);
+
 
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display|Quattrocento+Sans');
 @import "~bulma/bulma";
@@ -195,14 +201,19 @@ body{
     position: relative;
     top: -21px;
     right: -73px;
-    width: 230px;
+    width: 0px; // 230px
     height: 17px;
     opacity: 0.75;
     background: $orange;
     z-index: -1;
+    animation: smallLine 1.6s $bezier-1 1s forwards;
     @include tablet{
         right: -12em;
     }
+}
+
+@keyframes smallLine {
+    100% { width: 230px; }
 }
 
 .title.not-bold{
@@ -219,12 +230,22 @@ body{
 .p-after-h{
     margin-top: 3em;
     font-size: $size-5;
+    transform:  translateX(-13px);
+    opacity: 0;
+    animation: appearPara 1.6s $bezier-1 1s forwards;
     @include tablet{
         font-size: 1.3em;
         width: 60%;
     }
     @include fullhd{
         margin-top: 4.5em;
+    }
+}
+
+@keyframes appearPara {
+    100% {
+        transform:  translateX(0px);
+        opacity: 1;
     }
 }
 
