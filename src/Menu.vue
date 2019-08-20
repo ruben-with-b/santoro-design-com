@@ -1,45 +1,45 @@
 <template>
   <div>
-  <div class="container is-flex container-menu">
-    <a @click="toggleMenu" class="navbar-item back-button">
-      <icon-base width="40" height="40" viewBox="0 0 616.49 167.02" icon-name="arrow-back">
-        <icon-arrow-back />
-      </icon-base>
-    </a>
-    <div class="container has-text-centered container-navigation-menu">
-      <router-link to="/" class="menu-link ml-one" exact>
-        <h1 class="title is-1 is-family-secondary not-bold has-text-white">Home</h1>
-      </router-link>
-      <router-link to="/about" class="menu-link ml-two" exact>
-        <h1 class="title is-1 is-family-secondary not-bold has-text-white">Über</h1>
-      </router-link>
-      <router-link to="/services" class="menu-link ml-three" exact>
-        <h1 class="title is-1 is-family-secondary not-bold has-text-white">Leistungen</h1>
-      </router-link>
-      <router-link to="/contact" class="menu-link ml-four" exact>
-        <h1 class="title is-1 is-family-secondary not-bold has-text-white">Kontakt</h1>
-      </router-link>
-    </div>
-  </div>
-  <footer class="footer footer-menu">
-    <div class="columns footer-body is-mobile">
-      <div class="footer-logo column is-flex is-one-third">
-        <icon-base width="65" height="65" viewBox="0 0 140 140" icon-name="logo">
-          <icon-logo />
+    <div class="container is-flex container-menu">
+      <a @click="toggleMenu" class="navbar-item back-button">
+        <icon-base width="40" height="40" viewBox="0 0 616.49 167.02" icon-name="arrow-back">
+          <icon-arrow-back />
         </icon-base>
+      </a>
+      <div class="container has-text-centered container-navigation-menu">
+        <router-link to="/" class="menu-link ml-one" exact>
+          <h1 class="title is-1 is-family-secondary not-bold has-text-white">Home</h1>
+        </router-link>
+        <router-link to="/about" class="menu-link ml-two" exact>
+          <h1 class="title is-1 is-family-secondary not-bold has-text-white">Über</h1>
+        </router-link>
+        <router-link to="/services" class="menu-link ml-three" exact>
+          <h1 class="title is-1 is-family-secondary not-bold has-text-white">Leistungen</h1>
+        </router-link>
+        <router-link to="/contact" class="menu-link ml-four" exact>
+          <h1 class="title is-1 is-family-secondary not-bold has-text-white">Kontakt</h1>
+        </router-link>
       </div>
-      <div class="column is-flex footer-navigation">
-        <div class="columns is-mobile is-marginless has-text-centered">
-          <div class="column has-text-white">
-            Impressum
-          </div>
-          <div class="column has-text-white">
-            Datenschutz
+    </div>
+    <footer class="footer footer-menu">
+      <div class="columns footer-body is-mobile">
+        <div class="footer-logo column is-flex is-one-third">
+          <icon-base width="65" height="65" viewBox="0 0 140 140" icon-name="logo">
+            <icon-logo />
+          </icon-base>
+        </div>
+        <div class="column is-flex footer-navigation">
+          <div class="columns is-mobile is-marginless has-text-centered">
+            <div class="column has-text-white">
+              Impressum
+            </div>
+            <div class="column has-text-white">
+              Datenschutz
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
   </div>
 </template>
 

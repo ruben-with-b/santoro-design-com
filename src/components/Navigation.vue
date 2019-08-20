@@ -57,6 +57,7 @@ export default {
  .navbar-santoro{
     margin: 0 15px;
     justify-content: space-between;
+    height: 6.28em;
 }
  .burger-santoro {
   display: flex;
@@ -80,7 +81,7 @@ export default {
 }
 
 .menu-compo{
-  position: absolute;
+  position: fixed;
   z-index: 100;
   transform: translateX(100vw);
   transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
