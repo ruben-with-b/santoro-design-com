@@ -17,7 +17,7 @@ import Footer from './components/Footer.vue'
 
 
 export default {
-  name: 'About',
+  name: 'about',
   components: {
     AboutSection,
     Navigation,

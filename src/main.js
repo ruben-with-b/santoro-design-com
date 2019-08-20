@@ -2,7 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router';
 import App from './App.vue'
 import Home from './Home.vue'
-import Menu from './Menu.vue'
+// import Menu from './Menu.vue'
 import About from './About.vue'
 import VShowSlide from 'v-show-slide'
 import smoothscroll from 'smoothscroll-polyfill';
@@ -17,17 +17,20 @@ smoothscroll.polyfill()
 
 const routes = [
   { path: '/',
+    name: 'home',
     component: Home
   },
-  { path: '/menu',
-    component: Menu
-  },
+  // { path: '/menu',
+  //   name: 'menu',
+  //   component: Menu
+  // },
   { path: '/about',
+    name: 'about',
     component: About
   }
 ];
 
-const router = new VueRouter({
+export const router = new VueRouter({
   routes, // routes: routes
   mode: 'history'
 })

@@ -1,43 +1,45 @@
 <template>
+  <div>
   <div class="container is-flex container-menu">
-    <router-link to="/" class="navbar-item back-button">
+    <a @click="toggleMenu" class="navbar-item back-button">
       <icon-base width="40" height="40" viewBox="0 0 616.49 167.02" icon-name="arrow-back">
-        <icon-arrow-back /> <!-- pls insert white arrow !-->
+        <icon-arrow-back />
       </icon-base>
-    </router-link>
+    </a>
     <div class="container has-text-centered container-navigation-menu">
-      <router-link to="/" class="menu-link ml-one">
+      <router-link to="/" class="menu-link ml-one" exact>
         <h1 class="title is-1 is-family-secondary not-bold has-text-white">Home</h1>
       </router-link>
-      <router-link to="/about" class="menu-link ml-two">
+      <router-link to="/about" class="menu-link ml-two" exact>
         <h1 class="title is-1 is-family-secondary not-bold has-text-white">Über</h1>
       </router-link>
-      <router-link to="/services" class="menu-link ml-three">
+      <router-link to="/services" class="menu-link ml-three" exact>
         <h1 class="title is-1 is-family-secondary not-bold has-text-white">Leistungen</h1>
       </router-link>
-      <router-link to="/contact" class="menu-link ml-four">
+      <router-link to="/contact" class="menu-link ml-four" exact>
         <h1 class="title is-1 is-family-secondary not-bold has-text-white">Kontakt</h1>
       </router-link>
     </div>
-    <footer class="footer footer-menu">
-      <div class="columns is-mobile">
-        <div class="column is-flex is-one-third">
-          <icon-base width="65" height="65" viewBox="0 0 140 140" icon-name="logo">
-            <icon-logo />
-          </icon-base>
-        </div>
-        <div class="column is-flex footer-navigation">
-          <div class="columns is-mobile is-marginless has-text-centered">
-            <div class="column has-text-white">
-              Impressum
-            </div>
-            <div class="column has-text-white">
-              Datenschutz
-            </div>
+  </div>
+  <footer class="footer footer-menu">
+    <div class="columns footer-body is-mobile">
+      <div class="footer-logo column is-flex is-one-third">
+        <icon-base width="65" height="65" viewBox="0 0 140 140" icon-name="logo">
+          <icon-logo />
+        </icon-base>
+      </div>
+      <div class="column is-flex footer-navigation">
+        <div class="columns is-mobile is-marginless has-text-centered">
+          <div class="column has-text-white">
+            Impressum
+          </div>
+          <div class="column has-text-white">
+            Datenschutz
           </div>
         </div>
       </div>
-    </footer>
+    </div>
+  </footer>
   </div>
 </template>
 
@@ -47,7 +49,7 @@ import IconLogo from './components/icons/IconLogo.vue'
 import IconArrowBack from './components/icons/IconArrowBack.vue'
 
 export default {
-  name: 'Menu',
+  name: 'menu',
   props: {
     msg: String
   },
@@ -55,6 +57,12 @@ export default {
     IconBase,
     IconLogo,
     IconArrowBack
+  },
+  methods: {
+    toggleMenu () {
+      let menu = document.querySelector('.menu-compo');
+      menu.style.transform = 'translateX(100vw)'
+    }
   }
 }
 </script>
@@ -64,7 +72,7 @@ export default {
   background: #0a0a0a;
   margin: 0;
   width: 100vw;
-  height: 100vh;
+  height: 85vh;
 }
 
 .container-navigation-menu{
@@ -84,15 +92,15 @@ export default {
 }
 
 a.navbar-item:hover,
-a.navbar-item.is-active,
+a.navbar-item.router-link-exact-active,
 .navbar-link:hover,
-.navbar-link.is-active {
+.navbar-link.router-link-exact-active {
     background-color: unset;
     color: unset;
 }
 
-.router-link-active.menu-link::after,
-.menu-link::after{
+.menu-link.router-link-exact-active:after,
+.menu-link:after{
     content: '';
     display: block;
     position: relative;
@@ -106,7 +114,7 @@ a.navbar-item.is-active,
     transition: all .3s ease-in-out;
 }
 
-.menu-link::after{
+.menu-link:after{
     opacity: 0.25;
     background: #FFF;
     z-index: 0;
@@ -114,52 +122,53 @@ a.navbar-item.is-active,
     transition: all .3s ease-in-out;
 }
 
-.menu-link:hover::after{
+.menu-link:hover:after,
+.menu-link.router-link-exact-active:after{
     content: '';
     transform: scaleX(1.0);
 }
 
-.router-link-active.menu-link::after{
-  transform: scaleX(1.0);
-}
-
-.router-link-active.menu-link.ml-one::after,
+.menu-link.ml-one.router-link-exact-active:after,
 .menu-link.ml-one:hover:after{
     width: 70%;
     left: 15%;
 }
 
-.router-link-active.menu-link.ml-two::after,
+.menu-link.ml-two.router-link-exact-active:after,
 .menu-link.ml-two:hover:after{
     width: 60%;
     left: 20%;
 }
 
-.router-link-active.menu-link.ml-three::after,
+.menu-link.ml-three.router-link-exact-active:after,
 .menu-link.ml-three:hover:after{
     width: 110%;
     left: -5%;
 }
 
-.router-link-active.menu-link.ml-four::after,
+.menu-link.ml-four.router-link-exact-active:after,
 .menu-link.ml-four:hover:after{
     width: 90%;
     left: 5%;
 }
 
 .footer-menu{
-  background: white;
   margin: 0;
   padding: 0;
-  height: 15vh;
   width: 100vw;
   position: absolute;
-  bottom: 0;
+}
+
+.footer-body{
+  height: 15vh;
+}
+
+.footer-logo{
+  background: #FFF;
 }
 
 .footer-navigation{
   background: #F69F19;
-  height: 8em;
   padding: 0;
 }
 
