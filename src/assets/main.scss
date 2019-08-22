@@ -33,7 +33,6 @@ button{
     color: unset;
     background: unset;
     border: none;
-    outline: none;
 }
 
 // primary button
@@ -95,6 +94,18 @@ button{
 
 .next-to-icon{
     margin-left: 10px;
+}
+
+// secondary button
+
+.button-santoro-secondary{
+    border-radius: 0px;
+    font-size: $size-6;
+    color: $secondary;
+    &:hover{
+        color: $secondary;
+        text-decoration: underline;
+    }
 }
 
 // to top button
@@ -261,3 +272,27 @@ body{
     cursor: pointer;
 }
 
+// NAVIGATION
+.container-navigation-menu{
+    margin: 11em auto 0 auto;
+    @include tablet {
+      max-width: 19em;
+      width: 19em;
+      margin: 8em auto 0 auto;
+    }
+}
+
+.menu-link .title{
+    @include tablet{
+        font-size: 3.5em;
+        margin-bottom: 0.5em
+    }
+}
+
+.menu-link.router-link-exact-active:after,
+.menu-link:hover:after,
+.menu-link:after{
+    @include tablet{
+        top: -4em !important;
+    }
+}

@@ -1,11 +1,13 @@
 <template>
-  <div>
+  <div class="menu-root">
     <div class="container is-flex container-menu">
-      <a @click="toggleMenu" class="navbar-item back-button">
-        <icon-base width="40" height="40" viewBox="0 0 616.49 167.02" icon-name="arrow-back">
-          <icon-arrow-back />
-        </icon-base>
-      </a>
+      <button class="back-button">
+        <a @click="toggleMenu" class="navbar-item">
+          <icon-base width="40" height="40" viewBox="0 0 616.49 167.02" icon-name="arrow-back">
+            <icon-arrow-back />
+          </icon-base>
+        </a>
+      </button>
       <div class="container has-text-centered container-navigation-menu">
         <router-link to="/" class="menu-link ml-one" exact>
           <h1 class="title is-1 is-family-secondary not-bold has-text-white">Home</h1>
@@ -23,18 +25,29 @@
     </div>
     <footer class="footer footer-menu">
       <div class="columns footer-body is-mobile">
-        <div class="footer-logo column is-flex is-one-third">
+        <div class="footer-logo column is-flex is-one-third-mobile
+        is-hidden-desktop is-half-tablet is-three-quarters-desktop">
           <icon-base width="65" height="65" viewBox="0 0 140 140" icon-name="logo">
             <icon-logo />
           </icon-base>
         </div>
+        <div class="footer-logo column is-flex is-one-third-mobile
+        is-hidden-touch is-half-tablet is-three-quarters-desktop">
+          <icon-base width="200" height="119" viewBox="0 0 220 30" icon-name="logo">
+            <icon-logo-long />
+          </icon-base>  
+        </div>
         <div class="column is-flex footer-navigation">
           <div class="columns is-mobile is-marginless has-text-centered">
             <div class="column has-text-white">
-              Impressum
+              <router-link to="/legal" class="button-santoro-secondary">
+                Impressum
+              </router-link>
             </div>
             <div class="column has-text-white">
-              Datenschutz
+              <router-link to="/privacy" class="button-santoro-secondary">
+                Datenschutz
+              </router-link>
             </div>
           </div>
         </div>
@@ -46,6 +59,7 @@
 <script>
 import IconBase from './components/IconBase.vue'
 import IconLogo from './components/icons/IconLogo.vue'
+import IconLogoLong from './components/icons/IconLogoLong.vue'
 import IconArrowBack from './components/icons/IconArrowBack.vue'
 
 export default {
@@ -56,6 +70,7 @@ export default {
   components: {
     IconBase,
     IconLogo,
+    IconLogoLong,
     IconArrowBack
   },
   methods: {
@@ -68,15 +83,17 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.container-menu{
+
+.menu-root{
   background: #0a0a0a;
-  margin: 0;
   width: 100vw;
-  height: 85vh;
 }
 
-.container-navigation-menu{
-    margin: 11em auto 0 auto;
+.container-menu{
+  background: #0a0a0a;
+  margin: 0 auto;
+  width: 100vw;
+  height: 85vh;
 }
 
 .title{

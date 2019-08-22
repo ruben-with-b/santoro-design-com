@@ -13,11 +13,13 @@
             <icon-logo-long />
           </icon-base>
         </router-link>
-        <a @click="toggleMenu" class="burger-santoro" aria-label="menu" aria-expanded="false">
-          <icon-base width="35" height="35" viewBox="0 0 364 263.67" icon-name="menu">
-            <icon-menu-de />
-          </icon-base>
-        </a>
+        <button>
+          <a @click="toggleMenu" class="burger-santoro" aria-label="menu" aria-expanded="false">
+            <icon-base width="35" height="35" viewBox="0 0 364 263.67" icon-name="menu">
+              <icon-menu-de />
+            </icon-base>
+          </a>
+        </button>
       </nav>
     </div>
   </div>

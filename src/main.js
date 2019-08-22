@@ -4,6 +4,8 @@ import App from './App.vue'
 import Home from './Home.vue'
 // import Menu from './Menu.vue'
 import About from './About.vue'
+import Legal from './Legal.vue'
+import Privacy from './Privacy.vue'
 import VShowSlide from 'v-show-slide'
 import smoothscroll from 'smoothscroll-polyfill';
 
@@ -27,6 +29,14 @@ const routes = [
   { path: '/about',
     name: 'about',
     component: About
+  },
+  { path: '/legal',
+    name: 'legal',
+    component: Legal
+  },
+  { path: '/privacy',
+    name: 'privacy',
+    component: Privacy
   }
 ];
 

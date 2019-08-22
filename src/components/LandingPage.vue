@@ -13,14 +13,16 @@
       </p>
       <div class="columns is-mobile">
         <div class="column is-4 is-offset-6-mobile is-offset-8-tablet is-offset-7-desktop">
-          <router-link to="/services" class="menu-link button button-santoro is-secondary is-family-secondary">
-            <div class="arrow-mask">  
-              <icon-base class="santoro-arrow" width="1" height="1" viewBox="0 0 616.49 167.02" icon-name="arrow">
-                <icon-arrow />
-              </icon-base>
-            </div>
-            <span class="has-text-black next-to-icon">Leistungen</span>
-          </router-link>
+          <button>
+            <router-link to="/services" class="menu-link button button-santoro is-secondary is-family-secondary">
+              <div class="arrow-mask">  
+                <icon-base class="santoro-arrow" width="1" height="1" viewBox="0 0 616.49 167.02" icon-name="arrow">
+                  <icon-arrow />
+                </icon-base>
+              </div>
+              <span class="has-text-black next-to-icon">Leistungen</span>
+            </router-link>
+          </button>
         </div>
       </div>
     </div>
