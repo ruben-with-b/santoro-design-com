@@ -8,11 +8,11 @@
         <screens />
       </div>
       <p class="is-family-primary has-text-black p-after-h p-anim">
-        Mit einer sauberen Webseite sind Sie und Ihre Informationen auffindbar.
-        Ein unverwechselbarer und wiedererkennbarer Look verpasst Ihnen endlich
-        ein respektables Erscheinungsbild.
+        Zeigen Sie sich Ihren Kunden und lassen Sie Ihre Informationen auffindbar sein.
+        Ein unverwechselbarer und wiedererkennbarer Look wird Ihnen zu einem respektablen Erscheinungsbild
+        verhelfen.
         <br><br>
-        So einfach ist das!
+        Lassen Sie uns gemeinsam Ihre Webseite, App, Flyer oder Visitenkarten angehen!
       </p>
       <div class="columns is-mobile">
         <div class="column is-4 is-offset-6-mobile is-offset-8-tablet is-offset-7-desktop">

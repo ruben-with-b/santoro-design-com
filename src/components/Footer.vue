@@ -1,16 +1,16 @@
 <template>
   <footer class="footer">
     <div class="content">
-      <p class="is-size-7 has-text-white ">
-        &#169; 2019 <span class="is-uppercase">Santoro</span> Design
-        <button v-show="scrolled" class="scroll-top-button is-pulled-right is-family-secondary"
-        @click="scrollToTop()">
+      <div class="is-size-7 has-text-white is-flex vcenter footer-body">
+        <p class="is-marginless">&#169; 2019 <span class="is-uppercase">Santoro</span> Design</p>
+        <button v-show="scrolled" class="scroll-top-button 
+        is-family-secondary" @click="scrollToTop()">
           <span class="is-hidden-mobile">nach oben &nbsp; &nbsp;</span>
           <icon-base class="acc-arrow" width="15" height="15" viewBox="0 0 25.12 45" icon-name="short-arrow">
             <icon-short-arrow/>
           </icon-base>
         </button>
-      </p>
+      </div>
     </div>
   </footer>
 </template>
@@ -56,11 +56,14 @@ export default {
 .acc-arrow{
   position: relative;
   transform: rotate(-90deg);
-    transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .scroll-top-button:hover, .scroll-top-button:hover > .acc-arrow{
   color: #F69F19;
 }
 
+.footer-body{
+  justify-content: space-between;
+}
 </style>

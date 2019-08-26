@@ -25,6 +25,16 @@ $bezier-1: cubic-bezier(0.22, 0.61, 0.36, 1);
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display|Quattrocento+Sans');
 @import "~bulma/bulma";
 
+// ALIGNMENTS
+
+.vcenter{
+    align-items: center;
+}
+
+.hcenter{
+    align-self: center;
+}
+
 // BUTTONS
 
 // reset
@@ -109,6 +119,8 @@ button{
 
 // to top button
 .scroll-top-button{
+    padding: 0 1rem 0 0;
+    transition: all 0.3s;
     font-size: 1em;
     cursor: pointer;
     transition: all 0.3s;
@@ -298,9 +310,9 @@ body{
     }
 }
 
-.menu-link.router-link-exact-active:after,
-.menu-link:hover:after,
-.menu-link:after{
+.menu-link-main.router-link-exact-active:after,
+.menu-link-main:hover:after,
+.menu-link-main:after{
     @include tablet{
         top: -4em !important;
     }

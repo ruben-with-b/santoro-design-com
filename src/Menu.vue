@@ -9,16 +9,16 @@
         </a>
       </button>
       <div class="container has-text-centered container-navigation-menu">
-        <router-link to="/" class="menu-link ml-one" exact>
+        <router-link to="/" class="menu-link-main menu-link ml-one" exact>
           <h1 class="title is-1 is-family-secondary not-bold has-text-white">Home</h1>
         </router-link>
-        <router-link to="/about" class="menu-link ml-two" exact>
+        <router-link to="/about" class="menu-link-main menu-link ml-two" exact>
           <h1 class="title is-1 is-family-secondary not-bold has-text-white">Über</h1>
         </router-link>
-        <router-link to="/services" class="menu-link ml-three" exact>
+        <router-link to="/services" class="menu-link-main menu-link ml-three" exact>
           <h1 class="title is-1 is-family-secondary not-bold has-text-white">Leistungen</h1>
         </router-link>
-        <router-link to="/contact" class="menu-link ml-four" exact>
+        <router-link to="/contact" class="menu-link-main menu-link ml-four" exact>
           <h1 class="title is-1 is-family-secondary not-bold has-text-white">Kontakt</h1>
         </router-link>
       </div>
