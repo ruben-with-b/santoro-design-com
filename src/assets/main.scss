@@ -257,14 +257,32 @@ body{
     opacity: 0.75;
     background: $orange;
     z-index: -1;
-    animation: smallLine 1.6s $bezier-1 0.5s forwards;
     @include tablet{
         right: -12em;
     }
 }
 
+.t-o-u-main::after{
+    animation: smallLine 1.6s $bezier-1 0.5s forwards;
+}
+
 @keyframes smallLine {
     100% { width: 230px; }
+}
+
+.title-o-underline-toggle{
+    font-size: 2em !important;
+    @include desktop{
+        font-size: 3.5em !important;
+    }
+}
+
+.title-o-underline-toggle::after{
+    content: ' ';
+    top: -14px;
+    right: -30px;
+    width: 90px;
+    height: 10px;
 }
 
 .title.not-bold{

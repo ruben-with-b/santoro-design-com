@@ -3,13 +3,13 @@
     <div class="container">
       <h1 class="is-family-secondary santoro-breadcrumb-mobile is-hidden-desktop">{{ msg }}</h1>
       <h1 class="is-family-secondary santoro-breadcrumb is-hidden-touch">{{ msg }}</h1>
-      <h1 class="title is-1 is-family-secondary not-bold title-o-underline">Legen Sie einen guten Auftritt hin!</h1>
+      <h1 class="title is-1 is-family-secondary not-bold title-o-underline t-o-u-main">Legen Sie einen guten Auftritt hin!</h1>
       <div class="morph-section">
         <lottie :options="defaultOptions" :height="100" :width="200" v-on:animCreated="loadAnimation"/>
       </div>
       <p class="is-family-primary has-text-black p-after-h p-anim">
         Zeigen Sie sich Ihren Kunden und lassen Sie Ihre Informationen auffindbar sein.
-        Ein unverwechselbarer Look wird verhilft Ihnen zu einem respektablen
+        Ein unverwechselbarer Look verhilft Ihnen zu einem respektablen
         Erscheinungsbild.
         <br><br>
         Lassen Sie uns gemeinsam Ihre Webseite, App, Flyer oder Visitenkarten angehen!

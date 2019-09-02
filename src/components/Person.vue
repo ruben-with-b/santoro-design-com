@@ -8,16 +8,24 @@
             not-bold is-inline-block">Meine Person
             </h1>
         </div>
-        <div v-show-slide="featuresOpen" class="features is-family-primary has-text-black p-after-h">
-            <div class="columns is-mobile">
-                <div class="column is-two-third">
-                    <h1 class="title is-size-2-mobile is-family-secondary not-bold">
-                        Hi, <br> ich bin Ruben.
-                    </h1>
+        <div v-show-slide="featuresOpen" class="features is-family-primary has-text-black">
+            <div class="container-features">
+                <div class="columns columns-head is-mobile">
+                    <div class="column is-two-third">
+                        <h1 class="title title-o-underline title-o-underline-toggle  is-size-2-mobile is-family-secondary not-bold">
+                            Hi, <br> ich bin Ruben.
+                        </h1>
+                    </div>
+                    <div class="column d-exposure is-flex">
+                        Second column
+                    </div>
                 </div>
-                <div class="column d-exposure is-flex">
-                    Second column
-                </div>
+                <p class="is-family-primary has-text-black p-after-h p-anim">
+                    Hinter SANTORO Design steckt ein motivierter, leidenschaftlicher
+                    und kreativer Master-Student, der heiß darauf ist, Ihnen einen
+                    ästhetisch ansprechenden und gewinn-bringenden Dienst leisten zu
+                    können.
+                </p>
             </div>
         </div>
     </div>
@@ -54,11 +62,21 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style lang="scss">
+<style lang="scss" scoped>
+.toggle-features{
+    margin-bottom: 3rem;
+}
 .d-exposure{
     background: yellow;
     align-items: center;
     justify-content: center;
+    transform: translateY(3em);
+}
+.container-features{
+    margin: 0 0 3rem 2rem !important;
+}
+
+.columns-head{
+    margin-bottom: 5em !important;
 }
 </style>
