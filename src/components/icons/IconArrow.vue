@@ -8,7 +8,7 @@
 <style scoped>
   .cls-1{
     fill:none;
-    stroke:#000;
+    /* stroke:#000; */
     stroke-miterlimit:10;
     stroke-width:24px;
   }
