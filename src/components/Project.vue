@@ -4,7 +4,8 @@
             <icon-base class="acc-arrow-2" width="15" height="15" viewBox="0 0 25.12 45" icon-name="short-arrow">
                 <icon-short-arrow />
             </icon-base>
-            <h4 class="title is-4 is-family-secondary not-bold is-inline-block">Unser Projekt</h4>
+            <h1 class="title is-size-4-mobile is-size-3-tablet is-family-secondary
+                not-bold is-inline-block">Unser nächstes Projekt</h1>
         </div>
         <p v-show-slide="featuresOpen" class="features is-family-primary has-text-black p-after-h">
             Mit einer sauberen Webseite sind Sie und Ihre Informationen auffindbar.
@@ -48,15 +49,5 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
-
-.acc-arrow-2{
-  transform: rotate(90deg);
-  transition: 0.55s;
-  margin: 10px 15px 0 0;
-}
-
-.up{
-  transform: rotate(270deg)
-}
 
 </style>

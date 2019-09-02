@@ -5,12 +5,12 @@
       <h1 class="is-family-secondary santoro-breadcrumb is-hidden-touch">{{ msg }}</h1>
       <h1 class="title is-1 is-family-secondary not-bold title-o-underline">Legen Sie einen guten Auftritt hin!</h1>
       <div class="morph-section">
-        <screens />
+        <lottie :options="defaultOptions" :height="100" :width="200" v-on:animCreated="loadAnimation"/>
       </div>
       <p class="is-family-primary has-text-black p-after-h p-anim">
         Zeigen Sie sich Ihren Kunden und lassen Sie Ihre Informationen auffindbar sein.
-        Ein unverwechselbarer und wiedererkennbarer Look wird Ihnen zu einem respektablen Erscheinungsbild
-        verhelfen.
+        Ein unverwechselbarer Look wird verhilft Ihnen zu einem respektablen
+        Erscheinungsbild.
         <br><br>
         Lassen Sie uns gemeinsam Ihre Webseite, App, Flyer oder Visitenkarten angehen!
       </p>
@@ -35,7 +35,9 @@
 <script>
 import IconBase from '../components/IconBase.vue'
 import IconArrow from '../components/icons/IconArrow.vue'
-import Screens from '../components/icons/Screens.vue'
+import Lottie from '../components/animation/LottieBase.vue';
+import * as animationData1 from '@/assets/lottie-screens.json';
+
 
 export default {
   name: 'LandingPage',
@@ -45,7 +47,14 @@ export default {
   components: {
     IconBase,
     IconArrow,
-    Screens
+    Lottie,
+    'lottie': Lottie
+  },
+  data () {
+    return {
+      defaultOptions: {animationData: animationData1.default},
+      animationSpeed: 1
+    }
   }
 }
 </script>

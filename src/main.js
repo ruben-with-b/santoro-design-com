@@ -8,10 +8,12 @@ import Legal from './Legal.vue'
 import Privacy from './Privacy.vue'
 import VShowSlide from 'v-show-slide'
 import smoothscroll from 'smoothscroll-polyfill';
+import VueAnime from 'vue-animejs';
 
 
 Vue.use(VueRouter)
 Vue.use(VShowSlide)
+Vue.use(VueAnime)
 Vue.config.productionTip = false
 
 require("./assets/main.scss")

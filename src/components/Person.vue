@@ -4,16 +4,22 @@
             <icon-base class="acc-arrow" width="15" height="15" viewBox="0 0 25.12 45" icon-name="short-arrow">
                 <icon-short-arrow />
             </icon-base>
-            <h4 class="title is-4 is-family-secondary not-bold is-inline-block">Meine Person</h4>
+            <h1 class="title is-size-4-mobile is-size-3-tablet is-family-secondary
+            not-bold is-inline-block">Meine Person
+            </h1>
         </div>
-        <p v-show-slide="featuresOpen" class="features is-family-primary has-text-black p-after-h">
-            Mit einer sauberen Webseite sind Sie und Ihre Informationen auffindbar.
-            <br><br>
-            Ein unverwechselbarer und wiedererkennbarer Look verpasst Ihnen endlich
-            ein respektables Erscheinungsbild.
-            <br><br>
-            So einfach ist das!
-        </p>
+        <div v-show-slide="featuresOpen" class="features is-family-primary has-text-black p-after-h">
+            <div class="columns is-mobile">
+                <div class="column is-two-third">
+                    <h1 class="title is-size-2-mobile is-family-secondary not-bold">
+                        Hi, <br> ich bin Ruben.
+                    </h1>
+                </div>
+                <div class="column d-exposure is-flex">
+                    Second column
+                </div>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -37,25 +43,22 @@ export default {
     },
     methods: {
         toggleFeatures () {
-        this.featuresOpen = !this.featuresOpen
-        let arrow = document.querySelector('.acc-arrow')
-        arrow.classList.toggle('up')
+            this.featuresOpen = !this.featuresOpen
+            let arrow = document.querySelector('.acc-arrow')
+            let bg = document.querySelector('.body-bg')
+
+            arrow.classList.toggle('up')
+            bg.classList.toggle('toggle-bg')
         }
     }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style lang="scss" scoped>
-
-.acc-arrow{
-  transform: rotate(90deg);
-  transition: 0.55s;
-  margin: 10px 15px 0 0;
+<style lang="scss">
+.d-exposure{
+    background: yellow;
+    align-items: center;
+    justify-content: center;
 }
-
-.up{
-  transform: rotate(270deg)
-}
-
 </style>

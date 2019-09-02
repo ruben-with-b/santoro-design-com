@@ -129,6 +129,20 @@ button{
     } 
   }
 
+// accordeon-button
+
+.acc-arrow, .acc-arrow-2{
+    transform: rotate(90deg);
+    transition: 0.55s;
+    margin-top: 0.1rem;
+    margin-right: 1em;
+    align-self: center;
+  }
+
+  .up{
+    transform: rotate(270deg)
+  }
+
 // NAVI
 .nav-border{
     width: 100vw;
@@ -190,6 +204,7 @@ body{
     height: 100%;
     min-height: 85vh;
     position: relative;
+    transition: all 1s;
     @include desktop {
         min-height: 82vh;
     }
@@ -208,17 +223,14 @@ body{
     opacity: 0.075;
     background: url(./bg-bw.png) no-repeat 20% 100%;
     background-size: cover;
+    transition: all 1s;
 }
 
-// morph
-
-#screen-morph{
-    width: 20%;
-    visibility: hidden;
-    @include tablet {
-        width: 10%;
-    }
+.toggle-bg::before{
+    background: unset !important;
+    transition: all 1s;
 }
+
 
 // HEADLINES
 
@@ -277,7 +289,7 @@ body{
         width: 60%;
     }
     @include fullhd{
-        margin-top: 4.5em;
+        margin-top: 4em;
     }
 }
 
