@@ -12,20 +12,45 @@
             <div class="container-features">
                 <div class="columns columns-head is-mobile">
                     <div class="column is-two-third">
-                        <h1 class="title title-o-underline title-o-underline-toggle  is-size-2-mobile is-family-secondary not-bold">
+                        <h1 class="title title-o-underline title-o-underline-toggle is-family-secondary not-bold">
                             Hi, <br> ich bin Ruben.
                         </h1>
                     </div>
                     <div class="column d-exposure is-flex">
-                        Second column
+                        <div class="layerOne"></div>
+                        <div class="layerTwo"></div>
+                        <div class="layerOverlay"></div>
+                        
                     </div>
                 </div>
-                <p class="is-family-primary has-text-black p-after-h p-anim">
+                <p class="is-family-primary has-text-black p-after-h p-anim p-person">
                     Hinter SANTORO Design steckt ein motivierter, leidenschaftlicher
                     und kreativer Master-Student, der heiß darauf ist, Ihnen einen
                     ästhetisch ansprechenden und gewinn-bringenden Dienst leisten zu
                     können.
                 </p>
+                <div class="is-flex edu-logo hcenter">
+                    <icon-base class="education-logo" width="60" height="60" viewBox="0 0 150 150" icon-name="rubens-education">
+                        <icon-education />
+                    </icon-base>
+                </div>
+                <div class="edu-timeline">
+                    <div class="school">
+                       <p class="has-text-weight-bold">
+                           Medien & Informationswesen
+                        </p>
+                       <p>Hochschule Offenburg</p>
+                       <p>Bachelor of Science (03/2017)</p>
+                    </div>
+                    <div class="school">
+                       <p class="has-text-weight-bold">
+                           Interaktive Mediensysteme
+                        </p>
+                       <p>Hochschule Augsburg</p>
+                       <p>Master of Arts (07/2020)</p>
+                    </div>
+
+                </div>
             </div>
         </div>
     </div>
@@ -34,6 +59,7 @@
 <script>
 import IconBase from '../components/IconBase.vue'
 import IconShortArrow from '../components/icons/IconShortArrow.vue'
+import IconEducation from '../components/icons/IconEducation.vue'
 
 export default {
     name: 'Person',
@@ -42,7 +68,19 @@ export default {
     },
     components: {
         IconBase,
-        IconShortArrow
+        IconShortArrow,
+        IconEducation
+    },
+    mounted () {
+        document.addEventListener('mousemove', function(e) {
+            const x = e.pageX / (window.innerWidth * 10),
+                    y = e.pageY / (window.innerHeight * 10);
+            const bg = document.querySelector('.layerOne');
+            let pos1 = -500 * x + 40;
+            let pos2 = 500 * y - 5;
+
+            bg.style.backgroundPosition = pos1 + '% ' + pos2 + '%';
+        });
     },
     data () {
         return {
@@ -66,17 +104,29 @@ export default {
 .toggle-features{
     margin-bottom: 3rem;
 }
-.d-exposure{
-    background: yellow;
-    align-items: center;
-    justify-content: center;
-    transform: translateY(3em);
-}
+
 .container-features{
     margin: 0 0 3rem 2rem !important;
 }
 
 .columns-head{
     margin-bottom: 5em !important;
+}
+
+.edu-logo{
+    width: 100%;
+    height: 100%;
+    margin: 4em 0;
+}
+
+.edu-timeline{
+    width: 100%;
+    height: 100%;
+
+}
+
+.school{
+    width: 220px;
+    margin: 0 auto;
 }
 </style>
