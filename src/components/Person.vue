@@ -36,20 +36,19 @@
                 </div>
                 <div class="edu-timeline">
                     <div class="school">
-                       <p class="has-text-weight-bold">
-                           Medien & Informationswesen
-                        </p>
-                       <p>Hochschule Offenburg</p>
-                       <p>Bachelor of Science (03/2017)</p>
+                        <p class="has-text-weight-bold point-in-time">
+                            Medien & Informationswesen
+                            </p>
+                        <p>Hochschule Offenburg</p>
+                        <p>Bachelor of Science (03/2017)</p>
                     </div>
                     <div class="school">
-                       <p class="has-text-weight-bold">
-                           Interaktive Mediensysteme
-                        </p>
-                       <p>Hochschule Augsburg</p>
-                       <p>Master of Arts (07/2020)</p>
+                        <p class="has-text-weight-bold point-in-time">
+                            Interaktive Mediensysteme
+                            </p>
+                        <p>Hochschule Augsburg</p>
+                        <p class="has-text-grey">Master of Arts (07/2020)</p>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -111,22 +110,5 @@ export default {
 
 .columns-head{
     margin-bottom: 5em !important;
-}
-
-.edu-logo{
-    width: 100%;
-    height: 100%;
-    margin: 4em 0;
-}
-
-.edu-timeline{
-    width: 100%;
-    height: 100%;
-
-}
-
-.school{
-    width: 220px;
-    margin: 0 auto;
 }
 </style>
