@@ -2,14 +2,12 @@ import Vue from 'vue'
 import VueRouter from 'vue-router';
 import App from './App.vue'
 import Home from './Home.vue'
-// import Menu from './Menu.vue'
 import About from './About.vue'
 import Legal from './Legal.vue'
 import Privacy from './Privacy.vue'
 import VShowSlide from 'v-show-slide'
 import smoothscroll from 'smoothscroll-polyfill';
 import VueAnime from 'vue-animejs';
-
 
 Vue.use(VueRouter)
 Vue.use(VShowSlide)
@@ -24,10 +22,6 @@ const routes = [
     name: 'home',
     component: Home
   },
-  // { path: '/menu',
-  //   name: 'menu',
-  //   component: Menu
-  // },
   { path: '/about',
     name: 'about',
     component: About
