@@ -13,124 +13,132 @@
                     Unser gemeinsames Projekt wird üblicherweise folgende Schritte 
                     durchlaufen. Ich freue mich schon darauf!
                 </p>
-                <hooper :settings="hooperSettings">
+                <hooper ref="carousel" :settings="hooperSettings">
                     <slide>
-                    slide 1
+                        <div class="header-infographic is-flex wrap vcenter hcenter">
+                            <icon-base class="" width="60" height="60" viewBox="0 0 140 140" icon-name="one">
+                                <icon-number />
+                            </icon-base>
+                            <h1 class="title title-step is-size-5 is-family-primary has-text-centered">
+                                Wir müssen reden!
+                            </h1>
+                        </div>
+                        <div class="columns">
+                            <div class="column is-flex vcenter hcenter">
+                                <lottie :options="defaultOptions" :height="100" :width="200" v-on:animCreated="loadAnimation"/>
+                            </div>
+                            <div class="column is-flex vcenter hcenter">
+                                <p class="is-family-primary has-text-black p-after-h p-infographic">
+                                    Erzählen Sie mir Ihre Wünsche, Vorstellungen, Visionen und 
+                                    Erwartungen.<br><br>
+                                    Am besten persönlich, gerne aber auch telefonisch oder per
+                                    Videogespräch.
+                                </p>
+                            </div>
+                        </div>
                     </slide>
                     <slide>
-                    slide 2
+                        <div class="header-infographic is-flex wrap vcenter hcenter">
+                            <icon-base class="" width="60" height="60" viewBox="0 0 140 140" icon-name="one">
+                                <icon-number />
+                            </icon-base>
+                            <h1 class="title title-step is-size-5 is-family-primary has-text-centered">
+                                Wir werden sehen!
+                            </h1>
+                        </div>
+                        <div class="columns">
+                            <div class="column is-flex vcenter hcenter">
+                                <lottie :options="defaultOptions" :height="100" :width="200" v-on:animCreated="loadAnimation"/>
+                            </div>
+                            <div class="column is-flex vcenter hcenter">
+                                <p class="is-family-primary has-text-black p-after-h p-infographic">
+                                    Wir stimmen uns zwecks Feinheiten wie Preis und Umfang 
+                                    ab, und dann kann es auch schon losgehen!
+                                </p>
+                            </div>
+                        </div>
                     </slide>
                     <slide>
-                    slide 3
+                        <div class="header-infographic is-flex wrap vcenter hcenter">
+                            <icon-base class="" width="60" height="60" viewBox="0 0 140 140" icon-name="one">
+                                <icon-number />
+                            </icon-base>
+                            <h1 class="title title-step is-size-5 is-family-primary has-text-centered">
+                                Wir hören voneinander!
+                            </h1>
+                        </div>
+                        <div class="columns">
+                            <div class="column is-flex vcenter hcenter">
+                                <lottie :options="defaultOptions" :height="100" :width="200" v-on:animCreated="loadAnimation"/>
+                            </div>
+                            <div class="column is-flex vcenter hcenter">
+                                <p class="is-family-primary has-text-black p-after-h p-infographic">
+                                    In regelmäßigen Abständen hören Sie von mir und bekommen 
+                                    jede Menge Zwischenstände zu sehen. Damit Sie Bescheid 
+                                    wissen, Änderungen äußern und mich korrigieren können.
+                                </p>
+                            </div>
+                        </div>
                     </slide>
                     <slide>
-                    slide 4
+                        <div class="header-infographic is-flex wrap vcenter hcenter">
+                            <icon-base class="" width="60" height="60" viewBox="0 0 140 140" icon-name="one">
+                                <icon-number />
+                            </icon-base>
+                            <h1 class="title title-step is-size-5 is-family-primary has-text-centered">
+                                Wir werden es lieben!
+                            </h1>
+                        </div>
+                        <div class="columns">
+                            <div class="column is-flex vcenter hcenter">
+                                <lottie :options="defaultOptions" :height="100" :width="200" v-on:animCreated="loadAnimation"/>
+                            </div>
+                            <div class="column is-flex vcenter hcenter">
+                                <p class="is-family-primary has-text-black p-after-h p-infographic">
+                                    Nach regem Austausch und Produktion geht es an den letzten Feinschliff.
+                                </p>
+                            </div>
+                        </div>
                     </slide>
-                    <hooper-progress slot="hooper-addons"></hooper-progress>
+                    <slide>
+                        <div class="header-infographic is-flex wrap vcenter hcenter">
+                            <icon-base class="" width="60" height="60" viewBox="0 0 140 140" icon-name="one">
+                                <icon-number />
+                            </icon-base>
+                            <h1 class="title title-step is-size-5 is-family-primary has-text-centered">
+                                Wir haben es geschafft!
+                            </h1>
+                        </div>
+                        <div class="columns">
+                            <div class="column is-flex vcenter hcenter">
+                                <lottie :options="defaultOptions" :height="100" :width="200" v-on:animCreated="loadAnimation"/>
+                            </div>
+                            <div class="column is-flex vcenter hcenter">
+                                <p class="is-family-primary has-text-black p-after-h p-infographic">
+                                    Im letzten Schritt erfolgt die Übergabe, wir sind alle zufrieden, 
+                                    glücklich und ich konnte Ihnen hoffentlich helfen. <br><br>
+                                    Darüber hinaus bleiben wir gerne weiter in Konatkt.
+                                </p>
+                            </div>
+                        </div>
+                    </slide>
                 </hooper>
-                  
-                
-                
-                <!-- <div class="columns"> -->
-                    <!-- <div class="column number-column is-flex wrap vcenter hcenter">
-                        <div class="">
-                            <icon-base class="" width="60" height="60" viewBox="0 0 140 140" icon-name="one">
-                                <icon-number />
-                            </icon-base>
-                        </div>
-                        <h1 class="title title-step is-size-5 is-family-primary has-text-centered">
-                            Wir müssen reden!
-                        </h1>
-                    </div>
-                    <div class="column column-illustration is-flex vcenter hcenter">
-                        Here the illustration, please!
-                    </div>
-                    <div class="column">
-                        <p class="is-family-primary has-text-black p-after-h p-anim">
-                            Erzählen Sie mir Ihre Wünsche, Vorstellungen, Visionen und 
-                            Erwartungen.<br><br>
-                            Am besten persönlich, gerne aber auch telefonisch oder per
-                            Videogespräch.
-                        </p>
-                    </div>
-                    <div class="column number-column is-flex wrap vcenter hcenter">
-                        <div class="">
-                            <icon-base class="" width="60" height="60" viewBox="0 0 140 140" icon-name="one">
-                                <icon-number />
-                            </icon-base>
-                        </div>
-                        <h1 class="title title-step is-size-5 is-family-primary has-text-centered">
-                            Wir werden sehen!
-                        </h1>
-                    </div>
-                    <div class="column column-illustration is-flex vcenter hcenter">
-                        Here the illustration, please!
-                    </div>
-                    <div class="column">
-                        <p class="is-family-primary has-text-black p-after-h p-anim">
-                            Wir stimmen uns zwecks Feinheiten wie Preis und Umfang 
-                            ab, und dann kann es auch schon losgehen!
-                        </p>
-                    </div>
-                    <div class="column number-column is-flex wrap vcenter hcenter">
-                        <div class="">
-                            <icon-base class="" width="60" height="60" viewBox="0 0 140 140" icon-name="one">
-                                <icon-number />
-                            </icon-base>
-                        </div>
-                        <h1 class="title title-step is-size-5 is-family-primary has-text-centered">
-                            Wir hören voneinander!
-                        </h1>
-                    </div>
-                    <div class="column column-illustration is-flex vcenter hcenter">
-                        Here the illustration, please!
-                    </div>
-                    <div class="column">
-                        <p class="is-family-primary has-text-black p-after-h p-anim">
-                            In regelmäßigen Abständen hören Sie von mir und bekommen 
-                            jede Menge Zwischenstände zu sehen. Damit Sie Bescheid 
-                            wissen, Änderungen äußern und mich korrigieren können.
-                        </p>
-                    </div>
-                    <div class="column number-column is-flex wrap vcenter hcenter">
-                        <div class="">
-                            <icon-base class="" width="60" height="60" viewBox="0 0 140 140" icon-name="one">
-                                <icon-number />
-                            </icon-base>
-                        </div>
-                        <h1 class="title title-step is-size-5 is-family-primary has-text-centered">
-                            Wir werden es lieben!
-                        </h1>
-                    </div>
-                    <div class="column column-illustration is-flex vcenter hcenter">
-                        Here the illustration, please!
-                    </div>
-                    <div class="column">
-                        <p class="is-family-primary has-text-black p-after-h p-anim">
-                            Nach regem Austausch und Produktion geht es an den letzten Feinschliff.
-                        </p>
-                    </div>
-                    <div class="column number-column is-flex wrap vcenter hcenter">
-                        <div class="">
-                            <icon-base class="" width="60" height="60" viewBox="0 0 140 140" icon-name="one">
-                                <icon-number />
-                            </icon-base>
-                        </div>
-                        <h1 class="title title-step is-size-5 is-family-primary has-text-centered">
-                            Wir haben es geschafft!
-                        </h1>
-                    </div>
-                    <div class="column column-illustration is-flex vcenter hcenter">
-                        Here the illustration, please!
-                    </div>
-                    <div class="column">
-                        <p class="is-family-primary has-text-black p-after-h p-anim">
-                            Im letzten Schritt erfolgt die Übergabe, wir sind alle zufrieden, 
-                            glücklich und ich konnte Ihnen hoffentlich helfen. <br><br>
-                            Darüber hinaus bleiben wir gerne weiter in Konatkt.
-                        </p>
-                    </div> -->
-                <!-- </div> -->
+                <div class="infographic-navigation">
+                    <button class="button button-santoro" @click="slidePrev">
+                        <icon-base class="santoro-arrow slide-up" width="1" height="1"
+                        viewBox="0 0 616.49 167.02" icon-name="arrow"
+                        iconColor="#0a0a0a">
+                            <icon-arrow />
+                        </icon-base>
+                    </button>
+                    <button class="button button-santoro" @click="slideNext">
+                        <icon-base class="santoro-arrow" width="1" height="1"
+                        viewBox="0 0 616.49 167.02" icon-name="arrow"
+                        iconColor="#0a0a0a">
+                            <icon-arrow />
+                        </icon-base>
+                    </button>
+                </div>
             </div>
         </div>
     </div>
@@ -138,10 +146,13 @@
 
 <script>
 import IconBase from '../components/IconBase.vue'
+import IconArrow from '../components/icons/IconArrow.vue'
 import IconShortArrow from '../components/icons/IconShortArrow.vue'
-import { Hooper, Slide, Progress as HooperProgress } from 'hooper';
+import { Hooper, Slide } from 'hooper';
 import 'hooper/dist/hooper.css';
 import IconNumber from '../components/icons/IconNumber.vue'
+import Lottie from '../components/animation/LottieBase.vue';
+import * as animationData1 from '@/assets/lottie-screens.json';
 
 export default {
     name: 'Project',
@@ -150,19 +161,27 @@ export default {
     },
     components: {
         IconBase,
+        IconArrow,
         IconShortArrow,
         IconNumber,
         Hooper,
         Slide,
-        HooperProgress
+        Lottie,
+        'lottie': Lottie
     },
     data () {
         return {
             featuresOpen: false,
             hooperSettings: {
                 centerMode: true,
-                vertical: true
-            }
+                vertical: true,
+                infiniteScroll: true,
+                mouseDrag: false,
+                wheelControl: false,
+                touchDrag: false
+            },
+            defaultOptions: {animationData: animationData1.default},
+            animationSpeed: 1
         }
     },
     methods: {
@@ -173,6 +192,12 @@ export default {
 
             arrow.classList.toggle('up')
             bg.classList.toggle('toggle-bg')
+        },
+        slideNext() {
+            this.$refs.carousel.slideNext();
+        },
+        slidePrev() {
+            this.$refs.carousel.slidePrev();
         }
     }
 }
@@ -180,9 +205,6 @@ export default {
 
 <style lang="scss" scoped>
 
-.number-column{
-    margin: 4em 0 0 0;
-}
 .title-step{
     width: 100%;
     margin-top: 1em;
