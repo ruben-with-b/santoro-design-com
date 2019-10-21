@@ -13,8 +13,26 @@
                     Unser gemeinsames Projekt wird üblicherweise folgende Schritte 
                     durchlaufen. Ich freue mich schon darauf!
                 </p>
-                <div class="columns">
-                    <div class="column number-column is-flex wrap vcenter hcenter">
+                <hooper :settings="hooperSettings">
+                    <slide>
+                    slide 1
+                    </slide>
+                    <slide>
+                    slide 2
+                    </slide>
+                    <slide>
+                    slide 3
+                    </slide>
+                    <slide>
+                    slide 4
+                    </slide>
+                    <hooper-progress slot="hooper-addons"></hooper-progress>
+                </hooper>
+                  
+                
+                
+                <!-- <div class="columns"> -->
+                    <!-- <div class="column number-column is-flex wrap vcenter hcenter">
                         <div class="">
                             <icon-base class="" width="60" height="60" viewBox="0 0 140 140" icon-name="one">
                                 <icon-number />
@@ -111,8 +129,8 @@
                             glücklich und ich konnte Ihnen hoffentlich helfen. <br><br>
                             Darüber hinaus bleiben wir gerne weiter in Konatkt.
                         </p>
-                    </div>
-                </div>
+                    </div> -->
+                <!-- </div> -->
             </div>
         </div>
     </div>
@@ -121,6 +139,8 @@
 <script>
 import IconBase from '../components/IconBase.vue'
 import IconShortArrow from '../components/icons/IconShortArrow.vue'
+import { Hooper, Slide, Progress as HooperProgress } from 'hooper';
+import 'hooper/dist/hooper.css';
 import IconNumber from '../components/icons/IconNumber.vue'
 
 export default {
@@ -131,11 +151,18 @@ export default {
     components: {
         IconBase,
         IconShortArrow,
-        IconNumber
+        IconNumber,
+        Hooper,
+        Slide,
+        HooperProgress
     },
     data () {
         return {
-            featuresOpen: false
+            featuresOpen: false,
+            hooperSettings: {
+                centerMode: true,
+                vertical: true
+            }
         }
     },
     methods: {
