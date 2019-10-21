@@ -3,6 +3,7 @@ import VueRouter from 'vue-router';
 import App from './App.vue'
 import Home from './Home.vue'
 import About from './About.vue'
+import Services from './Services.vue'
 import Legal from './Legal.vue'
 import Privacy from './Privacy.vue'
 import VShowSlide from 'v-show-slide'
@@ -25,6 +26,10 @@ const routes = [
   { path: '/about',
     name: 'about',
     component: About
+  },
+  { path: '/services',
+    name: 'services',
+    component: Services
   },
   { path: '/legal',
     name: 'legal',

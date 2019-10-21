@@ -9,13 +9,110 @@
         </div>
         <div v-show-slide="featuresOpen" class="features is-family-primary has-text-black">
             <div class="container-features">
-                <flickity ref="flickity" :options="flickityOptions">
-                    <div class="carousel-cell">1</div>
-                    <div class="carousel-cell">2</div>
-                    <div class="carousel-cell">3</div>
-                    <div class="carousel-cell">4</div>
-                    <div class="carousel-cell">5</div>
-                </flickity>
+                <p class="is-family-primary has-text-black p-after-h p-anim">
+                    Unser gemeinsames Projekt wird üblicherweise folgende Schritte 
+                    durchlaufen. Ich freue mich schon darauf!
+                </p>
+                <div class="columns">
+                    <div class="column number-column is-flex wrap vcenter hcenter">
+                        <div class="">
+                            <icon-base class="" width="60" height="60" viewBox="0 0 140 140" icon-name="one">
+                                <icon-number />
+                            </icon-base>
+                        </div>
+                        <h1 class="title title-step is-size-5 is-family-primary has-text-centered">
+                            Wir müssen reden!
+                        </h1>
+                    </div>
+                    <div class="column column-illustration is-flex vcenter hcenter">
+                        Here the illustration, please!
+                    </div>
+                    <div class="column">
+                        <p class="is-family-primary has-text-black p-after-h p-anim">
+                            Erzählen Sie mir Ihre Wünsche, Vorstellungen, Visionen und 
+                            Erwartungen.<br><br>
+                            Am besten persönlich, gerne aber auch telefonisch oder per
+                            Videogespräch.
+                        </p>
+                    </div>
+                    <div class="column number-column is-flex wrap vcenter hcenter">
+                        <div class="">
+                            <icon-base class="" width="60" height="60" viewBox="0 0 140 140" icon-name="one">
+                                <icon-number />
+                            </icon-base>
+                        </div>
+                        <h1 class="title title-step is-size-5 is-family-primary has-text-centered">
+                            Wir werden sehen!
+                        </h1>
+                    </div>
+                    <div class="column column-illustration is-flex vcenter hcenter">
+                        Here the illustration, please!
+                    </div>
+                    <div class="column">
+                        <p class="is-family-primary has-text-black p-after-h p-anim">
+                            Wir stimmen uns zwecks Feinheiten wie Preis und Umfang 
+                            ab, und dann kann es auch schon losgehen!
+                        </p>
+                    </div>
+                    <div class="column number-column is-flex wrap vcenter hcenter">
+                        <div class="">
+                            <icon-base class="" width="60" height="60" viewBox="0 0 140 140" icon-name="one">
+                                <icon-number />
+                            </icon-base>
+                        </div>
+                        <h1 class="title title-step is-size-5 is-family-primary has-text-centered">
+                            Wir hören voneinander!
+                        </h1>
+                    </div>
+                    <div class="column column-illustration is-flex vcenter hcenter">
+                        Here the illustration, please!
+                    </div>
+                    <div class="column">
+                        <p class="is-family-primary has-text-black p-after-h p-anim">
+                            In regelmäßigen Abständen hören Sie von mir und bekommen 
+                            jede Menge Zwischenstände zu sehen. Damit Sie Bescheid 
+                            wissen, Änderungen äußern und mich korrigieren können.
+                        </p>
+                    </div>
+                    <div class="column number-column is-flex wrap vcenter hcenter">
+                        <div class="">
+                            <icon-base class="" width="60" height="60" viewBox="0 0 140 140" icon-name="one">
+                                <icon-number />
+                            </icon-base>
+                        </div>
+                        <h1 class="title title-step is-size-5 is-family-primary has-text-centered">
+                            Wir werden es lieben!
+                        </h1>
+                    </div>
+                    <div class="column column-illustration is-flex vcenter hcenter">
+                        Here the illustration, please!
+                    </div>
+                    <div class="column">
+                        <p class="is-family-primary has-text-black p-after-h p-anim">
+                            Nach regem Austausch und Produktion geht es an den letzten Feinschliff.
+                        </p>
+                    </div>
+                    <div class="column number-column is-flex wrap vcenter hcenter">
+                        <div class="">
+                            <icon-base class="" width="60" height="60" viewBox="0 0 140 140" icon-name="one">
+                                <icon-number />
+                            </icon-base>
+                        </div>
+                        <h1 class="title title-step is-size-5 is-family-primary has-text-centered">
+                            Wir haben es geschafft!
+                        </h1>
+                    </div>
+                    <div class="column column-illustration is-flex vcenter hcenter">
+                        Here the illustration, please!
+                    </div>
+                    <div class="column">
+                        <p class="is-family-primary has-text-black p-after-h p-anim">
+                            Im letzten Schritt erfolgt die Übergabe, wir sind alle zufrieden, 
+                            glücklich und ich konnte Ihnen hoffentlich helfen. <br><br>
+                            Darüber hinaus bleiben wir gerne weiter in Konatkt.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -24,7 +121,7 @@
 <script>
 import IconBase from '../components/IconBase.vue'
 import IconShortArrow from '../components/icons/IconShortArrow.vue'
-import Flickity from 'vue-flickity';
+import IconNumber from '../components/icons/IconNumber.vue'
 
 export default {
     name: 'Project',
@@ -34,19 +131,11 @@ export default {
     components: {
         IconBase,
         IconShortArrow,
-        Flickity
+        IconNumber
     },
     data () {
         return {
-            featuresOpen: false,
-            flickityOptions: {
-                initialIndex: 3,
-                prevNextButtons: true,
-                pageDots: true,
-                wrapAround: true
-                
-                // any options from Flickity can be used
-            }
+            featuresOpen: false
         }
     },
     methods: {
@@ -57,12 +146,6 @@ export default {
 
             arrow.classList.toggle('up')
             bg.classList.toggle('toggle-bg')
-        },
-        next() {
-            this.$refs.flickity.next();
-            },
-        previous() {
-            this.$refs.flickity.previous();
         }
     }
 }
@@ -70,4 +153,15 @@ export default {
 
 <style lang="scss" scoped>
 
+.number-column{
+    margin: 4em 0 0 0;
+}
+.title-step{
+    width: 100%;
+    margin-top: 1em;
+}
+
+.column-illustration{
+    width: 100%;
+}
 </style>

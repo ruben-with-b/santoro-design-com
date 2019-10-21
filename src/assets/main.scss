@@ -476,6 +476,7 @@ body{
         top: 88px;
         left: -20.25px;
         background: $secondary;
+        color: $grey;
         position: relative;
     }
     &:after{
@@ -483,7 +484,7 @@ body{
         display: inline-block;
         width: 1px;
         height: 38px;
-        background: $primary;
+        background: $grey;
         top: 37px;
         left: -222px;
         position: relative;
@@ -503,6 +504,7 @@ body{
         top: 88px;
         left: -20.25px;
         background: $secondary;
+        color: $grey;
         position: relative;
     }
 }
@@ -517,6 +519,7 @@ body{
         top: 100px;
         left: -20.25px;
         background: $secondary;
+        color: $grey;
         position: relative;
     }
 }
@@ -527,7 +530,7 @@ body{
         display: inline-block;
         width: 1px;
         height: 38px;
-        background: $primary;
+        background: $grey;
         top: 37px;
         left: -204px;
         position: relative;
