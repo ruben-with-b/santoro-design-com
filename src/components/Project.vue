@@ -48,7 +48,7 @@
                         </div>
                         <div class="columns infogr-reverse">
                             <div class="column is-flex vcenter hcenter">
-                                <lottie :options="defaultOptions" :height="100" :width="200" v-on:animCreated="loadAnimation"/>
+                                <lottie :options="defaultOptionsTwo" :height="auto" :width="250" v-on:animCreated="loadAnimation"/>
                             </div>
                             <div class="column is-flex vcenter hcenter">
                                 <p class="is-family-primary has-text-black p-after-h p-infographic">
@@ -146,13 +146,13 @@
 
 <script>
 import IconBase from '../components/IconBase.vue'
-import IconArrow from '../components/icons/IconArrow.vue'
 import IconShortArrow from '../components/icons/IconShortArrow.vue'
 import { Hooper, Slide } from 'hooper';
 import 'hooper/dist/hooper.css';
 import IconNumber from '../components/icons/IconNumber.vue'
 import Lottie from '../components/animation/LottieBase.vue';
 import * as animationData1 from '@/assets/talk/data.json';
+import * as animationData2 from '@/assets/start/data.json';
 
 export default {
     name: 'Project',
@@ -180,6 +180,7 @@ export default {
                 touchDrag: false
             },
             defaultOptions: {animationData: animationData1.default},
+            defaultOptionsTwo: {animationData: animationData2.default},
             animationSpeed: 1
         }
     },
