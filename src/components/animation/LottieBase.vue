@@ -18,8 +18,7 @@
         style: {
           width: this.width ? `${this.width}px` : '100%',
           height: this.height ? `${this.height}px` : '100%',
-          overflow: 'hidden',
-          margin: '0 0 0 -2.5em'
+          overflow: 'hidden'
         }
       }
     },

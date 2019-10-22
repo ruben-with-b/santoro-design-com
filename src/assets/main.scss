@@ -18,6 +18,10 @@ $footer-padding: 1rem 1.5rem 1rem;
 
 // ANIMATION
 
+.morph-section{
+    margin: 0 0 0 -2.5em;
+}
+
 // orange underline
 
 $bezier-1: cubic-bezier(0.22, 0.61, 0.36, 1);
@@ -38,6 +42,12 @@ $bezier-1: cubic-bezier(0.22, 0.61, 0.36, 1);
 
 .wrap{
     flex-wrap: wrap;
+}
+
+.infogr-reverse{
+    @include tablet{
+        flex-direction: row-reverse;
+    }
 }
 
 // BUTTONS
@@ -544,8 +554,12 @@ body{
     margin: 3em 0 0 0;
     height: 90vh;
 
+    &:focus{
+        outline: none;
+    }
+
     .hooper-slide{
-        border: 1px solid $primary;
+        // border: 1px solid $primary;
         
         .header-infographic{
             margin: 0 0 2em 0;
@@ -565,7 +579,7 @@ body{
     display: grid;
     grid-row-gap: 1em;
     justify-items: end;
-    bottom: 8em;
+    bottom: 15em;
     right: -2em;
 
     .button-santoro{

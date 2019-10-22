@@ -25,7 +25,7 @@
                         </div>
                         <div class="columns">
                             <div class="column is-flex vcenter hcenter">
-                                <lottie :options="defaultOptions" :height="100" :width="200" v-on:animCreated="loadAnimation"/>
+                                <lottie :options="defaultOptions" :height="auto" :width="250" v-on:animCreated="loadAnimation"/>
                             </div>
                             <div class="column is-flex vcenter hcenter">
                                 <p class="is-family-primary has-text-black p-after-h p-infographic">
@@ -46,7 +46,7 @@
                                 Wir werden sehen!
                             </h1>
                         </div>
-                        <div class="columns">
+                        <div class="columns infogr-reverse">
                             <div class="column is-flex vcenter hcenter">
                                 <lottie :options="defaultOptions" :height="100" :width="200" v-on:animCreated="loadAnimation"/>
                             </div>
@@ -89,7 +89,7 @@
                                 Wir werden es lieben!
                             </h1>
                         </div>
-                        <div class="columns">
+                        <div class="columns infogr-reverse">
                             <div class="column is-flex vcenter hcenter">
                                 <lottie :options="defaultOptions" :height="100" :width="200" v-on:animCreated="loadAnimation"/>
                             </div>
@@ -125,17 +125,17 @@
                 </hooper>
                 <div class="infographic-navigation">
                     <button class="button button-santoro" @click="slidePrev">
-                        <icon-base class="santoro-arrow slide-up" width="1" height="1"
-                        viewBox="0 0 616.49 167.02" icon-name="arrow"
+                        <icon-base class="santoro-arrow slide-up" width="15" height="15"
+                        viewBox="0 0 25.12 45" icon-name="arrow"
                         iconColor="#0a0a0a">
-                            <icon-arrow />
+                            <icon-short-arrow />
                         </icon-base>
                     </button>
                     <button class="button button-santoro" @click="slideNext">
-                        <icon-base class="santoro-arrow" width="1" height="1"
-                        viewBox="0 0 616.49 167.02" icon-name="arrow"
+                        <icon-base class="santoro-arrow" width="15" height="15"
+                        viewBox="0 0 25.12 45" icon-name="arrow"
                         iconColor="#0a0a0a">
-                            <icon-arrow />
+                            <icon-short-arrow />
                         </icon-base>
                     </button>
                 </div>
@@ -152,7 +152,7 @@ import { Hooper, Slide } from 'hooper';
 import 'hooper/dist/hooper.css';
 import IconNumber from '../components/icons/IconNumber.vue'
 import Lottie from '../components/animation/LottieBase.vue';
-import * as animationData1 from '@/assets/lottie-screens.json';
+import * as animationData1 from '@/assets/talk/data.json';
 
 export default {
     name: 'Project',
@@ -161,7 +161,6 @@ export default {
     },
     components: {
         IconBase,
-        IconArrow,
         IconShortArrow,
         IconNumber,
         Hooper,
