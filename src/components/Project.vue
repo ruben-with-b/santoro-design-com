@@ -48,7 +48,7 @@
                         </div>
                         <div class="columns infogr-reverse">
                             <div class="column is-flex vcenter hcenter">
-                                <lottie :options="defaultOptionsTwo" :height="auto" :width="250" v-on:animCreated="loadAnimation"/>
+                                <lottie :options="defaultOptionsTwo" :height="auto" :width="300" v-on:animCreated="loadAnimation"/>
                             </div>
                             <div class="column is-flex vcenter hcenter">
                                 <p class="is-family-primary has-text-black p-after-h p-infographic">
