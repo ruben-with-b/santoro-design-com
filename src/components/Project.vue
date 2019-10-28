@@ -17,7 +17,7 @@
                     <slide>
                         <div class="header-infographic is-flex wrap vcenter hcenter">
                             <icon-base class="" width="60" height="60" viewBox="0 0 140 140" icon-name="one">
-                                <icon-number />
+                                <icon-number-one />
                             </icon-base>
                             <h1 class="title title-step is-size-5 is-family-primary has-text-centered">
                                 Wir müssen reden!
@@ -40,7 +40,7 @@
                     <slide>
                         <div class="header-infographic is-flex wrap vcenter hcenter">
                             <icon-base class="" width="60" height="60" viewBox="0 0 140 140" icon-name="one">
-                                <icon-number />
+                                <icon-number-two />
                             </icon-base>
                             <h1 class="title title-step is-size-5 is-family-primary has-text-centered">
                                 Wir werden sehen!
@@ -61,7 +61,7 @@
                     <slide>
                         <div class="header-infographic is-flex wrap vcenter hcenter">
                             <icon-base class="" width="60" height="60" viewBox="0 0 140 140" icon-name="one">
-                                <icon-number />
+                                <icon-number-three />
                             </icon-base>
                             <h1 class="title title-step is-size-5 is-family-primary has-text-centered">
                                 Wir hören voneinander!
@@ -83,7 +83,7 @@
                     <slide>
                         <div class="header-infographic is-flex wrap vcenter hcenter">
                             <icon-base class="" width="60" height="60" viewBox="0 0 140 140" icon-name="one">
-                                <icon-number />
+                                <icon-number-four />
                             </icon-base>
                             <h1 class="title title-step is-size-5 is-family-primary has-text-centered">
                                 Wir werden es lieben!
@@ -103,7 +103,7 @@
                     <slide>
                         <div class="header-infographic is-flex wrap vcenter hcenter">
                             <icon-base class="" width="60" height="60" viewBox="0 0 140 140" icon-name="one">
-                                <icon-number />
+                                <icon-number-five />
                             </icon-base>
                             <h1 class="title title-step is-size-5 is-family-primary has-text-centered">
                                 Wir haben es geschafft!
@@ -149,7 +149,11 @@ import IconBase from '../components/IconBase.vue'
 import IconShortArrow from '../components/icons/IconShortArrow.vue'
 import { Hooper, Slide } from 'hooper';
 import 'hooper/dist/hooper.css';
-import IconNumber from '../components/icons/IconNumber.vue'
+import IconNumberOne from '../components/icons/IconNumberOne.vue'
+import IconNumberTwo from '../components/icons/IconNumberTwo.vue'
+import IconNumberThree from '../components/icons/IconNumberThree.vue'
+import IconNumberFour from '../components/icons/IconNumberFour.vue'
+import IconNumberFive from '../components/icons/IconNumberFive.vue'
 import Lottie from '../components/animation/LottieBase.vue';
 import * as animationData1 from '@/assets/talk/data.json';
 import * as animationData2 from '@/assets/start/data.json';
@@ -162,7 +166,11 @@ export default {
     components: {
         IconBase,
         IconShortArrow,
-        IconNumber,
+        IconNumberOne,
+        IconNumberTwo,
+        IconNumberThree,
+        IconNumberFour,
+        IconNumberFive,
         Hooper,
         Slide,
         Lottie,
