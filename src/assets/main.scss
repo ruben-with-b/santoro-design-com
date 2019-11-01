@@ -552,7 +552,7 @@ body{
 
 .hooper.is-vertical{
     margin: 3em 0 0 0;
-    height: 90vh;
+    height: 34em;
 
     &:focus{
         outline: none;
@@ -580,13 +580,12 @@ body{
 
 .infographic-navigation{
     width: 100%;
-    height: 100%;
+    height: 0;
     position: relative;
     display: grid;
     grid-row-gap: 1em;
     justify-items: end;
-    bottom: 15em;
-    right: -2em;
+    transform: translate(1.5em, -10em);
 
     .button-santoro{
         transform: rotate(90deg);
