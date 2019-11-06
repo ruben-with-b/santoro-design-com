@@ -69,7 +69,7 @@
                         </div>
                         <div class="columns">
                             <div class="column is-flex vcenter hcenter">
-                                <lottie :options="defaultOptions" :height="100" :width="200" v-on:animCreated="loadAnimation"/>
+                                <lottie :options="defaultOptionsThree" :height="auto" :width="400" v-on:animCreated="loadAnimation"/>
                             </div>
                             <div class="column is-flex vcenter hcenter">
                                 <p class="is-family-primary has-text-black p-after-h p-infographic">
@@ -91,7 +91,7 @@
                         </div>
                         <div class="columns infogr-reverse">
                             <div class="column is-flex vcenter hcenter">
-                                <lottie :options="defaultOptions" :height="100" :width="200" v-on:animCreated="loadAnimation"/>
+                                <lottie :options="defaultOptionsFour" :height="auto" :width="300" v-on:animCreated="loadAnimation"/>
                             </div>
                             <div class="column is-flex vcenter hcenter">
                                 <p class="is-family-primary has-text-black p-after-h p-infographic">
@@ -122,23 +122,8 @@
                             </div>
                         </div>
                     </slide>
+                    <hooper-pagination slot="hooper-addons"></hooper-pagination>
                 </hooper>
-                <div class="infographic-navigation">
-                    <button class="button button-santoro" @click="slidePrev">
-                        <icon-base class="santoro-arrow slide-up" width="15" height="15"
-                        viewBox="0 0 25.12 45" icon-name="arrow"
-                        iconColor="#0a0a0a">
-                            <icon-short-arrow />
-                        </icon-base>
-                    </button>
-                    <button class="button button-santoro" @click="slideNext">
-                        <icon-base class="santoro-arrow" width="15" height="15"
-                        viewBox="0 0 25.12 45" icon-name="arrow"
-                        iconColor="#0a0a0a">
-                            <icon-short-arrow />
-                        </icon-base>
-                    </button>
-                </div>
             </div>
         </div>
     </div>
@@ -147,7 +132,7 @@
 <script>
 import IconBase from '../components/IconBase.vue'
 import IconShortArrow from '../components/icons/IconShortArrow.vue'
-import { Hooper, Slide } from 'hooper';
+import { Hooper, Slide, Pagination as HooperPagination } from 'hooper';
 import 'hooper/dist/hooper.css';
 import IconNumberOne from '../components/icons/IconNumberOne.vue'
 import IconNumberTwo from '../components/icons/IconNumberTwo.vue'
@@ -157,6 +142,8 @@ import IconNumberFive from '../components/icons/IconNumberFive.vue'
 import Lottie from '../components/animation/LottieBase.vue';
 import * as animationData1 from '@/assets/talk/data.json';
 import * as animationData2 from '@/assets/start/data.json';
+import * as animationData3 from '@/assets/notification/data.json';
+import * as animationData4 from '@/assets/cleanup/data.json';
 
 export default {
     name: 'Project',
@@ -173,6 +160,7 @@ export default {
         IconNumberFive,
         Hooper,
         Slide,
+        HooperPagination,
         Lottie,
         'lottie': Lottie
     },
@@ -185,10 +173,14 @@ export default {
                 infiniteScroll: true,
                 mouseDrag: false,
                 wheelControl: false,
-                touchDrag: false
+                touchDrag: false,
+                autoPlay: false,
+                playSpeed: 5000
             },
             defaultOptions: {animationData: animationData1.default},
             defaultOptionsTwo: {animationData: animationData2.default},
+            defaultOptionsThree: {animationData: animationData3.default},
+            defaultOptionsFour: {animationData: animationData4.default},
             animationSpeed: 1
         }
     },
