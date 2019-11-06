@@ -23,8 +23,8 @@
                                 Wir müssen reden!
                             </h1>
                         </div>
-                        <div class="columns">
-                            <div class="column is-flex vcenter hcenter">
+                        <div class="columns is-desktop">
+                            <div class="column is-one-third is-flex vcenter hcenter">
                                 <lottie :options="defaultOptions" :height="auto" :width="250" v-on:animCreated="loadAnimation"/>
                             </div>
                             <div class="column is-flex vcenter hcenter">
@@ -46,8 +46,8 @@
                                 Wir werden sehen!
                             </h1>
                         </div>
-                        <div class="columns infogr-reverse">
-                            <div class="column is-flex vcenter hcenter">
+                        <div class="columns is-desktop infogr-reverse">
+                            <div class="column is-one-third is-flex vcenter hcenter">
                                 <lottie :options="defaultOptionsTwo" :height="auto" :width="400" v-on:animCreated="loadAnimation"/>
                             </div>
                             <div class="column is-flex vcenter hcenter">
@@ -67,8 +67,8 @@
                                 Wir hören voneinander!
                             </h1>
                         </div>
-                        <div class="columns">
-                            <div class="column is-flex vcenter hcenter">
+                        <div class="columns is-desktop">
+                            <div class="column is-one-third is-flex vcenter hcenter">
                                 <lottie :options="defaultOptionsThree" :height="auto" :width="400" v-on:animCreated="loadAnimation"/>
                             </div>
                             <div class="column is-flex vcenter hcenter">
@@ -89,8 +89,8 @@
                                 Wir werden es lieben!
                             </h1>
                         </div>
-                        <div class="columns infogr-reverse">
-                            <div class="column is-flex vcenter hcenter">
+                        <div class="columns is-desktop infogr-reverse">
+                            <div class="column is-one-third is-flex vcenter hcenter">
                                 <lottie :options="defaultOptionsFour" :height="auto" :width="300" v-on:animCreated="loadAnimation"/>
                             </div>
                             <div class="column is-flex vcenter hcenter">
@@ -109,8 +109,8 @@
                                 Wir haben es geschafft!
                             </h1>
                         </div>
-                        <div class="columns">
-                            <div class="column is-flex vcenter hcenter">
+                        <div class="columns is-desktop">
+                            <div class="column is-one-third is-flex vcenter hcenter">
                                 <lottie :options="defaultOptions" :height="100" :width="200" v-on:animCreated="loadAnimation"/>
                             </div>
                             <div class="column is-flex vcenter hcenter">

@@ -600,16 +600,28 @@ body{
 }
 
 .hooper-indicator {
-    height: 2px;
+    height: 1px;
     border-radius: 0;
     background-color: $primary;
 }
 
 .hooper-indicator:hover, .hooper-indicator.is-active {
     background-color: $primary;
-    width: 3em !important;
+    width: 2em !important;
 }
 
 .hooper-pagination.is-vertical .hooper-indicator {
-    width: 2em;
+    width: 1.1em;
+}
+
+.hooper-pagination.is-vertical{
+    direction: rtl;
+    bottom: 2em;
+    right: 0;
+    top: auto;
+    padding: 0;
+    @include tablet {
+        bottom: auto;
+        top: 50%;
+    }
 }
