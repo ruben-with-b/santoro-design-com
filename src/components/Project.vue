@@ -15,11 +15,11 @@
                 </p>
                 <div class="process-step">
                     <div class="header-infographic is-flex wrap vcenter hcenter">
-                        <icon-base class="" width="60" height="60" viewBox="0 0 140 140" icon-name="one">
+                        <icon-base width="60" height="60" viewBox="0 0 140 140" icon-name="one">
                             <icon-number-one />
                         </icon-base>
                         <h1 class="title title-step is-size-5 is-family-primary has-text-centered">
-                            Wir müssen reden!
+                            Redebedarf!
                         </h1>
                     </div>
                     <div class="columns">
@@ -40,11 +40,11 @@
                 </div>
                 <div class="process-step">
                     <div class="header-infographic is-flex wrap vcenter hcenter">
-                        <icon-base class="" width="60" height="60" viewBox="0 0 140 140" icon-name="one">
+                        <icon-base width="60" height="60" viewBox="0 0 140 140" icon-name="one">
                             <icon-number-two />
                         </icon-base>
                         <h1 class="title title-step is-size-5 is-family-primary has-text-centered">
-                            Wir werden sehen!
+                            Los geht's!
                         </h1>
                     </div>
                     <div class="columns infogr-reverse">
@@ -54,7 +54,7 @@
                             </div>
                         </div>
                         <div class="column is-flex vcenter hcenter">
-                            <p class="is-family-primary has-text-black p-after-h p-infographic">
+                            <p class="is-family-primary has-text-black p-after-h p-infographic float-right-tablet">
                                 Wir stimmen uns zwecks Feinheiten wie Preis und Umfang 
                                 ab, und dann kann es auch schon losgehen!
                             </p>
@@ -63,7 +63,7 @@
                 </div>
                 <div class="process-step">
                     <div class="header-infographic is-flex wrap vcenter hcenter">
-                        <icon-base class="" width="60" height="60" viewBox="0 0 140 140" icon-name="one">
+                        <icon-base width="60" height="60" viewBox="0 0 140 140" icon-name="one">
                             <icon-number-three />
                         </icon-base>
                         <h1 class="title title-step is-size-5 is-family-primary has-text-centered">
@@ -87,11 +87,11 @@
                 </div>
                 <div class="process-step">
                     <div class="header-infographic is-flex wrap vcenter hcenter">
-                        <icon-base class="" width="60" height="60" viewBox="0 0 140 140" icon-name="one">
+                        <icon-base width="60" height="60" viewBox="0 0 140 140" icon-name="one">
                             <icon-number-four />
                         </icon-base>
                         <h1 class="title title-step is-size-5 is-family-primary has-text-centered">
-                            Wir werden es lieben!
+                            Ein letzter Feinschliff!
                         </h1>
                     </div>
                     <div class="columns infogr-reverse">
@@ -101,7 +101,7 @@
                             </div>
                         </div>
                         <div class="column is-flex vcenter hcenter">
-                            <p class="is-family-primary has-text-black p-after-h p-infographic">
+                            <p class="is-family-primary has-text-black p-after-h p-infographic float-right-tablet">
                                 Nach regem Austausch und Produktion geht es an den letzten Feinschliff.
                             </p>
                         </div>
@@ -109,7 +109,7 @@
                 </div>
                 <div class="process-step">
                     <div class="header-infographic is-flex wrap vcenter hcenter">
-                        <icon-base class="" width="60" height="60" viewBox="0 0 140 140" icon-name="one">
+                        <icon-base width="60" height="60" viewBox="0 0 140 140" icon-name="one">
                             <icon-number-five />
                         </icon-base>
                         <h1 class="title title-step is-size-5 is-family-primary has-text-centered">

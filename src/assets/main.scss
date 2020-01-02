@@ -565,6 +565,12 @@ body{
         width: 80%;
     }
 }
+
+.float-right-tablet{
+    @include tablet {
+        text-align: right;
+    }
+}
  
 
 .number{
@@ -585,7 +591,10 @@ body{
     margin: 0 0 0 1.5em;
     width: 40%;
     height: auto;
+    @include tablet {
+        width: 20%; 
+    }
     @include desktop {
-        width: 75%; 
+        width: 14%; 
     }
 }
