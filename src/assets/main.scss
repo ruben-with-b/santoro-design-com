@@ -385,7 +385,7 @@ body{
 }
 
 .container-features{
-    margin: 0 0 3rem 2rem !important;
+
 }
 
 .columns-head{
@@ -548,29 +548,24 @@ body{
 }
 
 // process infographic
-// hooper slider
 
-.hooper.is-vertical{
-    margin: 3em 0 0 0;
-    height: 80vh;
+.process-step{
+    margin: 0 0 8em 0;
+}
+       
+.header-infographic{
+    margin: 5em 0 4em 0;
+}
 
-    &:focus{
-        outline: none;
-    }
-
-    .hooper-slide{
-        // border: 1px solid $primary;
-        
-        .header-infographic{
-            margin: 0 0 2em 0;
-        }
-
-        .p-infographic{
-            margin: 0 2em 0 0;
-            hyphens: auto;
-        }
+.p-infographic{
+    hyphens: auto;
+    margin: 0 0 0 0;
+    width: 100%;
+    @include desktop {
+        width: 80%;
     }
 }
+ 
 
 .number{
     font-family: $family-secondary;
@@ -578,50 +573,10 @@ body{
     color: $primary;
 }
 
-.infographic-navigation{
-    width: 100%;
-    height: 0;
-    position: relative;
-    display: grid;
-    grid-row-gap: 1em;
-    justify-items: end;
-    transform: translate(1.5em, -10em);
-
-    .button-santoro{
-        transform: rotate(90deg);
-        margin: 0;
-        &:hover:after{
-            width: 0;
-        }
-        .slide-up{
-            transform: rotate(180deg);
-        }
-    }
-}
-
-.hooper-indicator {
-    height: 1px;
-    border-radius: 0;
-    background-color: $primary;
-}
-
-.hooper-indicator:hover, .hooper-indicator.is-active {
-    background-color: $primary;
-    width: 2em !important;
-}
-
-.hooper-pagination.is-vertical .hooper-indicator {
-    width: 1.1em;
-}
-
-.hooper-pagination.is-vertical{
-    direction: rtl;
-    bottom: 2em;
-    right: 0;
-    top: auto;
-    padding: 0;
-    @include tablet {
-        bottom: auto;
-        top: 50%;
+.lottie-vp{
+    width: 60%;
+    height: auto;
+    @include desktop {
+        width: 75%; 
     }
 }

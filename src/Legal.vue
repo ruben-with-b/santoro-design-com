@@ -1,5 +1,11 @@
 <template>
-
+  <div id="legal"> 
+    <Navigation/>
+    <div class="nav-border"></div>
+    <div class="body-bg">
+    </div>
+    <Footer/>
+  </div>
 </template>
 
 <script>
@@ -11,6 +17,6 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 
 </style>

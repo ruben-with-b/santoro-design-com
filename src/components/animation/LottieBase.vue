@@ -16,8 +16,8 @@
     data () {
       return {
         style: {
-          width: this.width ? `${this.width}px` : '100%',
-          height: this.height ? `${this.height}px` : '100%',
+          width: this.width ? `${this.width}%` : '100%',
+          height: this.height ? `${this.height}%` : '100%',
           overflow: 'hidden'
         }
       }
