@@ -580,3 +580,12 @@ body{
         width: 75%; 
     }
 }
+
+.lottie-lp{
+    margin: 0 0 0 1.5em;
+    width: 40%;
+    height: auto;
+    @include desktop {
+        width: 75%; 
+    }
+}
