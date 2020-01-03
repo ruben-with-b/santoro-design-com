@@ -5,7 +5,7 @@
                 <icon-short-arrow />
             </icon-base>
             <h1 class="title is-size-4-mobile is-size-3-tablet is-family-secondary
-                not-bold is-inline-block">Unser nächstes Projekt</h1>
+                not-bold is-inline-block">Projektablauf</h1>
         </div>
         <div v-show-slide="featuresOpen" class="features is-family-primary has-text-black">
             <div class="container-features">
@@ -80,7 +80,7 @@
                             <p class="is-family-primary has-text-black p-after-h p-infographic">
                                 In regelmäßigen Abständen hören Sie von mir und bekommen 
                                 jede Menge Zwischenstände zu sehen. Damit Sie Bescheid 
-                                wissen, Änderungen äußern und mich korrigieren können.
+                                wissen, Änderungswünsche äußern und Feedback geben können.
                             </p>
                         </div>
                     </div>
@@ -102,7 +102,7 @@
                         </div>
                         <div class="column is-flex vcenter hcenter">
                             <p class="is-family-primary has-text-black p-after-h p-infographic float-right-tablet">
-                                Nach regem Austausch und Produktion geht es an den letzten Feinschliff.
+                                Nach regem Austausch und der Umsetzung Ihrer Bedürfnisse geht es an den letzten Feinschliff.
                             </p>
                         </div>
                     </div>
@@ -124,8 +124,8 @@
                         </div>
                         <div class="column is-flex vcenter hcenter">
                             <p class="is-family-primary has-text-black p-after-h p-infographic">
-                                Im letzten Schritt erfolgt die Übergabe, wir sind alle zufrieden, 
-                                glücklich und ich konnte Ihnen hoffentlich helfen. <br><br>
+                                Im letzten Schritt erfolgt die Übergabe, beide Seiten sind
+                                zufrieden und stolz, ich konnte Ihnen hoffentlich weiterhelfen. <br><br>
                                 Darüber hinaus bleiben wir gerne weiter in Konatkt.
                             </p>
                         </div>
