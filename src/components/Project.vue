@@ -119,7 +119,7 @@
                     <div class="columns">
                         <div class="column is-flex vcenter hcenter">
                             <div class="lottie-vp">
-                                <lottie :options="defaultOptions" :height="auto" v-on:animCreated="loadAnimation"/>
+                                <lottie :options="defaultOptionsFive" :height="auto" v-on:animCreated="loadAnimation"/>
                             </div>
                         </div>
                         <div class="column is-flex vcenter hcenter">
@@ -149,6 +149,7 @@ import * as animationData1 from '@/assets/talk/data.json';
 import * as animationData2 from '@/assets/start/data.json';
 import * as animationData3 from '@/assets/notification/data.json';
 import * as animationData4 from '@/assets/cleanup/data.json';
+import * as animationData5 from '@/assets/shipment/data.json';
 
 export default {
     name: 'Project',
@@ -173,6 +174,7 @@ export default {
             defaultOptionsTwo: {animationData: animationData2.default},
             defaultOptionsThree: {animationData: animationData3.default},
             defaultOptionsFour: {animationData: animationData4.default},
+            defaultOptionsFive: {animationData: animationData5.default},
             animationSpeed: 1
         }
     },
