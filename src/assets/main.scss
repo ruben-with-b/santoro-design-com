@@ -60,13 +60,27 @@ button{
 }
 
 // primary button
-.button-santoro{
+.button-santoro,
+.button-santoro-white{
     background-color: inherit;
     border: none;
     border-radius: 0px;
     font-size: $size-5;
     letter-spacing: 0.6px;
     margin: 40px 0 0 0;
+}
+
+.button-santoro-white{
+    margin: 3em 0 0 0;
+
+    @include tablet{
+        margin: 0 0 0 9em;
+        width: 6em;
+    }
+
+    @include desktop{
+        margin: 1em 0 0 1em;
+    }
 }
 
 .santoro-arrow{
@@ -86,7 +100,7 @@ button{
   }
 
 .button-santoro::after,
-.button-santoro::after{
+.button-santoro-white::after{
     content: '';
     position: absolute;
     top: 35px;
@@ -97,19 +111,40 @@ button{
     transition: all 200ms ease-out;
 }
 
+.button-santoro-white::after{
+    border-bottom: 4px double $secondary;
+    @include desktop {
+        top: 2em;
+    }
+}
+
 .button-santoro.is-hovered::after,
-.button-santoro:hover::after{
+.button-santoro-white.is-hovered::after,
+.button-santoro:hover::after,
+.button-santoro-white:hover::after{
     content: '';
     width: 45px;
 }
+
+.button-santoro-white.is-hovered::after,
+.button-santoro-white:hover::after{
+    @include desktop{
+        top: 2em;
+    }
+}
+
+
+
 
 .button:focus:not(:active), .button.is-focused:not(:active){
     box-shadow: none;
     color: $grey;
 }
 
-.button-santoro.is-hovered>.menu-link>.arrow-mask>.santoro-arrow,
-.button-santoro:hover>.menu-link>.arrow-mask>.santoro-arrow{
+.button-santoro.is-hovered > .menu-link > .arrow-mask > .santoro-arrow,
+.button-santoro:hover > .menu-link > .arrow-mask > .santoro-arrow,
+.button-santoro-white.is-hovered > .menu-link > .arrow-mask > .santoro-arrow,
+.button-santoro-white:hover > .menu-link > .arrow-mask > .santoro-arrow{
     transform: translateX(55px);
 }
 
@@ -378,14 +413,24 @@ body{
     }
 }
 
+// LANDING PAGE
+
+.lottie-lp{
+    margin: 0 0 0 1.5em;
+    width: 40%;
+    height: auto;
+    @include tablet {
+        width: 20%; 
+    }
+    @include desktop {
+        width: 14%; 
+    }
+}
+
 // ABOUT
 
 .toggle-features{
     margin-bottom: 3rem;
-}
-
-.container-features{
-
 }
 
 .columns-head{
@@ -587,14 +632,58 @@ body{
     }
 }
 
-.lottie-lp{
-    margin: 0 0 0 1.5em;
-    width: 40%;
-    height: auto;
+// contact teaser
+
+.contact-teaser{
+    background: $orange;
+    color: $secondary;
+    width: 100vw;
+    height: 12em;
+    display: flex;
+    // align-items: center;
+    padding: 3em 0 0 2em;
+    opacity: 0;
+    transform: translateX(-1.5rem);
+    transition: opacity 0.5s;
+
+    a{
+        color: $secondary;
+    }
+
     @include tablet {
-        width: 20%; 
+        flex-direction: column;
     }
     @include desktop {
-        width: 14%; 
+        height: 18em;
+        padding: 3em 0 0 5em;
+        transform: translateX(-9rem);
     }
+
+    .p-infographic{
+        @include desktop{
+            font-size: 1.8rem;
+        }
+    }
+
+    .arrow-mask{
+        @include desktop{
+            top: unset;
+        }
+    }
+
+    .next-to-icon{
+        @include desktop{
+            font-size: 1.8rem;
+            margin-left: 1.3em;
+        }
+    }
+
+    @include fullhd{
+        padding: 3em 0 0 5em;
+        transform: translateX(-18rem);
+    }
+}
+
+.toggle-teaser{
+    opacity: 1;
 }

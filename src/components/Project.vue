@@ -133,11 +133,30 @@
                 </div>
             </div>
         </div>
+        <div class="contact-teaser">
+            <p class="is-family-secondary p-after-h p-infographic">
+                Könnte etwas werden?<br>
+                Gehen wir's an!
+            </p>
+            <button class="button button-santoro-white">
+            <router-link to="/contact" class="menu-link is-secondary is-family-secondary">
+              <div class="arrow-mask">  
+                <icon-base class="santoro-arrow" width="1" height="1"
+                  viewBox="0 0 616.49 167.02" icon-name="arrow"
+                  iconColor="#FFFFFF">
+                  <icon-arrow />
+                </icon-base>
+              </div>
+              <span class="next-to-icon">Kontakt</span>
+            </router-link>
+          </button>
+        </div>
     </div>
 </template>
 
 <script>
 import IconBase from '../components/IconBase.vue'
+import IconArrow from '../components/icons/IconArrow.vue'
 import IconShortArrow from '../components/icons/IconShortArrow.vue'
 import IconNumberOne from '../components/icons/IconNumberOne.vue'
 import IconNumberTwo from '../components/icons/IconNumberTwo.vue'
@@ -158,6 +177,7 @@ export default {
     },
     components: {
         IconBase,
+        IconArrow,
         IconShortArrow,
         IconNumberOne,
         IconNumberTwo,
@@ -186,6 +206,11 @@ export default {
 
             arrow.classList.toggle('up')
             bg.classList.toggle('toggle-bg')
+            setTimeout(this.toggleTeaser(), 3000)
+        },
+        toggleTeaser() {
+            let teaser = document.querySelector('.contact-teaser')
+            teaser.classList.toggle('toggle-teaser')
         }
     }
 }
