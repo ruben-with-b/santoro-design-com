@@ -687,3 +687,95 @@ body{
 .toggle-teaser{
     opacity: 1;
 }
+
+// CONTACT
+
+.form-body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 4em 0 0 0;
+    color: #ffffff;
+    width: 100%;
+    height: auto;
+  
+    .input-group{
+      display: flex;
+      flex-direction: column;
+      margin: 0 0 2em 0;
+      width: 18em;
+  
+      .input-area{
+        outline: none;
+        padding: 0.5em 0;
+        border: none;
+        background: none;
+        border-bottom: 1px solid $secondary;
+        font-family: $family-primary;
+        font-size: 1.1rem;
+        color: $secondary;
+
+        &:focus{
+          border-bottom: 1px solid $orange;
+        }
+        &:focus + .labelName,
+        &:focus + .labelMail,
+        &:focus + .labelCompany,
+        &:focus + .labelSite,
+        &:focus + .labelSubject{
+          top: -4em;
+          font-size: 0.9rem;
+        }
+        &:valid + .labelName,
+        &:valid + .labelPassword,
+        &:valid + .labelCompany,
+        &:valid + .labelSite,
+        &:valid + .labelSubject{
+          top: -4em;
+          font-size: 0.9rem;
+        }
+      }
+
+      .text-area{
+        padding: 1em 0;
+        margin: 1.5em 0 0 0;
+        border-top: 1px solid $secondary;
+        border-bottom: 1px solid $secondary;
+        resize: none;
+
+        &:focus{
+            border-top: 1px solid $orange;
+            border-bottom: 1px solid $orange;
+        }
+      }
+  
+      .labelName,
+      .labelMail,
+      .labelCompany,
+      .labelSite,
+      .labelSubject,
+      .labelMessage{
+        position: relative;
+        top: -2em;
+        font-family: $family-secondary;
+        font-size: 1.1rem;
+        transition: 100ms all ease-in-out;
+      }
+
+      .labelMessage{
+        top: -15.5em;
+      }
+    }
+
+    button{
+        margin: 0 0 0 1em;
+        a{
+            color: $secondary;
+        }    
+    }
+    
+    .error-box{
+      color: orange;
+      margin: 4em 0 0 0;
+    }
+  }
