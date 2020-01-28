@@ -690,6 +690,15 @@ body{
 
 // CONTACT
 
+.contact-bg{
+    background: $primary;
+}
+
+.contact-bg::before{
+    content: '';
+    background: none;
+}
+
 .form-body{
     display: flex;
     align-items: center;
@@ -704,6 +713,10 @@ body{
       flex-direction: column;
       margin: 0 0 2em 0;
       width: 18em;
+
+      @include tablet {
+          width: 35em;
+      }
   
       .input-area{
         outline: none;
@@ -715,6 +728,10 @@ body{
         font-size: 1.1rem;
         color: $secondary;
 
+        @include desktop{
+            font-size: 1.5rem;
+        }
+
         &:focus{
           border-bottom: 1px solid $orange;
         }
@@ -725,6 +742,10 @@ body{
         &:focus + .labelSubject{
           top: -4em;
           font-size: 0.9rem;
+
+          @include desktop{
+            top: -4.8em;
+          }
         }
         &:valid + .labelName,
         &:valid + .labelPassword,
@@ -733,18 +754,20 @@ body{
         &:valid + .labelSubject{
           top: -4em;
           font-size: 0.9rem;
+
+          @include desktop{
+            top: -4.8em;
+          }
         }
       }
 
       .text-area{
         padding: 1em 0;
         margin: 1.5em 0 0 0;
-        border-top: 1px solid $secondary;
         border-bottom: 1px solid $secondary;
         resize: none;
 
         &:focus{
-            border-top: 1px solid $orange;
             border-bottom: 1px solid $orange;
         }
       }
@@ -760,18 +783,43 @@ body{
         font-family: $family-secondary;
         font-size: 1.1rem;
         transition: 100ms all ease-in-out;
+
+        @include desktop{
+            font-size: 1.5rem;
+        }
       }
 
       .labelMessage{
-        top: -15.5em;
+        top: -14.5em;
+
+        @include desktop{
+            top: -14em;
+        }
       }
     }
 
     button{
         margin: 0 0 0 1em;
+        
         a{
             color: $secondary;
-        }    
+        }
+
+        .next-to-icon{
+            @include tablet{
+                margin-left: 2em;
+            }
+        }
+
+        &:after {
+            top: 1.7em;
+        }
+
+        &:hover{
+            &:after {
+                top: 1.7em;
+            }
+        }
     }
     
     .error-box{

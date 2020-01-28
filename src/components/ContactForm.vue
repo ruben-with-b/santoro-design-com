@@ -2,7 +2,7 @@
   <section class="section">
     <div class="container">
       <h1 class="is-family-secondary santoro-breadcrumb-mobile is-hidden-desktop has-text-white">{{ msg }}</h1>
-      <h1 class="is-family-secondary santoro-breadcrumb is-hidden-touch">{{ msg }}</h1>
+      <h1 class="is-family-secondary santoro-breadcrumb is-hidden-touch has-text-white">{{ msg }}</h1>
       
 
       <div class="form-body">

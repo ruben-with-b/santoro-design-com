@@ -2,7 +2,7 @@
   <div> 
     <Navigation/>
     <div class="nav-border"></div>
-    <div class="body-bg">
+    <div class="body-bg contact-bg">
       <contact-form msg="Kontakt"/>
     </div>
     <Footer/>
@@ -23,15 +23,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss" scoped>
-.body-bg{
-    background: black;
-}
-
-.body-bg::before{
-    content: '';
-    background: none;
-}
-
-</style>
