@@ -198,19 +198,41 @@ export default {
             animationSpeed: 1
         }
     },
+    mounted(){
+        let arrow = document.querySelector('.acc-arrow-2');
+        let bg = document.querySelector('.body-bg');
+        
+        // on refresh & reload
+        if(this.$route.query.section === 'project'){
+            this.featuresOpen = true;
+            arrow.classList.toggle('up');
+            bg.classList.add('pure-bg');
+            this.toggleTeaser()
+        }
+        
+    },
     methods: {
         toggleFeatures () {
-            this.featuresOpen = !this.featuresOpen
-            let arrow = document.querySelector('.acc-arrow-2')
-            let bg = document.querySelector('.body-bg')
+            let arrowPerson = document.querySelector('.acc-arrow');
+            let arrowProject = document.querySelector('.acc-arrow-2');
+            let bg = document.querySelector('.body-bg');
+            this.featuresOpen = !this.featuresOpen;
+            this.featuresOpen ? this.$router.push({name: 'about', query: { section: 'project' }}) : this.$router.push({name: 'about', query : '' });
+            arrowProject.classList.toggle('up');
 
-            arrow.classList.toggle('up')
-            bg.classList.toggle('toggle-bg')
-            setTimeout(this.toggleTeaser(), 3000)
+            if(this.$route.query.section === 'project'){
+                bg.classList.add('pure-bg');
+            } else if(Object.keys(this.$route.query).length === 0
+                    && !arrowPerson.classList.contains('up')){
+                setTimeout(() => {
+                    bg.classList.remove('pure-bg');
+                }, 400);
+            }
+            setTimeout(this.toggleTeaser(), 3000);
         },
         toggleTeaser() {
-            let teaser = document.querySelector('.contact-teaser')
-            teaser.classList.toggle('toggle-teaser')
+            let teaser = document.querySelector('.contact-teaser');
+            teaser.classList.toggle('toggle-teaser');
         }
     }
 }

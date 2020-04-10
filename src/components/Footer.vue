@@ -2,7 +2,7 @@
   <footer class="footer">
     <div class="content">
       <div class="is-size-7 has-text-white is-flex vcenter footer-body">
-        <p class="is-marginless">&#169; 2019 <span class="is-uppercase">Santoro</span> Design</p>
+        <p class="is-marginless">&#169; 2020 <span class="is-uppercase">Santoro</span> Design</p>
         <button v-show="scrolled" class="scroll-top-button 
         is-family-secondary" @click="scrollToTop()">
           <span class="is-hidden-mobile">nach oben &nbsp; &nbsp;</span>

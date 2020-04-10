@@ -74,8 +74,13 @@ export default {
         IconShortArrow,
         IconEducation
     },
+    data () {
+        return {
+        featuresOpen: false
+        }
+    },
     mounted () {
-        document.addEventListener('mousemove', function(e) {
+        document.addEventListener('mousemove', (e) => {
             const x = e.pageX / (window.innerWidth * 10),
                     y = e.pageY / (window.innerHeight * 10);
             const bg = document.querySelector('.layerOne');
@@ -84,20 +89,34 @@ export default {
 
             bg.style.backgroundPosition = pos1 + '% ' + pos2 + '%';
         });
-    },
-    data () {
-        return {
-        featuresOpen: false
+
+        let arrow = document.querySelector('.acc-arrow');
+        let bg = document.querySelector('.body-bg');
+        
+        // on refresh & reload
+        if(this.$route.query.section === 'person'){
+            this.featuresOpen = true;
+            arrow.classList.toggle('up');
+            bg.classList.add('pure-bg');
         }
     },
     methods: {
         toggleFeatures () {
-            this.featuresOpen = !this.featuresOpen
-            let arrow = document.querySelector('.acc-arrow')
-            let bg = document.querySelector('.body-bg')
+            let arrowPerson = document.querySelector('.acc-arrow');
+            let arrowProject = document.querySelector('.acc-arrow-2');
+            let bg = document.querySelector('.body-bg');
+            this.featuresOpen = !this.featuresOpen;
+            this.featuresOpen ? this.$router.push({name: 'about', query: { section: 'person' }}) : this.$router.push({name: 'about', query : '' });
+            arrowPerson.classList.toggle('up');
 
-            arrow.classList.toggle('up')
-            bg.classList.toggle('toggle-bg')
+            if(this.$route.query.section === 'person'){
+                bg.classList.add('pure-bg');
+            } else if(Object.keys(this.$route.query).length === 0
+                    && !arrowProject.classList.contains('up')){
+                setTimeout(() => {
+                    bg.classList.remove('pure-bg');
+                }, 400);
+            }
         }
     }
 }

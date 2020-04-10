@@ -273,12 +273,13 @@ body{
     opacity: 0.075;
     background: url(./bg-bw.png) no-repeat 20% 100%;
     background-size: cover;
-    transition: all 1s;
+    transition: all .2s;
 }
 
-.toggle-bg::before{
-    background: unset !important;
-    transition: all 1s;
+.pure-bg::before{
+    // background: unset !important;
+    opacity: 0;
+    transition: all .2s;
 }
 
 
@@ -748,9 +749,7 @@ body{
           }
         }
         &:valid + .labelName,
-        &:valid + .labelPassword,
-        &:valid + .labelCompany,
-        &:valid + .labelSite,
+        &:valid + .labelMail,
         &:valid + .labelSubject{
           top: -4em;
           font-size: 0.9rem;

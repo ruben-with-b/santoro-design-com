@@ -16,7 +16,8 @@ Vue.use(VShowSlide)
 Vue.use(VueAnime)
 Vue.config.productionTip = false
 
-require("./assets/main.scss")
+require("./assets/main.scss");
+require('dotenv').config();
 smoothscroll.polyfill()
 
 const routes = [
