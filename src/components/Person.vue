@@ -5,7 +5,7 @@
                 <icon-short-arrow />
             </icon-base>
             <h1 class="title is-size-4-mobile is-size-3-tablet is-family-secondary
-            not-bold is-inline-block">Meine Person
+            not-bold is-inline-block">Über mich
             </h1>
         </div>
         <div v-show-slide="featuresOpen" class="features is-family-primary has-text-black">
@@ -24,10 +24,10 @@
                     </div>
                 </div>
                 <p class="is-family-primary has-text-black p-after-h p-anim p-person">
-                    Hinter SANTORO Design steckt ein motivierter, leidenschaftlicher
-                    und kreativer Master-Student, der heiß darauf ist, Ihnen einen
-                    ästhetisch ansprechenden und gewinn-bringenden Dienst leisten zu
-                    können.
+                    SANTORO Design, das ist mein kreatives Schaffen, das sind meine Ideen und
+                    Lösungen für Sie. Ich bin bereits jetzt hochmotiviert, voller Leidenschaft
+                    und heiß darauf, Ihnen einen ästhetisch ansprechenden und gewinnbringenden
+                    Dienst leisten zu können.
                 </p>
                 <div class="is-flex edu-logo hcenter">
                     <icon-base class="education-logo" width="60" height="60" viewBox="0 0 150 150" icon-name="rubens-education">
@@ -35,7 +35,7 @@
                     </icon-base>
                 </div>
                 <div class="edu-timeline">
-                    <div class="school">
+                    <div class="school is-size-5-desktop">
                         <p class="has-text-weight-bold start-point">
                             <span class="end-point">
                                 Medien & Informationswesen
@@ -44,7 +44,7 @@
                         <p>Hochschule Offenburg</p>
                         <p>Bachelor of Science (03/2017)</p>
                     </div>
-                    <div class="school">
+                    <div class="school is-size-5-desktop">
                         <p class="has-text-weight-bold start-point master">
                             <span class="end-point">
                                 Interaktive Mediensysteme
