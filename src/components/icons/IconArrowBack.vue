@@ -8,11 +8,8 @@
 <style scoped>
   .cls-1{
     fill:none;
-    stroke:#fff;
     stroke-miterlimit:10;
     stroke-width:24px;
   }
-  rect{
-    color: #fff;
-  }
+
 </style>

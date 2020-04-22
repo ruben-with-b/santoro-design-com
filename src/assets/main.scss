@@ -882,4 +882,164 @@ body{
       color: orange;
       margin: 4em 0 0 0;
     }
-  }
+}
+
+
+// SERVICE
+
+.service-section{
+    padding: 0 0;
+    
+    .topic-carousel{
+        height: 45vh;
+
+        @include fullhd {
+            height: 55vh;
+        }
+
+        .slide-topic{
+            width: 100%;
+            height: 100%;
+            
+            &.one{
+                background: url(./1x-car-service-1.jpg) no-repeat 50% 50%;
+                background-size: cover;
+                @include tablet {
+                    background: url(./2x-car-service-1.jpg) no-repeat 50% 34%;
+                    background-size: cover;
+                }
+                @include fullhd {
+                    background: url(./3x-car-service-1.jpg) no-repeat 50% 70%;
+                    background-size: cover;
+                }
+            }
+
+            &.two{
+                background: url(./1x-car-service-2.png) no-repeat 50% 50%;
+                background-size: cover;
+                @include tablet {
+                    background: url(./2x-car-service-2.png) no-repeat 50% 38%;
+                    background-size: cover;
+                }
+                @include desktop {
+                    background: url(./2x-car-service-2.png) no-repeat 50% 28%;
+                    background-size: cover;
+                }
+                @include fullhd {
+                    background: url(./3x-car-service-2.png) no-repeat 50% 32%;
+                    background-size: cover;
+                }
+            }
+
+            &.three{
+                background: url(./1x-car-service-3.png) no-repeat 50% 50%;
+                background-size: cover;
+                @include tablet {
+                    background: url(./2x-car-service-3.png) no-repeat 50% 50%;
+                    background-size: cover;
+                }
+                @include fullhd {
+                    background: url(./3x-car-service-3.png) no-repeat 50% 50%;
+                    background-size: cover;
+                }
+            }
+        }
+    }
+
+    .headline-carousel{
+        background: $primary;
+        color: $secondary;
+        height: 5em;
+        $offset-car: -4.2em;
+        top: $offset-car;
+        width: 75vw;
+        transform: translateX(calc(100vw - 75vw));
+
+        @include tablet {
+            height: 6em;
+            width: 40vw;
+            transform: translateX(calc(100vw - 40vw));
+        }
+
+        @include desktop {
+            width: 31vw;
+            transform: translateX(calc(100vw - 30vw));
+            height: 8em;
+        }
+
+        @include fullhd {
+            width: 29vw;
+            transform: translateX(calc(100vw - 29vw));
+            height: 9em;
+        }
+
+        .hooper-slide{
+            color: $orange;
+            text-align: right;
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: flex-end;
+            padding: 0 3.5em 1.2em 0;
+
+            @include tablet {
+                flex-direction: row;
+                text-align: left;
+                padding: 0 3.5em 1.2em 2em;
+            }
+
+            @include fullhd{
+                padding: 0 3.5em 2em 3em;
+            }
+
+            .hl-car{
+                line-height: 1.5rem;
+                @include desktop{
+                    line-height: 2rem;
+                }
+            }
+            
+        }
+
+        .hooper-next, .hooper-prev{
+            top: 15em;
+        }   
+    }
+
+    .p-car{
+        margin-top: -4em;
+        transform: none;
+
+        @include tablet {
+            margin-top: -3em;
+        }
+    }
+
+    .arrow-hoo-nav{
+        margin-top: 1em;
+        justify-content: space-around;
+
+        @include tablet {
+            margin-top: -2em;
+            justify-content: flex-end;
+        }
+
+        @include desktop{
+            margin-top: -6em;
+            margin-right: -4em;
+        }
+
+        @include fullhd{
+            margin-right: -10em;
+        }
+
+        svg{
+            cursor: pointer;
+
+            &:nth-of-type(1){
+                margin-right: 2em;
+                transform: rotate(180deg);
+            }
+        }
+    }
+}
+    
