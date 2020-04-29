@@ -60,6 +60,17 @@ $bezier-1: cubic-bezier(0.22, 0.61, 0.36, 1);
     }
 }
 
+// LINKS
+
+// reset
+a{
+    color: unset;
+    
+    &:hover{
+        color: unset;
+    }
+}
+
 // BUTTONS
 
 // reset

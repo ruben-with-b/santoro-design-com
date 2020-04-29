@@ -4,6 +4,10 @@ import App from './App.vue'
 import Home from './Home.vue'
 import About from './About.vue'
 import Services from './Services.vue'
+import ServiceCarousel from './components/ServiceCarousel'
+import WebsitesApps from './components/WebsitesApps'
+import Print from './components/Print'
+import CorporateDesign from './components/CorporateDesign'
 import Contact from './Contact.vue'
 import Legal from './Legal.vue'
 import Privacy from './Privacy.vue'
@@ -31,7 +35,25 @@ const routes = [
   },
   { path: '/services',
     name: 'services',
-    component: Services
+    component: Services,
+    children: [
+      {
+        path: '',
+        component: ServiceCarousel
+      },
+      {
+        path: 'websites-and-apps',
+        component: WebsitesApps
+      },
+      {
+        path: 'print',
+        component: Print
+      },
+      {
+        path: 'corporate-design',
+        component: CorporateDesign
+      },
+    ]
   },
   { path: '/contact',
     name: 'contact',

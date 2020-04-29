@@ -3,14 +3,13 @@
     <Navigation/>
     <div class="nav-border"></div>
     <div class="body-bg">
-      <ServiceCarousel msg="Leistungen"/>
+      <router-view></router-view>
     </div>
     <Footer/>
   </div>
 </template>
 
 <script>
-import ServiceCarousel from './components/ServiceCarousel.vue'
 import Navigation from './components/Navigation.vue'
 import Footer from './components/Footer.vue'
 
@@ -19,7 +18,6 @@ import Footer from './components/Footer.vue'
 export default {
   name: 'services',
   components: {
-    ServiceCarousel,
     Navigation,
     Footer
   }

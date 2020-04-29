@@ -1,22 +1,46 @@
 <template>
   <div class="service-section">
     <hooper ref="carousel" group="group1" :settings="settingsCarousel" class="topic-carousel">
-      <slide class="slide-topic one"></slide>
-      <slide class="slide-topic two"></slide>
-      <slide class="slide-topic three"></slide>
+      <slide class="slide-topic one">
+        <router-link to="/services/websites-and-apps">
+          <div class="hooper-router"></div>
+        </router-link>
+      </slide>
+      <slide class="slide-topic two">
+        <router-link to="/services/print">
+          <div class="hooper-router"></div>
+        </router-link>
+      </slide>
+      <slide class="slide-topic three">
+        <router-link to="/services/corporate-design">
+          <div class="hooper-router"></div>
+        </router-link>
+      </slide>
     </hooper>
     <hooper ref="carousel" group="group1" :settings="settingsHeadline" class="headline-carousel">
       <slide>
-        <h1 class="hl-car is-size-4-touch is-size-3-desktop is-family-secondary
+        <router-link to="/services/websites-and-apps">
+          <div>
+            <h1 class="hl-car is-size-4-touch is-size-3-desktop is-family-secondary
             not-bold">Websites <br>und Apps</h1>
+          </div>
+        </router-link>
       </slide>
       <slide>
-         <h1 class="hl-car is-size-4-touch is-size-3-desktop is-family-secondary
+        <router-link to="/services/print">
+          <div>
+            <h1 class="hl-car is-size-4-touch is-size-3-desktop is-family-secondary
             not-bold">Flyer und<br> Einladungen</h1>
+          </div>
+        </router-link>
       </slide>
       <slide>
-         <h1 class="hl-car is-size-4-touch is-size-3-desktop is-family-secondary
-            not-bold">Logos und<br>Corporate Design</h1>
+        <router-link to="/services/corporate-design">
+          <div>
+            <h1 class="hl-car is-size-4-touch is-size-3-desktop is-family-secondary
+                not-bold">Logos und<br>Corporate Design</h1>
+          </div>
+        </router-link>
       </slide>
     </hooper>
     <div class="section">
@@ -90,5 +114,8 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
-
+  .hooper-router{
+    width: 100%;
+    height: 100%;
+  }
 </style>
