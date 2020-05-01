@@ -7,7 +7,7 @@
       </p>
       <div class="is-flex hcenter">
         <video-mockup-mobile class="mobile-mockup"
-          videoUrl="http://techslides.com/demos/sample-videos/small.mp4"
+          videoUrl="sp-mobile"
           videoType="video/mp4"
         />
       </div>
