@@ -118,4 +118,9 @@ export default {
     width: 100%;
     height: 100%;
   }
+  a{   
+    &:hover{
+        color: #ffffff;
+    }
+}
 </style>
