@@ -29,6 +29,21 @@ $bezier-1: cubic-bezier(0.22, 0.61, 0.36, 1);
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display|Quattrocento+Sans');
 @import "~bulma/bulma";
 
+// RESETS
+
+// Hooper
+.hooper{
+    &:focus{
+        outline: none;
+    }
+
+    .hooper-list{
+        &:focus{
+            outline: none;
+        }
+    }
+}
+
 // container
 .container{
     @include tablet{
@@ -154,9 +169,6 @@ button{
     }
 }
 
-
-
-
 .button:focus:not(:active), .button.is-focused:not(:active){
     box-shadow: none;
     color: $grey;
@@ -244,6 +256,7 @@ button{
 body{
     scroll-behavior: smooth;
     color: $primary;
+    overflow-x: hidden;
 }
 
 .santoro-breadcrumb,
@@ -1137,31 +1150,31 @@ body{
         }
     }
 
-    .arrow-hoo-nav{
-        margin-top: 1em;
-        justify-content: space-around;
+}
+.arrow-hoo-nav{
+    margin-top: 1em;
+    justify-content: space-around;
 
-        @include tablet {
-            margin-top: -2em;
-            justify-content: flex-end;
-        }
+    @include tablet {
+        margin-top: -2em;
+        justify-content: flex-end;
+    }
 
-        @include desktop{
-            margin-top: -6em;
-            margin-right: -4em;
-        }
+    @include desktop{
+        margin-top: -6em;
+        margin-right: -4em;
+    }
 
-        @include fullhd{
-            margin-right: -10em;
-        }
+    @include fullhd{
+        margin-right: -10em;
+    }
 
-        svg{
-            cursor: pointer;
+    svg{
+        cursor: pointer;
 
-            &:nth-of-type(1){
-                margin-right: 2em;
-                transform: rotate(180deg);
-            }
+        &:nth-of-type(1){
+            margin-right: 2em;
+            transform: rotate(180deg);
         }
     }
 }

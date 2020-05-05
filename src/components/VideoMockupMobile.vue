@@ -21,15 +21,27 @@ export default {
     videoType: {
       type: String
     },
+    width: {
+      type: String
+    },
+    height: {
+      type: String
+    },
   },
   data () {
     return {
       playerOptions: {
+        autoplay: false,
+        controls: false,
         muted: true,
+        loop: true,
+        width: this.width,
+        height: this.height,
         sources: [{
           type: "video/mp4",
           src: require('@/assets/videos/' + this.videoUrl + '.mp4')
         }],
+        preload: 'auto'
       },
     }
   },
