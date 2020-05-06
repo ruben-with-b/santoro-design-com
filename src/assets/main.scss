@@ -1178,4 +1178,74 @@ body{
         }
     }
 }
+
+// Websites & Apps
+
+.arrow-breadcrumb{
+    transform: translateY(-2px);
+    display: inline-block;
+  }
+  
+  .mobile-mockup, .tablet-mockup, .desktop-mockup{
+    width: 210px;
+    margin: 2em 0 0 0;
+    border: 5px solid black;
+    border-radius: 17px;
+    box-shadow:
+      0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+      0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+      0 12.5px 10px rgba(0, 0, 0, 0.06),
+      0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+      0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+      0 100px 80px rgba(0, 0, 0, 0.12);
+    
+    .vjs-tech{
+      border-radius: 13px;
+    }
+
+    @include desktop{
+        width: 260px;
+    }
+  }
+  
+  .tablet-mockup{
+    width: 312px;
+    border: 6px solid black;
+    border-radius: 20px;
+
+    @include tablet{
+        width: 545.33px;
+    }
+    
+    @include widescreen{
+        width: 678.66px;
+    }
+  }
+  
+  .desktop-mockup{
+    width: 308px;
+    margin: 2em 0 0 0;
+    border: 4px solid black;
+    border-radius: 14px;
+  
+    .vjs-tech{
+      border-radius: 10px;
+    }
+    @include tablet{
+        width: 781.2px;
+        border: 7px solid black;
+    }
+
+    @include widescreen{
+        width: 973px;
+    }
+  }
+  
+  .sp-carousel{
+    height: 100%;
+    
+    & > .hooper-list{
+      overflow: visible;
+    }
+  }
     

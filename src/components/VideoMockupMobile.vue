@@ -32,7 +32,7 @@ export default {
     return {
       playerOptions: {
         autoplay: false,
-        controls: false,
+        controls: true,
         muted: true,
         loop: true,
         width: this.width,
@@ -41,7 +41,7 @@ export default {
           type: "video/mp4",
           src: require('@/assets/videos/' + this.videoUrl + '.mp4')
         }],
-        preload: 'auto'
+        responsive: true
       },
     }
   },

@@ -7,27 +7,57 @@
         </p>
         <hooper ref="carousel" :settings="settings" class="sp-carousel">
           <slide class="mockup-slide is-flex hcenter">
-            <video-mockup-mobile class="mobile-mockup"
-              videoUrl="sp-mobile"
+            <video-mockup-mobile class="desktop-mockup is-hidden-tablet"
+              videoUrl="sp-widescreen"
               videoType="video/mp4"
-              width="240px"
-              height="480px"
+              width="300px"
+              height="156.41px"
+            />
+            <video-mockup-mobile class="desktop-mockup is-hidden-mobile is-hidden-widescreen"
+              videoUrl="sp-widescreen"
+              videoType="video/mp4"
+              width="767.2px"
+              height="400px"
+            />
+            <video-mockup-mobile class="desktop-mockup is-hidden-touch is-hidden-desktop-only"
+              videoUrl="sp-widescreen"
+              videoType="video/mp4"
+              width="959px"
+              height="500px"
             />
           </slide>
           <slide class="mockup-slide is-flex hcenter">
-            <video-mockup-mobile class="mobile-mockup"
+            <video-mockup-mobile class="tablet-mockup is-hidden-tablet"
+              videoUrl="sp-tablet"
+              videoType="video/mp4"
+              width="300px"
+              height="225px"
+            />
+            <video-mockup-mobile class="tablet-mockup is-hidden-mobile is-hidden-widescreen"
+              videoUrl="sp-tablet"
+              videoType="video/mp4"
+              width="533.33px"
+              height="400px"
+            />
+            <video-mockup-mobile class="tablet-mockup is-hidden-touch is-hidden-desktop-only"
+              videoUrl="sp-tablet"
+              videoType="video/mp4"
+              width="666.66px"
+              height="500px"
+            />
+          </slide>
+          <slide class="mockup-slide is-flex hcenter">
+            <video-mockup-mobile class="mobile-mockup is-hidden-desktop"
               videoUrl="sp-mobile"
               videoType="video/mp4"
               width="200px"
               height="400px"
             />
-          </slide>
-          <slide class="mockup-slide is-flex hcenter">
-            <video-mockup-mobile class="mobile-mockup"
+            <video-mockup-mobile class="mobile-mockup is-hidden-touch"
               videoUrl="sp-mobile"
               videoType="video/mp4"
-              width="240px"
-              height="480px"
+              width="250px"
+              height="500px"
             />
           </slide>
         </hooper>
@@ -66,9 +96,9 @@ export default {
     return {
       settings: {
         initialSlide: 1,
-        itemsToShow: 1.2,
+        itemsToShow: 0.5,
         centerMode: true,
-        transition: 300,
+        transition: 500,
       },
     }
   },
@@ -84,34 +114,5 @@ export default {
 </script>
 
 <style lang="scss">
-.arrow-breadcrumb{
-  transform: translateY(-2px);
-  display: inline-block;
-}
 
-.mobile-mockup{
-  width: 214px;
-  margin: 2em 0 0 0;
-  border: 7px solid black;
-  border-radius: 20px;
-  box-shadow:
-    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
-    0 12.5px 10px rgba(0, 0, 0, 0.06),
-    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
-    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-    0 100px 80px rgba(0, 0, 0, 0.12);
-  
-  .vjs-tech{
-    border-radius: 17px;
-  }
-}
-
-.sp-carousel{
-  height: 100%;
-  
-  & > .hooper-list{
-    overflow: visible;
-  }
-}
 </style>
