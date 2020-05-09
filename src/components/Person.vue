@@ -80,15 +80,15 @@ export default {
         }
     },
     mounted () {
-        document.addEventListener('mousemove', (e) => {
-            const x = e.pageX / (window.innerWidth * 10),
-                    y = e.pageY / (window.innerHeight * 10);
-            const bg = document.querySelector('.layerOne');
-            let pos1 = -500 * x + 40;
-            let pos2 = 500 * y - 5;
+        // document.addEventListener('mousemove', (e) => {
+        //     const x = e.pageX / (window.innerWidth * 10),
+        //             y = e.pageY / (window.innerHeight * 10);
+        //     const bg = document.querySelector('.layerOne');
+        //     let pos1 = -500 * x + 40;
+        //     let pos2 = 500 * y - 5;
 
-            bg.style.backgroundPosition = pos1 + '% ' + pos2 + '%';
-        });
+        //     bg.style.backgroundPosition = pos1 + '% ' + pos2 + '%';
+        // });
 
         let arrow = document.querySelector('.acc-arrow');
         let bg = document.querySelector('.body-bg');

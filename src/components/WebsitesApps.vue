@@ -10,18 +10,21 @@
             <video-mockup-mobile class="desktop-mockup is-hidden-tablet"
               videoUrl="sp-widescreen"
               videoType="video/mp4"
+              posterUrl="sp-widescreen-poster"
               width="300px"
               height="156.41px"
             />
             <video-mockup-mobile class="desktop-mockup is-hidden-mobile is-hidden-widescreen"
               videoUrl="sp-widescreen"
               videoType="video/mp4"
+              posterUrl="sp-widescreen-poster"
               width="767.2px"
               height="400px"
             />
             <video-mockup-mobile class="desktop-mockup is-hidden-touch is-hidden-desktop-only"
               videoUrl="sp-widescreen"
               videoType="video/mp4"
+              posterUrl="sp-widescreen-poster"
               width="959px"
               height="500px"
             />
@@ -30,18 +33,21 @@
             <video-mockup-mobile class="tablet-mockup is-hidden-tablet"
               videoUrl="sp-tablet"
               videoType="video/mp4"
+              posterUrl="sp-tablet-poster"
               width="300px"
               height="225px"
             />
             <video-mockup-mobile class="tablet-mockup is-hidden-mobile is-hidden-widescreen"
               videoUrl="sp-tablet"
               videoType="video/mp4"
+              posterUrl="sp-tablet-poster"
               width="533.33px"
               height="400px"
             />
             <video-mockup-mobile class="tablet-mockup is-hidden-touch is-hidden-desktop-only"
               videoUrl="sp-tablet"
               videoType="video/mp4"
+              posterUrl="sp-tablet-poster"
               width="666.66px"
               height="500px"
             />
@@ -50,23 +56,45 @@
             <video-mockup-mobile class="mobile-mockup is-hidden-desktop"
               videoUrl="sp-mobile"
               videoType="video/mp4"
+              posterUrl="sp-mobile-poster"
               width="200px"
               height="400px"
             />
             <video-mockup-mobile class="mobile-mockup is-hidden-touch"
               videoUrl="sp-mobile"
               videoType="video/mp4"
+              posterUrl="sp-mobile-poster"
               width="250px"
               height="500px"
             />
           </slide>
         </hooper>
         <div class="is-flex arrow-hoo-nav">
-          <icon-base @click.native="slidePrev" width="40" height="40" viewBox="0 0 616.49 167.02" icon-name="arrow-back">
+          <icon-base @click.native="slidePrev" width="50" height="50" viewBox="0 0 616.49 167.02" icon-name="arrow-back">
             <icon-arrow-back />
           </icon-base>
-          <icon-base @click.native="slideNext" width="40" height="40" viewBox="0 0 616.49 167.02" icon-name="arrow-back">
+          <icon-base @click.native="slideNext" width="50" height="50" viewBox="0 0 616.49 167.02" icon-name="arrow-back">
             <icon-arrow-back />
+          </icon-base>
+        </div>
+        <h1 class="title title-step is-size-5 is-family-primary">
+            Homepage für das Vintage Café Sweety Pretty 
+        </h1>
+        <p class="is-family-primary has-text-black p-after-h p-anim p-web-desc">
+          Das »Sweety Pretty« wurde von einem dreiköpfigem Studenten-Team mit einem eigenen Webauftritt ausgestattet. Die Website
+          liefert entscheidende Informationen zum Sortiment und Angebot, sowie gibt erste essenzielle Eindrücke des
+          gemütlichen Ambientes im Café.
+        </p>
+        <div class="tools">
+          <p>Frameworks</p>
+          <icon-base width="30" height="30" viewBox="0 0 100 100" icon-name="wordpress">
+            <icon-wordpress />
+          </icon-base>
+          <icon-base width="30" height="30" viewBox="0 0 100 100" icon-name="wordpress">
+            <icon-wordpress />
+          </icon-base>
+          <icon-base width="30" height="30" viewBox="0 0 100 100" icon-name="wordpress">
+            <icon-wordpress />
           </icon-base>
         </div>
       </div>
@@ -75,6 +103,7 @@
 
 <script>
 import IconBase from '../components/IconBase.vue'
+import IconWordpress from '../components/icons/IconWordpress.vue'
 import IconArrowBack from '../components/icons/IconArrowBack.vue'
 import {
   Hooper,
@@ -87,6 +116,7 @@ export default {
   name: 'WebsitesApps',
   components: {
     IconBase,
+    IconWordpress,
     IconArrowBack,
     Hooper,
     Slide,
@@ -95,10 +125,19 @@ export default {
   data () {
     return {
       settings: {
-        initialSlide: 1,
+        initialSlide: 2,
         itemsToShow: 0.5,
         centerMode: true,
         transition: 500,
+        breakpoints: {
+          500: {
+            initialSlide: 1 
+          },
+          1600: {
+            initialSlide: 0,
+            itemsToShow: 1.5
+          }
+        }
       },
     }
   },

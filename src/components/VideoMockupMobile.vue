@@ -15,6 +15,9 @@ export default {
     videoPlayer
   },
   props: {
+    posterUrl: {
+      type: String
+    },
     videoUrl: {
       type: String
     },
@@ -41,6 +44,7 @@ export default {
           type: "video/mp4",
           src: require('@/assets/videos/' + this.videoUrl + '.mp4')
         }],
+        poster: require('@/assets/videos/poster/' + this.posterUrl + '.jpg'),
         responsive: true
       },
     }

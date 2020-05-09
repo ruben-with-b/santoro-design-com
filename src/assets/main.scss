@@ -1199,12 +1199,13 @@ body{
       0 41.8px 33.4px rgba(0, 0, 0, 0.086),
       0 100px 80px rgba(0, 0, 0, 0.12);
     
-    .vjs-tech{
+    .vjs-tech, .vjs-poster {
       border-radius: 13px;
     }
 
     @include desktop{
         width: 260px;
+        
     }
   }
   
@@ -1219,6 +1220,7 @@ body{
     
     @include widescreen{
         width: 678.66px;
+        z-index: 10;
     }
   }
   
@@ -1248,4 +1250,53 @@ body{
       overflow: visible;
     }
   }
+
+  .webapps-section{
+    .arrow-hoo-nav{
+        justify-content: flex-end;
+        margin-bottom: 2em;
+
+        @include tablet {
+            margin-top: -2em;
+        }
     
+        @include desktop{
+            margin-top: -6em;
+            margin-right: 0em;
+        }
+    
+        @include fullhd{
+            margin-right: 5em;
+        }
+    
+        svg{
+            cursor: pointer;
+            color: $secondary;
+            background: $footer-background-color;
+            padding: 0.3rem 0.5rem;
+            z-index: 5;
+
+            &:nth-of-type(1){
+                margin-right: 2em;
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    .p-web-desc{
+        margin-top: 1em;
+    }
+
+    .tools{
+        margin: 2em 0 0 0;
+        text-align: right;
+        
+        p{
+            margin: 0 0 .5em 0;
+        }
+
+        svg{
+            margin: 0 0 0 1em;
+        }
+    }
+  }
