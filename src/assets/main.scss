@@ -1243,12 +1243,17 @@ body{
     }
   }
   
-  .three-device-carousel{
+  .three-device-carousel,
+  .one-device-carousel{
     height: 100%;
     
     & > .hooper-list{
       overflow: visible;
     }
+  }
+
+  .one-device-carousel{
+    margin-bottom: 2em;
   }
 
   .webapps-section{

@@ -87,20 +87,8 @@
         </p>
         <div class="tools">
           <p>Frameworks</p>
-          <icon-base width="30" height="30" viewBox="0 0 256 290" icon-name="vue-logo">
-            <icon-webpack />
-          </icon-base>
-          <icon-base width="30" height="30" viewBox="0 0 256 221" icon-name="vue-logo">
-            <icon-vue />
-          </icon-base>
           <icon-base width="30" height="30" viewBox="0 0 100 100" icon-name="wordpress">
             <icon-wordpress />
-          </icon-base>
-          <icon-base width="30" height="30" viewBox="0 0 307 356" icon-name="greensock-gsap">
-            <icon-greensock />
-          </icon-base>
-          <icon-base width="30" height="30" viewBox="0 0 256 256" icon-name="mapbox">
-            <icon-mapbox />
           </icon-base>
           <icon-base width="30" height="30" viewBox="0 0 256 256" icon-name="bootstrap">
             <icon-bootstrap />
@@ -109,62 +97,62 @@
         <hooper ref="carouselErinnerungsort" :settings="settings" class="three-device-carousel">
           <slide class="mockup-slide is-flex hcenter">
             <video-mockup-mobile class="desktop-mockup is-hidden-tablet"
-              videoUrl=""
+              videoUrl="er-widescreen"
               videoType="video/mp4"
-              posterUrl="sp-widescreen-poster"
+              posterUrl="er-widescreen-poster"
               width="300px"
               height="156.41px"
             />
             <video-mockup-mobile class="desktop-mockup is-hidden-mobile is-hidden-widescreen"
-              videoUrl=""
+              videoUrl="er-widescreen"
               videoType="video/mp4"
-              posterUrl="sp-widescreen-poster"
+              posterUrl="er-widescreen-poster"
               width="767.2px"
               height="400px"
             />
             <video-mockup-mobile class="desktop-mockup is-hidden-touch is-hidden-desktop-only"
-              videoUrl=""
+              videoUrl="er-widescreen"
               videoType="video/mp4"
-              posterUrl="sp-widescreen-poster"
+              posterUrl="er-widescreen-poster"
               width="959px"
               height="500px"
             />
           </slide>
           <slide class="mockup-slide is-flex hcenter">
             <video-mockup-mobile class="tablet-mockup is-hidden-tablet"
-              videoUrl=""
+              videoUrl="er-tablet"
               videoType="video/mp4"
-              posterUrl="sp-tablet-poster"
+              posterUrl="er-tablet-poster"
               width="300px"
               height="225px"
             />
             <video-mockup-mobile class="tablet-mockup is-hidden-mobile is-hidden-widescreen"
-              videoUrl=""
+              videoUrl="er-tablet"
               videoType="video/mp4"
-              posterUrl="sp-tablet-poster"
+              posterUrl="er-tablet-poster"
               width="533.33px"
               height="400px"
             />
             <video-mockup-mobile class="tablet-mockup is-hidden-touch is-hidden-desktop-only"
-              videoUrl=""
+              videoUrl="er-tablet"
               videoType="video/mp4"
-              posterUrl="sp-tablet-poster"
+              posterUrl="er-tablet-poster"
               width="666.66px"
               height="500px"
             />
           </slide>
           <slide class="mockup-slide is-flex hcenter">
             <video-mockup-mobile class="mobile-mockup is-hidden-desktop"
-              videoUrl=""
+              videoUrl="er-mobile"
               videoType="video/mp4"
-              posterUrl="sp-mobile-poster"
+              posterUrl="er-mobile-poster"
               width="200px"
               height="400px"
             />
             <video-mockup-mobile class="mobile-mockup is-hidden-touch"
-              videoUrl=""
+              videoUrl="er-mobile"
               videoType="video/mp4"
-              posterUrl="sp-mobile-poster"
+              posterUrl="er-mobile-poster"
               width="250px"
               height="500px"
             />
@@ -195,33 +183,28 @@
           <icon-base width="30" height="30" viewBox="0 0 256 256" icon-name="mapbox">
             <icon-mapbox />
           </icon-base>
+          <icon-base width="30" height="30" viewBox="0 0 307 356" icon-name="greensock-gsap">
+            <icon-greensock />
+          </icon-base>
         </div>
-        <hooper ref="carouselErinnerungsort" :settings="settings" class="three-device-carousel">
+        <hooper ref="carouselPickMe" :settings="settings" class="one-device-carousel">
           <slide class="mockup-slide is-flex hcenter">
             <video-mockup-mobile class="mobile-mockup is-hidden-desktop"
-              videoUrl=""
+              videoUrl="pick-me-mobile"
               videoType="video/mp4"
-              posterUrl="sp-mobile-poster"
+              posterUrl="pick-me-mobile-poster"
               width="200px"
               height="400px"
             />
             <video-mockup-mobile class="mobile-mockup is-hidden-touch"
-              videoUrl=""
+              videoUrl="pick-me-mobile"
               videoType="video/mp4"
-              posterUrl="sp-mobile-poster"
+              posterUrl="pick-me-mobile-poster"
               width="250px"
               height="500px"
             />
           </slide>
         </hooper>
-        <div class="is-flex arrow-hoo-nav">
-          <icon-base @click.native="slidePrev" id="pickme" width="50" height="50" viewBox="0 0 616.49 167.02" icon-name="arrow-back">
-            <icon-arrow-back />
-          </icon-base>
-          <icon-base @click.native="slideNext" id="pickme" width="50" height="50" viewBox="0 0 616.49 167.02" icon-name="arrow-back">
-            <icon-arrow-back />
-          </icon-base>
-        </div>
         <h1 class="title title-step is-size-5 is-family-primary">
             Pick Me – Deine Packliste
         </h1>
