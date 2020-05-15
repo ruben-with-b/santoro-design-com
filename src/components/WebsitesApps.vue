@@ -417,7 +417,7 @@ export default {
       } else if (event.target.id === "erinnerungsort") {
         this.$refs.carouselErinnerungsort.slideNext();
       } else if (event.target.id === "cookies") {
-        this.$refs.carouselCookies.slidePrev();
+        this.$refs.carouselCookies.slideNext();
       }
     }
   }
