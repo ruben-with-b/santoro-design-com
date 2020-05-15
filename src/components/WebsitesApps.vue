@@ -183,9 +183,6 @@
           <icon-base width="30" height="30" viewBox="0 0 256 256" icon-name="mapbox">
             <icon-mapbox />
           </icon-base>
-          <icon-base width="30" height="30" viewBox="0 0 307 356" icon-name="greensock-gsap">
-            <icon-greensock />
-          </icon-base>
         </div>
         <hooper ref="carouselPickMe" :settings="settings" class="one-device-carousel">
           <slide class="mockup-slide is-flex hcenter">
@@ -218,6 +215,49 @@
           </icon-base>
           <icon-base width="30" height="30" viewBox="0 0 256 221" icon-name="vue-logo">
             <icon-vue />
+          </icon-base>
+        </div>
+        <hooper ref="carouselWishIKnew" :settings="settings" class="one-device-carousel">
+          <slide class="mockup-slide is-flex hcenter">
+            <video-mockup-mobile class="desktop-mockup is-hidden-tablet"
+              videoUrl="wishIknew-widescreen"
+              videoType="video/mp4"
+              posterUrl="wishIknew-widescreen-poster"
+              width="300px"
+              height="156.41px"
+            />
+            <video-mockup-mobile class="desktop-mockup is-hidden-mobile is-hidden-widescreen"
+              videoUrl="wishIknew-widescreen"
+              videoType="video/mp4"
+              posterUrl="wishIknew-widescreen-poster"
+              width="767.2px"
+              height="400px"
+            />
+            <video-mockup-mobile class="desktop-mockup is-hidden-touch is-hidden-desktop-only"
+              videoUrl="wishIknew-widescreen"
+              videoType="video/mp4"
+              posterUrl="wishIknew-widescreen-poster"
+              width="959px"
+              height="500px"
+            />
+          </slide>
+        </hooper>
+        <h1 class="title title-step is-size-5 is-family-primary">
+            I wish I knew that – Data Infographic
+        </h1>
+        <p class="is-family-primary has-text-black p-after-h p-anim p-web-desc">
+          Mit der Pick Me App können Gepäckstücke wie Koffer und Rucksäcke angelegt und deren Inhalte verwaltet werden.
+        </p>
+        <div class="tools">
+          <p>Frameworks</p>
+          <icon-base width="30" height="30" viewBox="0 0 256 290" icon-name="vue-logo">
+            <icon-webpack />
+          </icon-base>
+          <icon-base width="30" height="30" viewBox="0 0 256 221" icon-name="vue-logo">
+            <icon-vue />
+          </icon-base>
+          <icon-base width="30" height="30" viewBox="0 0 307 356" icon-name="greensock-gsap">
+            <icon-greensock />
           </icon-base>
         </div>
 
