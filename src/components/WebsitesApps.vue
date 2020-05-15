@@ -260,11 +260,93 @@
             <icon-greensock />
           </icon-base>
         </div>
-
-
-
-
-
+        <hooper ref="carouselCookies" :settings="settings" class="three-device-carousel">
+          <slide class="mockup-slide is-flex hcenter">
+            <video-mockup-mobile class="desktop-mockup is-hidden-tablet"
+              videoUrl="cookies-widescreen"
+              videoType="video/mp4"
+              posterUrl="coockies-widescreen-poster"
+              width="300px"
+              height="156.41px"
+            />
+            <video-mockup-mobile class="desktop-mockup is-hidden-mobile is-hidden-widescreen"
+              videoUrl="cookies-widescreen"
+              videoType="video/mp4"
+              posterUrl="cookies-widescreen-poster"
+              width="767.2px"
+              height="400px"
+            />
+            <video-mockup-mobile class="desktop-mockup is-hidden-touch is-hidden-desktop-only"
+              videoUrl="cookies-widescreen"
+              videoType="video/mp4"
+              posterUrl="coockies-widescreen-poster"
+              width="959px"
+              height="500px"
+            />
+          </slide>
+          <slide class="mockup-slide is-flex hcenter">
+            <video-mockup-mobile class="tablet-mockup is-hidden-tablet"
+              videoUrl="cookies-tablet"
+              videoType="video/mp4"
+              posterUrl="cookies-tablet-poster"
+              width="300px"
+              height="225px"
+            />
+            <video-mockup-mobile class="tablet-mockup is-hidden-mobile is-hidden-widescreen"
+              videoUrl="cookies-tablet"
+              videoType="video/mp4"
+              posterUrl="cookies-tablet-poster"
+              width="533.33px"
+              height="400px"
+            />
+            <video-mockup-mobile class="tablet-mockup is-hidden-touch is-hidden-desktop-only"
+              videoUrl="cookies-tablet"
+              videoType="video/mp4"
+              posterUrl="cookies-tablet-poster"
+              width="666.66px"
+              height="500px"
+            />
+          </slide>
+          <slide class="mockup-slide is-flex hcenter">
+            <video-mockup-mobile class="mobile-mockup is-hidden-desktop"
+              videoUrl="cookies-mobile"
+              videoType="video/mp4"
+              posterUrl="cookies-mobile-poster"
+              width="200px"
+              height="400px"
+            />
+            <video-mockup-mobile class="mobile-mockup is-hidden-touch"
+              videoUrl="cookies-mobile"
+              videoType="video/mp4"
+              posterUrl="cookies-mobile-poster"
+              width="250px"
+              height="500px"
+            />
+          </slide>
+        </hooper>
+        <div class="is-flex arrow-hoo-nav">
+          <icon-base @click.native="slidePrev" id="cookies" width="50" height="50" viewBox="0 0 616.49 167.02" icon-name="arrow-back">
+            <icon-arrow-back />
+          </icon-base>
+          <icon-base @click.native="slideNext" id="cookies" width="50" height="50" viewBox="0 0 616.49 167.02" icon-name="arrow-back">
+            <icon-arrow-back />
+          </icon-base>
+        </div>
+        <h1 class="title title-step is-size-5 is-family-primary">
+            What are cookies? – Interaktive Scroll-Infografik
+        </h1>
+        <p class="is-family-primary has-text-black p-after-h p-anim p-web-desc">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo quia impedit voluptatum in pariatur provident iusto animi sint accusantium praesentium rerum expedita quas molestias nihil, dolore, officia dignissimos molestiae exercitationem!
+        </p>
+        <div class="tools">
+          <p>Frameworks</p>
+          <icon-base width="30" height="30" viewBox="0 0 256 256" icon-name="bootstrap">
+            <icon-bootstrap />
+          </icon-base>
+          <icon-base width="30" height="30" viewBox="0 0 307 356" icon-name="greensock-gsap">
+            <icon-greensock />
+          </icon-base>
+        </div>
       </div>
     </section>
 </template>
@@ -325,6 +407,8 @@ export default {
         this.$refs.carouselSp.slidePrev();  
       } else if (event.target.id === "erinnerungsort") {
         this.$refs.carouselErinnerungsort.slidePrev();
+      } else if (event.target.id === "cookies") {
+        this.$refs.carouselCookies.slidePrev();
       }
     },
     slideNext() {
@@ -332,6 +416,8 @@ export default {
         this.$refs.carouselSp.slideNext();  
       } else if (event.target.id === "erinnerungsort") {
         this.$refs.carouselErinnerungsort.slideNext();
+      } else if (event.target.id === "cookies") {
+        this.$refs.carouselCookies.slidePrev();
       }
     }
   }
