@@ -1,4 +1,5 @@
 <template>
+<div>
     <section class="section webapps-section">
       <div class="container">
         <h1 class="is-family-secondary santoro-breadcrumb">Leistungen <span class="arrow-breadcrumb">&#10230;</span> Websites und Apps</h1>
@@ -94,6 +95,10 @@
             <icon-bootstrap />
           </icon-base>
         </div>
+        <div class="line-seperator is-flex vcenter">
+          <div class="line"></div>
+          <div class="line"></div>  
+        </div>
         <hooper ref="carouselErinnerungsort" :settings="settings" class="three-device-carousel">
           <slide class="mockup-slide is-flex hcenter">
             <video-mockup-mobile class="desktop-mockup is-hidden-tablet"
@@ -184,7 +189,11 @@
             <icon-mapbox />
           </icon-base>
         </div>
-        <hooper ref="carouselPickMe" :settings="settings" class="one-device-carousel">
+         <div class="line-seperator is-flex vcenter">
+          <div class="line"></div>
+          <div class="line"></div>  
+        </div>
+        <hooper ref="carouselPickMe" :settings="settingsSingle" class="one-device-carousel">
           <slide class="mockup-slide is-flex hcenter">
             <video-mockup-mobile class="mobile-mockup is-hidden-desktop"
               videoUrl="pick-me-mobile"
@@ -217,6 +226,10 @@
             <icon-vue />
           </icon-base>
         </div>
+         <div class="line-seperator is-flex vcenter">
+          <div class="line"></div>
+          <div class="line"></div>  
+        </div>
         <hooper ref="carouselWishIKnew" :settings="settings" class="one-device-carousel">
           <slide class="mockup-slide is-flex hcenter">
             <video-mockup-mobile class="desktop-mockup is-hidden-tablet"
@@ -243,7 +256,7 @@
           </slide>
         </hooper>
         <h1 class="title title-step is-size-5 is-family-primary">
-            I wish I knew that – Data Infographic
+            I wish I knew that – Infographic about Spotify Data Collection
         </h1>
         <p class="is-family-primary has-text-black p-after-h p-anim p-web-desc">
           Mit der Pick Me App können Gepäckstücke wie Koffer und Rucksäcke angelegt und deren Inhalte verwaltet werden.
@@ -260,12 +273,16 @@
             <icon-greensock />
           </icon-base>
         </div>
-        <hooper ref="carouselCookies" :settings="settings" class="three-device-carousel">
+         <div class="line-seperator is-flex vcenter">
+          <div class="line"></div>
+          <div class="line"></div>  
+        </div>
+        <hooper ref="carouselCookies" :settings="settingsSingle" class="three-device-carousel">
           <slide class="mockup-slide is-flex hcenter">
             <video-mockup-mobile class="desktop-mockup is-hidden-tablet"
               videoUrl="cookies-widescreen"
               videoType="video/mp4"
-              posterUrl="coockies-widescreen-poster"
+              posterUrl="cookies-widescreen-poster"
               width="300px"
               height="156.41px"
             />
@@ -279,7 +296,7 @@
             <video-mockup-mobile class="desktop-mockup is-hidden-touch is-hidden-desktop-only"
               videoUrl="cookies-widescreen"
               videoType="video/mp4"
-              posterUrl="coockies-widescreen-poster"
+              posterUrl="cookies-widescreen-poster"
               width="959px"
               height="500px"
             />
@@ -349,6 +366,25 @@
         </div>
       </div>
     </section>
+    <div class="contact-teaser">
+        <p class="is-family-secondary p-after-h p-infographic">
+            Lust auf ähnliches?<br>
+            Gehen wir's an!
+        </p>
+        <button class="button button-santoro-white">
+        <router-link to="/contact" class="menu-link is-secondary is-family-secondary">
+          <div class="arrow-mask">  
+            <icon-base class="santoro-arrow" width="1" height="1"
+              viewBox="0 0 616.49 167.02" icon-name="arrow"
+              iconColor="#FFFFFF">
+              <icon-arrow />
+            </icon-base>
+          </div>
+          <span class="next-to-icon">Kontakt</span>
+        </router-link>
+      </button>
+    </div>
+    </div>  
 </template>
 
 <script>
@@ -359,6 +395,7 @@ import IconMapbox from '../components/icons/IconMapbox.vue'
 import IconVue from '../components/icons/IconVue.vue'
 import IconWebpack from '../components/icons/IconWebpack.vue'
 import IconBootstrap from '../components/icons/IconBootstrap.vue'
+import IconArrow from '../components/icons/IconArrow.vue'
 import IconArrowBack from '../components/icons/IconArrowBack.vue'
 import {
   Hooper,
@@ -377,6 +414,7 @@ export default {
     IconVue,
     IconWebpack,
     IconBootstrap,
+    IconArrow,
     IconArrowBack,
     Hooper,
     Slide,
@@ -389,16 +427,32 @@ export default {
         itemsToShow: 0.5,
         centerMode: true,
         transition: 500,
+        wheelControl: false,
         breakpoints: {
           500: {
             initialSlide: 1 
           },
           1600: {
-            initialSlide: 0,
-            itemsToShow: 1.5
+            initialSlide: 0
           }
         }
       },
+      settingsSingle: {
+        initialSlide: 2,
+        touchDrag: false,
+        itemsToShow: 0.5,
+        centerMode: true,
+        transition: 500,
+        wheelControl: false,
+        breakpoints: {
+          500: {
+            initialSlide: 1 
+          },
+          1600: {
+            initialSlide: 0
+          }
+        }
+      }
     }
   },
   methods: {
@@ -424,6 +478,10 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
+  
+  .contact-teaser{
+    opacity: 1;
+  }
 
 </style>
