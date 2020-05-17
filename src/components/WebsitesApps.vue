@@ -425,6 +425,7 @@ export default {
       settings: {
         initialSlide: 2,
         itemsToShow: 0.5,
+        infiniteScroll: true,
         centerMode: true,
         transition: 500,
         wheelControl: false,
@@ -441,6 +442,7 @@ export default {
         initialSlide: 2,
         touchDrag: false,
         itemsToShow: 0.5,
+        infiniteScroll: true,
         centerMode: true,
         transition: 500,
         wheelControl: false,
@@ -454,6 +456,10 @@ export default {
         }
       }
     }
+  },
+  mounted () {
+    let bg = document.querySelector('.body-bg');
+    bg.classList.add('pure-bg');
   },
   methods: {
     slidePrev(event) {
