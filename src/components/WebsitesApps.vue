@@ -6,68 +6,71 @@
         <p class="is-family-primary has-text-black p-after-h p-anim">
           Hier sehen Sie eine Auswahl an Projekten, die individuell von mir oder in Zusammenarbeit mit anderen Studenten entstanden sind.
         </p>
-        <hooper ref="carouselSp" :settings="settings" class="three-device-carousel">
+        <hooper ref="carouselSp" :settings="settings" class="three-device-carousel sweety">
           <slide class="mockup-slide is-flex hcenter">
-            <video-mockup-mobile class="desktop-mockup is-hidden-tablet"
+            <video-mockup-mobile v-if="intersectedSweety" class="desktop-mockup is-hidden-tablet"
               videoUrl="sp-widescreen"
               videoType="video/mp4"
               posterUrl="sp-widescreen-poster"
               width="300px"
               height="156.41px"
             />
-            <video-mockup-mobile class="desktop-mockup is-hidden-mobile is-hidden-widescreen"
+            <video-mockup-mobile v-if="intersectedSweety" class="desktop-mockup is-hidden-mobile is-hidden-widescreen"
               videoUrl="sp-widescreen"
               videoType="video/mp4"
               posterUrl="sp-widescreen-poster"
               width="767.2px"
               height="400px"
             />
-            <video-mockup-mobile class="desktop-mockup is-hidden-touch is-hidden-desktop-only"
+            <video-mockup-mobile v-if="intersectedSweety" class="desktop-mockup is-hidden-touch is-hidden-desktop-only"
               videoUrl="sp-widescreen"
               videoType="video/mp4"
               posterUrl="sp-widescreen-poster"
               width="959px"
               height="500px"
             />
+            <div v-else class="mockup-skeleton"></div>
           </slide>
           <slide class="mockup-slide is-flex hcenter">
-            <video-mockup-mobile class="tablet-mockup is-hidden-tablet"
+            <video-mockup-mobile v-if="intersectedSweety" class="tablet-mockup is-hidden-tablet"
               videoUrl="sp-tablet"
               videoType="video/mp4"
               posterUrl="sp-tablet-poster"
               width="300px"
               height="225px"
             />
-            <video-mockup-mobile class="tablet-mockup is-hidden-mobile is-hidden-widescreen"
+            <video-mockup-mobile v-if="intersectedSweety" class="tablet-mockup is-hidden-mobile is-hidden-widescreen"
               videoUrl="sp-tablet"
               videoType="video/mp4"
               posterUrl="sp-tablet-poster"
               width="533.33px"
               height="400px"
             />
-            <video-mockup-mobile class="tablet-mockup is-hidden-touch is-hidden-desktop-only"
+            <video-mockup-mobile v-if="intersectedSweety" class="tablet-mockup is-hidden-touch is-hidden-desktop-only"
               videoUrl="sp-tablet"
               videoType="video/mp4"
               posterUrl="sp-tablet-poster"
               width="666.66px"
               height="500px"
             />
+            <div v-else class="mockup-skeleton"></div>
           </slide>
           <slide class="mockup-slide is-flex hcenter">
-            <video-mockup-mobile class="mobile-mockup is-hidden-desktop"
+            <video-mockup-mobile v-if="intersectedSweety" class="mobile-mockup is-hidden-desktop"
               videoUrl="sp-mobile"
               videoType="video/mp4"
               posterUrl="sp-mobile-poster"
               width="200px"
               height="400px"
             />
-            <video-mockup-mobile class="mobile-mockup is-hidden-touch"
+            <video-mockup-mobile v-if="intersectedSweety" class="mobile-mockup is-hidden-touch"
               videoUrl="sp-mobile"
               videoType="video/mp4"
               posterUrl="sp-mobile-poster"
               width="250px"
               height="500px"
             />
+            <div v-else class="mockup-skeleton"></div>
           </slide>
         </hooper>
         <div class="is-flex arrow-hoo-nav">
@@ -99,68 +102,71 @@
           <div class="line"></div>
           <div class="line"></div>  
         </div>
-        <hooper ref="carouselErinnerungsort" :settings="settings" class="three-device-carousel">
+        <hooper ref="carouselErinnerungsort" :settings="settings" class="three-device-carousel erinnerungsort">
           <slide class="mockup-slide is-flex hcenter">
-            <video-mockup-mobile class="desktop-mockup is-hidden-tablet"
+            <video-mockup-mobile v-if="intersectedErinnerungsort" class="desktop-mockup is-hidden-tablet"
               videoUrl="er-widescreen"
               videoType="video/mp4"
               posterUrl="er-widescreen-poster"
               width="300px"
               height="156.41px"
             />
-            <video-mockup-mobile class="desktop-mockup is-hidden-mobile is-hidden-widescreen"
+            <video-mockup-mobile v-if="intersectedErinnerungsort" class="desktop-mockup is-hidden-mobile is-hidden-widescreen"
               videoUrl="er-widescreen"
               videoType="video/mp4"
               posterUrl="er-widescreen-poster"
               width="767.2px"
               height="400px"
             />
-            <video-mockup-mobile class="desktop-mockup is-hidden-touch is-hidden-desktop-only"
+            <video-mockup-mobile v-if="intersectedErinnerungsort" class="desktop-mockup is-hidden-touch is-hidden-desktop-only"
               videoUrl="er-widescreen"
               videoType="video/mp4"
               posterUrl="er-widescreen-poster"
               width="959px"
               height="500px"
             />
+            <div v-else class="mockup-skeleton"></div>
           </slide>
           <slide class="mockup-slide is-flex hcenter">
-            <video-mockup-mobile class="tablet-mockup is-hidden-tablet"
+            <video-mockup-mobile v-if="intersectedErinnerungsort" class="tablet-mockup is-hidden-tablet"
               videoUrl="er-tablet"
               videoType="video/mp4"
               posterUrl="er-tablet-poster"
               width="300px"
               height="225px"
             />
-            <video-mockup-mobile class="tablet-mockup is-hidden-mobile is-hidden-widescreen"
+            <video-mockup-mobile v-if="intersectedErinnerungsort" class="tablet-mockup is-hidden-mobile is-hidden-widescreen"
               videoUrl="er-tablet"
               videoType="video/mp4"
               posterUrl="er-tablet-poster"
               width="533.33px"
               height="400px"
             />
-            <video-mockup-mobile class="tablet-mockup is-hidden-touch is-hidden-desktop-only"
+            <video-mockup-mobile v-if="intersectedErinnerungsort" class="tablet-mockup is-hidden-touch is-hidden-desktop-only"
               videoUrl="er-tablet"
               videoType="video/mp4"
               posterUrl="er-tablet-poster"
               width="666.66px"
               height="500px"
             />
+            <div v-else class="mockup-skeleton"></div>
           </slide>
           <slide class="mockup-slide is-flex hcenter">
-            <video-mockup-mobile class="mobile-mockup is-hidden-desktop"
+            <video-mockup-mobile v-if="intersectedErinnerungsort" class="mobile-mockup is-hidden-desktop"
               videoUrl="er-mobile"
               videoType="video/mp4"
               posterUrl="er-mobile-poster"
               width="200px"
               height="400px"
             />
-            <video-mockup-mobile class="mobile-mockup is-hidden-touch"
+            <video-mockup-mobile v-if="intersectedErinnerungsort" class="mobile-mockup is-hidden-touch"
               videoUrl="er-mobile"
               videoType="video/mp4"
               posterUrl="er-mobile-poster"
               width="250px"
               height="500px"
             />
+            <div v-else class="mockup-skeleton"></div>
           </slide>
         </hooper>
         <div class="is-flex arrow-hoo-nav">
@@ -193,22 +199,23 @@
           <div class="line"></div>
           <div class="line"></div>  
         </div>
-        <hooper ref="carouselPickMe" :settings="settingsSingle" class="one-device-carousel">
+        <hooper ref="carouselPickMe" :settings="settingsSingle" class="one-device-carousel pick">
           <slide class="mockup-slide is-flex hcenter">
-            <video-mockup-mobile class="mobile-mockup is-hidden-desktop"
+            <video-mockup-mobile v-if="intersectedPick" class="mobile-mockup is-hidden-desktop"
               videoUrl="pick-me-mobile"
               videoType="video/mp4"
               posterUrl="pick-me-mobile-poster"
               width="200px"
               height="400px"
             />
-            <video-mockup-mobile class="mobile-mockup is-hidden-touch"
+            <video-mockup-mobile v-if="intersectedPick" class="mobile-mockup is-hidden-touch"
               videoUrl="pick-me-mobile"
               videoType="video/mp4"
               posterUrl="pick-me-mobile-poster"
               width="250px"
               height="500px"
             />
+            <div v-else class="mockup-skeleton"></div>
           </slide>
         </hooper>
         <h1 class="title title-step is-size-5 is-family-primary">
@@ -230,29 +237,30 @@
           <div class="line"></div>
           <div class="line"></div>  
         </div>
-        <hooper ref="carouselWishIKnew" :settings="settings" class="one-device-carousel">
+        <hooper ref="carouselWishIKnew" :settings="settings" class="one-device-carousel wish">
           <slide class="mockup-slide is-flex hcenter">
-            <video-mockup-mobile class="desktop-mockup is-hidden-tablet"
+            <video-mockup-mobile v-if="intersectedWish" class="desktop-mockup is-hidden-tablet"
               videoUrl="wishIknew-widescreen"
               videoType="video/mp4"
               posterUrl="wishIknew-widescreen-poster"
               width="300px"
               height="156.41px"
             />
-            <video-mockup-mobile class="desktop-mockup is-hidden-mobile is-hidden-widescreen"
+            <video-mockup-mobile v-if="intersectedWish" class="desktop-mockup is-hidden-mobile is-hidden-widescreen"
               videoUrl="wishIknew-widescreen"
               videoType="video/mp4"
               posterUrl="wishIknew-widescreen-poster"
               width="767.2px"
               height="400px"
             />
-            <video-mockup-mobile class="desktop-mockup is-hidden-touch is-hidden-desktop-only"
+            <video-mockup-mobile v-if="intersectedWish" class="desktop-mockup is-hidden-touch is-hidden-desktop-only"
               videoUrl="wishIknew-widescreen"
               videoType="video/mp4"
               posterUrl="wishIknew-widescreen-poster"
               width="959px"
               height="500px"
             />
+            <div v-else class="mockup-skeleton"></div>
           </slide>
         </hooper>
         <h1 class="title title-step is-size-5 is-family-primary">
@@ -277,68 +285,71 @@
           <div class="line"></div>
           <div class="line"></div>  
         </div>
-        <hooper ref="carouselCookies" :settings="settingsSingle" class="three-device-carousel">
+        <hooper ref="carouselCookies" :settings="settingsSingle" class="three-device-carousel cookies">
           <slide class="mockup-slide is-flex hcenter">
-            <video-mockup-mobile class="desktop-mockup is-hidden-tablet"
+            <video-mockup-mobile v-if="intersectedCookies" class="desktop-mockup is-hidden-tablet"
               videoUrl="cookies-widescreen"
               videoType="video/mp4"
               posterUrl="cookies-widescreen-poster"
               width="300px"
               height="156.41px"
             />
-            <video-mockup-mobile class="desktop-mockup is-hidden-mobile is-hidden-widescreen"
+            <video-mockup-mobile v-if="intersectedCookies" class="desktop-mockup is-hidden-mobile is-hidden-widescreen"
               videoUrl="cookies-widescreen"
               videoType="video/mp4"
               posterUrl="cookies-widescreen-poster"
               width="767.2px"
               height="400px"
             />
-            <video-mockup-mobile class="desktop-mockup is-hidden-touch is-hidden-desktop-only"
+            <video-mockup-mobile v-if="intersectedCookies" class="desktop-mockup is-hidden-touch is-hidden-desktop-only"
               videoUrl="cookies-widescreen"
               videoType="video/mp4"
               posterUrl="cookies-widescreen-poster"
               width="959px"
               height="500px"
             />
+            <div v-else class="mockup-skeleton"></div>
           </slide>
           <slide class="mockup-slide is-flex hcenter">
-            <video-mockup-mobile class="tablet-mockup is-hidden-tablet"
+            <video-mockup-mobile v-if="intersectedCookies" class="tablet-mockup is-hidden-tablet"
               videoUrl="cookies-tablet"
               videoType="video/mp4"
               posterUrl="cookies-tablet-poster"
               width="300px"
               height="225px"
             />
-            <video-mockup-mobile class="tablet-mockup is-hidden-mobile is-hidden-widescreen"
+            <video-mockup-mobile v-if="intersectedCookies" class="tablet-mockup is-hidden-mobile is-hidden-widescreen"
               videoUrl="cookies-tablet"
               videoType="video/mp4"
               posterUrl="cookies-tablet-poster"
               width="533.33px"
               height="400px"
             />
-            <video-mockup-mobile class="tablet-mockup is-hidden-touch is-hidden-desktop-only"
+            <video-mockup-mobile v-if="intersectedCookies" class="tablet-mockup is-hidden-touch is-hidden-desktop-only"
               videoUrl="cookies-tablet"
               videoType="video/mp4"
               posterUrl="cookies-tablet-poster"
               width="666.66px"
               height="500px"
             />
+            <div v-else class="mockup-skeleton"></div>
           </slide>
           <slide class="mockup-slide is-flex hcenter">
-            <video-mockup-mobile class="mobile-mockup is-hidden-desktop"
+            <video-mockup-mobile v-if="intersectedCookies" class="mobile-mockup is-hidden-desktop"
               videoUrl="cookies-mobile"
               videoType="video/mp4"
               posterUrl="cookies-mobile-poster"
               width="200px"
               height="400px"
             />
-            <video-mockup-mobile class="mobile-mockup is-hidden-touch"
+            <video-mockup-mobile v-if="intersectedCookies" class="mobile-mockup is-hidden-touch"
               videoUrl="cookies-mobile"
               videoType="video/mp4"
               posterUrl="cookies-mobile-poster"
               width="250px"
               height="500px"
             />
+            <div v-else class="mockup-skeleton"></div>
           </slide>
         </hooper>
         <div class="is-flex arrow-hoo-nav">
@@ -402,7 +413,7 @@ import {
   Slide,
 } from 'hooper';
 import 'hooper/dist/hooper.css';
-import VideoMockupMobile from '../components/VideoMockupMobile.vue'
+import VideoMockupMobile from '../components/VideoMockupMobile.vue';
 
 export default {
   name: 'WebsitesApps',
@@ -454,12 +465,44 @@ export default {
             initialSlide: 0
           }
         }
-      }
+      },
+      observer: null,
+      intersectedSweety: false,
+      intersectedErinnerungsort: false,
+      intersectedPick: false,
+      intersectedWish: false,
+      intersectedCookies: false,
     }
   },
+  computed: {
+    
+  },
   mounted () {
+    // if route
     let bg = document.querySelector('.body-bg');
     bg.classList.add('pure-bg');
+
+    this.observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          if (entry.target.className.includes('sweety')) {
+            this.intersectedSweety = true;
+          } else if (entry.target.className.includes('erinnerungsort')) {
+            this.intersectedErinnerungsort = true;
+          } else if (entry.target.className.includes('pick')) {
+            this.intersectedPick = true;
+          } else if (entry.target.className.includes('wish')) {
+            this.intersectedWish = true;
+          } else if (entry.target.className.includes('cookies')) {
+            this.intersectedCookies = true;
+          }
+        }
+      });
+    });
+    const allMockups = document.querySelectorAll(".hooper");
+    allMockups.forEach(mockup => {
+      this.observer.observe(mockup);
+    });
   },
   methods: {
     slidePrev(event) {

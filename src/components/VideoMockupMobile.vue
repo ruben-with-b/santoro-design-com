@@ -31,8 +31,17 @@ export default {
       type: String
     },
   },
+  computed: {
+    player() {
+      return this.$refs.videoPlayer.player
+    }
+  },
+  mounted () {
+    
+  },
   data () {
     return {
+
       playerOptions: {
         autoplay: false,
         controls: true,
@@ -49,11 +58,6 @@ export default {
       },
     }
   },
-  computed: {
-      player() {
-        return this.$refs.videoPlayer.player
-      }
-    },
 }
 </script>
 

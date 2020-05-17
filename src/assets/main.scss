@@ -1184,12 +1184,25 @@ body{
 .arrow-breadcrumb{
     transform: translateY(-2px);
     display: inline-block;
-  }
+}
+
+.mockup-skeleton{
+    margin: 4em 0;
+    width: 54vw;
+    height: 23em;
+    background: #ececec;
+    background: linear-gradient(128deg, 
+    rgba(230,230,230,1) 0%, 
+    rgba(250,250,250,1) 100%);
+    border-radius: 12px;
+    opacity: .8;
+}
+
   
   .mobile-mockup, .tablet-mockup, .desktop-mockup{
     width: 210px;
     margin: 2em 0 0 0;
-    border: 5px solid black;
+    border: 5px solid $primary;
     border-radius: 17px;
     box-shadow:
       0 2.8px 2.2px rgba(0, 0, 0, 0.034),
@@ -1229,7 +1242,7 @@ body{
   
   .tablet-mockup{
     width: 312px;
-    border: 6px solid black;
+    border: 6px solid $primary;
     border-radius: 20px;
 
     @include tablet{
@@ -1245,7 +1258,7 @@ body{
   .desktop-mockup{
     width: 316px;
     margin: 2em 0 0 0;
-    border: 8px solid black;
+    border: 8px solid $primary;
     border-radius: 14px;
   
     .vjs-tech, .vjs-poster{
@@ -1253,7 +1266,7 @@ body{
     }
     @include tablet{
         width: 781.2px;
-        border: 7px solid black;
+        border: 7px solid $primary;
     }
 
     @include widescreen{
