@@ -1382,3 +1382,26 @@ body{
         }
     }
   }
+
+  // Print
+
+  .wedding-card-out{
+    background-image: url(./1x-wedding-out.png);
+    background-repeat: no-repeat;
+    background-position: 0% 50%;
+    background-size: contain;
+
+    @include tablet {
+        background-image: url(./2x-wedding-out.png);
+        background-position: 50% 0%;
+        background-size: cover;
+    }
+
+    @include desktop {
+        background-position: 0% 50%;
+    }
+
+    @include fullhd {
+        background-image: url(./3x-wedding-out.png);
+    }
+  }
