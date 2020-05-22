@@ -1385,7 +1385,63 @@ body{
 
   // Print
 
-  .wedding-card-out{
+  .print-section{
+      padding-bottom: 0;
+  }
+
+  .invitation-tile{
+    margin-top: 3em !important;
+  }
+
+  .flyer-tile{
+    .inner-tile{
+        background-color: #ececec;
+    }
+
+    .tile-title{
+        background: $secondary;
+    }
+  }
+
+  .inner-tile{
+    background-color: #fafaf1;
+    height: 20em;
+    width: 100%;
+
+    @include tablet{
+        height: 17em;
+    }
+
+    @include desktop{
+        height: 25em;
+    }
+    
+    @include fullhd{
+        height: 35em;
+    }
+  }
+
+  .tile-title{
+    background: $secondary;
+    justify-content: flex-end;
+    padding-right: 1.5em;
+    text-align: right;
+    
+    h1{
+        line-height: 1em;
+        transform: translateY(1em);
+    }
+  }
+
+  .wedding-card-out,
+  .wedding-card,
+  .vw-bus,
+  .ibc17-tile,
+  .ibc16-tile,
+  .smd-tile,
+  .guitar-tile,
+  .mm-tile,
+  .danke-tile{
     background-image: url(./1x-wedding-out.png);
     background-repeat: no-repeat;
     background-position: 0% 50%;
@@ -1393,7 +1449,7 @@ body{
 
     @include tablet {
         background-image: url(./2x-wedding-out.png);
-        background-position: 50% 0%;
+        background-position: 50% 50%;
         background-size: cover;
     }
 
@@ -1403,5 +1459,108 @@ body{
 
     @include fullhd {
         background-image: url(./3x-wedding-out.png);
+    }
+  }
+
+  .wedding-card-in{
+    background-image: url(./1x-wedding-in.png);
+    
+    @include tablet {
+        background-image: url(./2x-wedding-in.png);
+    }
+
+    @include fullhd {
+        background-image: url(./3x-wedding-in.png);
+    }
+  }
+
+  .vw-bus{
+    background-image: url(./2x-vw-bus.png);
+
+    @include fullhd {
+        background-image: url(./3x-vw-bus.png);
+    }
+  }
+
+  .wedding-flower{
+    background-image: url(./2x-flower.png);
+
+    @include fullhd {
+        background-image: url(./3x-flower.png);
+    }
+  }
+
+  .ibc17-tile{
+    background-image: url(./1x-ibc-17.png);
+
+    @include tablet{
+        background-image: url(./2x-ibc-17.png);
+    }
+    @include fullhd{
+        background-image: url(./3x-ibc-17.png);
+    }
+  }
+
+  .ibc16-tile{
+    background-color: rgb(230, 228, 211) !important;
+    background-image: url(./1x-ibc-16.png);
+    
+    @include tablet{
+        background-image: url(./2x-ibc-16.png);
+    }
+    @include fullhd{
+        background-image: url(./3x-ibc-16.png);
+    }
+  }
+
+  .smd-tile{
+    background-color: rgb(230, 228, 211) !important;
+    background-image: url(./1x-smd.png);
+    background-size: contain;
+    
+    @include tablet{
+        background-image: url(./2x-smd.png);
+    }
+    @include fullhd{
+        background-image: url(./3x-smd.png);
+    }
+  }
+
+  .guitar-tile{
+    background-color: #F9F3A4 !important;
+    background-image: url(./1x-gitarrenpass.png);
+    background-size: contain;
+    
+    @include tablet{
+        background-image: url(./2x-gitarrenpass.png);
+    }
+    @include fullhd{
+        background-image: url(./3x-gitarrenpass.png);
+    }
+  }
+
+  .mm-tile{
+    background-color: #0F2026 !important;
+    background-image: url(./1x-mm.png);
+    background-size: contain;
+    
+    @include tablet{
+        background-image: url(./2x-mm.png);
+    }
+    @include fullhd{
+        background-image: url(./3x-mm.png);
+    }
+  }
+
+  .danke-tile{
+    background-color: #1d5b29 !important;
+    background-image: url(./1x-danke.png);
+    background-size: contain;
+    
+    @include tablet{
+        background-image: url(./2x-danke.png);
+    }
+    @include fullhd{
+        background-image: url(./3x-danke.png);
     }
   }
