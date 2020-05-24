@@ -1383,13 +1383,14 @@ body{
     }
   }
 
-  // Print
+  // Print + Corporate Design
 
   .print-section{
       padding-bottom: 0;
   }
 
-  .invitation-tile{
+  .invitation-tile,
+  .cds-tile{
     margin-top: 3em !important;
   }
 
@@ -1441,7 +1442,12 @@ body{
   .smd-tile,
   .guitar-tile,
   .mm-tile,
-  .danke-tile{
+  .danke-tile,
+  .cd-brecht-tile,
+  .logo-brecht,
+  .vk-brecht-tile,
+  .ludd-logo-tile,
+  .vk-ludd-tile{
     background-image: url(./1x-wedding-out.png);
     background-repeat: no-repeat;
     background-position: 0% 50%;
@@ -1562,5 +1568,67 @@ body{
     }
     @include fullhd{
         background-image: url(./3x-danke.png);
+    }
+  }
+
+  .cd-brecht-tile{
+    background-color: #f3f3f3 !important;
+    background-image: url(./1x-brecht-cd.png);
+    background-size: contain;
+    
+    @include tablet{
+        background-image: url(./2x-brecht-cd.png);
+        background-position: 50% 50%;
+    }
+    @include fullhd{
+        background-image: url(./3x-brecht-cd.png);
+    }
+  }
+
+  .logo-brecht{
+    background-color: #592018;
+    background-image: url(./brecht-logo-1x.png);
+    background-size: contain;
+  }
+
+  .vk-brecht-tile{
+    background-color: #f3f3f3 !important;
+    background-image: url(./1x-vk-brecht.png);
+    background-size: contain;
+    
+    @include tablet{
+        background-image: url(./2x-vk-brecht.png);
+        background-position: 50% 50%;
+    }
+    @include fullhd{
+        background-image: url(./3x-vk-brecht.png);
+    }
+  }
+
+  .ludd-logo-tile{
+    background-color: #11637b !important;
+    background-image: url(./ludd-logo-1x.png);
+    background-size: contain;
+    
+    @include tablet{
+        background-image: url(./ludd-logo-2x.png);
+        background-position: 50% 50%;
+    }
+    @include fullhd{
+        background-image: url(./ludd-logo-3x.png);
+    }
+  }
+
+  .vk-ludd-tile{
+    background-color: #f3f3f3 !important;
+    background-image: url(./2x-vk-ludd.png);
+    background-size: 160%;
+    background-position: 50% 50%;
+    
+    @include tablet{
+        background-size: 100%;
+    }
+    @include fullhd{
+        background-image: url(./3x-vk-ludd.png);
     }
   }

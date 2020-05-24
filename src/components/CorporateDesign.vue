@@ -9,35 +9,55 @@
         <p class="is-family-primary has-text-black p-after-h p-anim">
           Hier sehen Sie eine Auswahl an Projekten, die individuell von mir oder in Zusammenarbeit mit anderen Studenten entstanden sind.
         </p>
-        <div class="tile is-ancestor invitation-tile">
+        <div class="tile is-ancestor cds-tile">
           <div class="tile is-parent is-8">
-            <div class="tile inner-tile is-child is-flex hcenter vcenter">
-              Hochzeitseinladung A&M Außen
-            </div>
+            <div class="tile cd-brecht-tile inner-tile is-child is-flex hcenter vcenter"></div>
           </div>
           <div class="tile is-vertical is-parent">
-            <div class="tile inner-tile hcenter is-child vcenter is-flex">
-              Hochzeitseinladungen
+            <div class="tile logo-brecht inner-tile hcenter is-child vcenter is-flex">
+  
             </div>
-            <div class="tile inner-tile hcenter vcenter is- child is-flex">
-              der VW-Bus
+            <div class="tile vk-brecht-tile inner-tile hcenter vcenter is- child is-flex"></div>
+          </div>
+        </div>
+        <div class="tile is-ancestor">
+          <div class="tile is-parent is-4">
+            <div class="tile ludd-logo-tile inner-tile is-child is-flex hcenter vcenter"></div>
+          </div>
+          <div class="tile is-parent">
+            <div class="tile vk-ludd-tile inner-tile hcenter is-child vcenter is-flex">
             </div>
           </div>
         </div>
-
         <div class="tile is-ancestor">
           <div class="tile is-parent is-4">
             <div class="tile inner-tile is-child is-flex hcenter vcenter">
-              anderes Element
+              Logo Mechanic
+            </div>
+          </div>
+          <div class="tile is-parent is-4">
+            <div class="tile inner-tile hcenter is-child vcenter is-flex">
+              Logo Finance
             </div>
           </div>
           <div class="tile is-parent">
             <div class="tile inner-tile hcenter is-child vcenter is-flex">
-              Hochzeitseinladung A&M Innen
+              Logo m&m
             </div>
           </div>
         </div>
-
+         <div class="tile is-ancestor">
+          <div class="tile is-parent is-8">
+            <div class="tile inner-tile is-child is-flex hcenter vcenter">
+              Visitenkarten Santoro
+            </div>
+          </div>
+          <div class="tile is-parent">
+            <div class="tile inner-tile hcenter is-child vcenter is-flex">
+              Logo Santoro
+            </div>
+          </div>
+        </div>
       </div>
     </section>      
   </div>  
@@ -76,13 +96,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  .invitation-tile{
-    margin-top: 3em !important;
-  }
 
-  .inner-tile{
-    background: #f6f6f6;
-    height: 35em;
-    width: 100%;
-  }
 </style>
