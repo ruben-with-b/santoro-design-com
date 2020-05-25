@@ -48,8 +48,8 @@
         <div class="columns is-centered">
           <div class="column is-two-thirds-tablet is-offset-one-third-tablet is-offset-two-thirds-fullhd">
             <p class="is-family-primary has-text-black p-after-h p-anim p-car">
-              Werfen Sie einen Blick auf die Arbeitsproben und überzeugen Sie sich
-              selbst.
+              Werfen Sie einen Blick auf Projekte und Arbeitsproben. Überzeugen Sie sich
+              selbst und machen Sie sich ein Bild von den kreativen Arbeiten.
             </p>
           </div>
         </div>

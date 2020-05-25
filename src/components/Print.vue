@@ -7,7 +7,8 @@
           <span class="arrow-breadcrumb">&#10230;</span> Flyer, Einladungen und mehr...
         </h1>
         <p class="is-family-primary has-text-black p-after-h p-anim">
-          Hier sehen Sie eine Auswahl an Projekten, die individuell von mir oder in Zusammenarbeit mit anderen Studenten entstanden sind.
+          Karten, Einladungen und Flyer sind immer noch eine gute und greifbare Möglichkeit, um Ihren Liebsten oder
+          oder Ihren Kunden etwas besonderes vorzustellen oder zu erzählen.
         </p>
         <div class="tile is-ancestor invitation-tile">
           <div class="tile is-parent is-8">

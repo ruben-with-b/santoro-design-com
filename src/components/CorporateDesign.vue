@@ -7,7 +7,9 @@
           <span class="arrow-breadcrumb">&#10230;</span>  Logos und Corporate Design
         </h1>
         <p class="is-family-primary has-text-black p-after-h p-anim">
-          Hier sehen Sie eine Auswahl an Projekten, die individuell von mir oder in Zusammenarbeit mit anderen Studenten entstanden sind.
+          Ein Logo gibt Ihnen Wiedererkennungswert, auf großen Flächen oder in kleinen
+          Ecken, ob gedruckt oder digital. Wenn Sie dann auch noch ein komplettes Corporate Design verpasst bekommen,
+          dann treten Sie als starke Einheit auf.
         </p>
         <div class="tile is-ancestor cds-tile">
           <div class="tile is-parent is-8">

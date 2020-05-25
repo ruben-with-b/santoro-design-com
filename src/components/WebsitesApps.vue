@@ -6,7 +6,7 @@
            <router-link to="/services">Leistungen </router-link>
            <span class="arrow-breadcrumb">&#10230;</span> Websites und Apps</h1>
         <p class="is-family-primary has-text-black p-after-h p-anim">
-          Hier sehen Sie eine Auswahl an Projekten, die individuell von mir oder in Zusammenarbeit mit anderen Studenten entstanden sind.
+          Hier sehen Sie eine Auswahl an Projekten, die individuell von mir oder in Zusammenarbeit mit anderen lieben Menschen entstanden sind.
         </p>
         <hooper ref="carouselSp" :settings="settings" class="three-device-carousel sweety">
           <slide class="mockup-slide is-flex hcenter">
@@ -88,8 +88,8 @@
         </h1>
         <p class="is-family-primary has-text-black p-after-h p-anim p-web-desc">
           Das »Sweety Pretty« wurde von einem dreiköpfigem Studenten-Team mit einem eigenen Webauftritt ausgestattet. Die Website
-          liefert entscheidende Informationen zum Sortiment und Angebot, sowie gibt erste essenzielle Eindrücke des
-          gemütlichen Ambientes im Café.
+          liefert entscheidende Informationen zum Sortiment und Angebot und gibt erste essenzielle Eindrücke des
+          gemütlichen Ambientes im Café. Video- und Bildmaterial wurde selbst produziert.
         </p>
         <div class="tools">
           <p>Frameworks</p>
@@ -183,7 +183,11 @@
             Erinnerungsort 
         </h1>
         <p class="is-family-primary has-text-black p-after-h p-anim p-web-desc">
-          Erinnerungsort ist ein Plattform zum Gedenken an Holocaust-Opfer.
+          Im Master-Studiengang »Interaktive Mediensysteme« mit Schwerpunkt
+          »Web Systems« wurde die multimediale Aufbereitung des »Außenlagerkomplexes
+          Kaufering« bearbeitet. Die Webanwendung macht die unfreiwillige Entwurzelung tausender
+          Menschen während des Zweiten Weltkriegs sowie die Erinnerungen
+          von Zeitzeugen in einer interaktiven Karte zum Kernelement.
         </p>
         <div class="tools">
           <p>Frameworks</p>
@@ -221,10 +225,11 @@
           </slide>
         </hooper>
         <h1 class="title title-step is-size-5 is-family-primary">
-            Pick Me – Deine Packliste
+            Pick Me – Die App für's Packen!
         </h1>
         <p class="is-family-primary has-text-black p-after-h p-anim p-web-desc">
-          Mit der Pick Me App können Gepäckstücke wie Koffer und Rucksäcke angelegt und deren Inhalte verwaltet werden.
+          Mit der Progressive Web App »Pick Me« können Gepäckstücke wie Rucksäcke, Koffer oder Taschen angelegt und deren Inhalte verwaltet werden, damit nichts mehr vergessen wird.
+          Das Projekt wurde von zwei Studenten durchgeführt.
         </p>
         <div class="tools">
           <p>Frameworks</p>
@@ -266,10 +271,14 @@
           </slide>
         </hooper>
         <h1 class="title title-step is-size-5 is-family-primary">
-            I wish I knew that – Infographic about Spotify Data Collection
+            iwishiknewithat – Webanwendung über die Speicherung von Spotify-Daten
         </h1>
         <p class="is-family-primary has-text-black p-after-h p-anim p-web-desc">
-          Mit der Pick Me App können Gepäckstücke wie Koffer und Rucksäcke angelegt und deren Inhalte verwaltet werden.
+          Die Anwendung ist eine digitale Plattform, die modular aufgebaut ist. Die drei
+          Grundbausteine bestehen aus Einleitung, Spiel (Grafik) und Datenanfrage.
+          Der User kann durch die Sammlung von Icons erfahren, welche Daten in welcher Tagessituation gespeichert werden.
+          Für die Anforderung der privaten Daten steht ein Kontaktfurmular bereit. Ein
+          dreiköpfiges Team stellte das Projekt fertig.
         </p>
         <div class="tools">
           <p>Frameworks</p>
@@ -366,7 +375,8 @@
             What are cookies? – Interaktive Scroll-Infografik
         </h1>
         <p class="is-family-primary has-text-black p-after-h p-anim p-web-desc">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo quia impedit voluptatum in pariatur provident iusto animi sint accusantium praesentium rerum expedita quas molestias nihil, dolore, officia dignissimos molestiae exercitationem!
+          Eine interaktive animierte Infografik, die unterhaltsam über
+          Internet-Cookies aufklärt.
         </p>
         <div class="tools">
           <p>Frameworks</p>
