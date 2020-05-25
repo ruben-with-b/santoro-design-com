@@ -31,31 +31,21 @@
         </div>
         <div class="tile is-ancestor">
           <div class="tile is-parent is-4">
-            <div class="tile inner-tile is-child is-flex hcenter vcenter">
-              Logo Mechanic
-            </div>
+            <div class="tile supply-logo-tile inner-tile is-child is-flex hcenter vcenter"></div>
           </div>
           <div class="tile is-parent is-4">
-            <div class="tile inner-tile hcenter is-child vcenter is-flex">
-              Logo Finance
-            </div>
+            <div class="tile finance-logo-tile inner-tile hcenter is-child vcenter is-flex"></div>
           </div>
           <div class="tile is-parent">
-            <div class="tile inner-tile hcenter is-child vcenter is-flex">
-              Logo m&m
-            </div>
+            <div class="tile mm-logo-tile inner-tile hcenter is-child vcenter is-flex"></div>
           </div>
         </div>
          <div class="tile is-ancestor">
           <div class="tile is-parent is-8">
-            <div class="tile inner-tile is-child is-flex hcenter vcenter">
-              Visitenkarten Santoro
-            </div>
+            <div class="tile vk-santoro-tile inner-tile is-child is-flex hcenter vcenter"></div>
           </div>
           <div class="tile is-parent">
-            <div class="tile inner-tile hcenter is-child vcenter is-flex">
-              Logo Santoro
-            </div>
+            <div class="tile santoro-logo-tile inner-tile hcenter is-child vcenter is-flex"></div>
           </div>
         </div>
       </div>

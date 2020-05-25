@@ -1447,7 +1447,11 @@ body{
   .logo-brecht,
   .vk-brecht-tile,
   .ludd-logo-tile,
-  .vk-ludd-tile{
+  .vk-ludd-tile,
+  .santoro-logo-tile,
+  .mm-logo-tile,
+  .supply-logo-tile,
+  .finance-logo-tile{
     background-image: url(./1x-wedding-out.png);
     background-repeat: no-repeat;
     background-position: 0% 50%;
@@ -1575,10 +1579,10 @@ body{
     background-color: #f3f3f3 !important;
     background-image: url(./1x-brecht-cd.png);
     background-size: contain;
+    background-position: 50% 50%;
     
     @include tablet{
         background-image: url(./2x-brecht-cd.png);
-        background-position: 50% 50%;
     }
     @include fullhd{
         background-image: url(./3x-brecht-cd.png);
@@ -1595,10 +1599,10 @@ body{
     background-color: #f3f3f3 !important;
     background-image: url(./1x-vk-brecht.png);
     background-size: contain;
+    background-position: 50% 50%;
     
     @include tablet{
         background-image: url(./2x-vk-brecht.png);
-        background-position: 50% 50%;
     }
     @include fullhd{
         background-image: url(./3x-vk-brecht.png);
@@ -1609,10 +1613,10 @@ body{
     background-color: #11637b !important;
     background-image: url(./ludd-logo-1x.png);
     background-size: contain;
+    background-position: 50% 50%;
     
     @include tablet{
         background-image: url(./ludd-logo-2x.png);
-        background-position: 50% 50%;
     }
     @include fullhd{
         background-image: url(./ludd-logo-3x.png);
@@ -1630,5 +1634,78 @@ body{
     }
     @include fullhd{
         background-image: url(./3x-vk-ludd.png);
+    }
+  }
+
+  .supply-logo-tile{
+    background-color:#f4f431 !important;
+    background-image: url(./car-supplier-1x.png);
+    background-size: 80%;
+    background-position: 50% 50%;
+    
+    @include tablet{
+        background-image: url(./car-supplier-2x.png);
+    }
+    @include fullhd{
+        background-image: url(./car-supplier-3x.png);
+        background-size: 100%;
+    }
+  }
+
+  .finance-logo-tile{
+    background-color:#0e1a3a !important;
+    background-image: url(./finance-logo-1x.png);
+    background-size: 120%;
+    background-position: 50% 50%;
+    
+    @include tablet{
+        background-image: url(./finance-logo-2x.png);
+    }
+    @include fullhd{
+        background-image: url(./finance-logo-3x.png);
+        background-size: 120%;
+    }
+  }
+
+  .mm-logo-tile{
+    background-color: #0F2026 !important;
+    background-image: url(./mm-logo-1x.png);
+    background-size: 80%;
+    background-position: 50% 50%;
+    
+    @include tablet{
+        background-image: url(./mm-logo-2x.png);
+    }
+    @include fullhd{
+        background-image: url(./mm-logo-3x.png);
+    }
+  }
+
+  .vk-santoro-tile{
+    background-color: #f3f3f3 !important;
+    background-image: url(./1x-vk-santoro.png);
+    background-size: 160%;
+    background-position: 50% 50%;
+    
+    @include tablet{
+        background-size: 100%;
+        background-image: url(./2x-vk-santoro.png);
+    }
+    @include fullhd{
+        background-image: url(./3x-vk-santoro.png);
+    }
+  }
+
+  .santoro-logo-tile{
+    background-color: $primary !important;
+    background-image: url(./santoro-logo-1x.png);
+    background-size: contain;
+    background-position: 50% 50%;
+    
+    @include tablet{
+        background-image: url(./santoro-logo-2x.png);
+    }
+    @include fullhd{
+        background-image: url(./santoro-logo-3x.png);
     }
   }
