@@ -142,6 +142,12 @@ button{
     margin: 40px 0 0 0;
 }
 
+.button-santoro:not(:root:root){
+    &:after{
+        border-bottom: 5px double $primary;
+    }
+}
+
 .button-santoro-white{
     margin: 3em 0 0 0;
 
@@ -152,6 +158,17 @@ button{
 
     @include desktop{
         margin: 1em 0 0 1em;
+    }
+}
+
+.button-santoro-white:not(:root:root){
+    &:after{
+        border-bottom: 5px double $secondary;
+    }
+
+    @include tablet{
+        padding-right: 5em;
+        padding-left: 3em;
     }
 }
 
@@ -772,11 +789,34 @@ body{
     margin: -6em 0 5em 1em;
 }
 
+.edu-timeline:not(:root:root){ 
+    .start-point{
+        &:before{
+            top: 2.7em;
+        }
+        &:after{
+            display: block;
+            left: -0.88em;
+            top: -0.4em;
+            margin-bottom: -2.5em;
+            @include tablet{
+                top: -0.52em;
+                left: -1.15em;
+            }
+        }
+    }
+    .end-point{
+        &:before{
+            top: 3.2em;
+        }
+    }
+}
+
 .school{
     width: 230px;
     margin: -4em auto 0 auto;
     @include desktop{
-        width: 280px;
+        width: 290px;
     }
 }
 
@@ -1293,6 +1333,15 @@ body{
     }
 
 }
+
+.arrow-hoo-nav:not(:root:root){
+    svg{
+        rect{
+            width: 600px;
+        }
+    }
+}
+
 .arrow-hoo-nav{
     margin-top: 1em;
     justify-content: space-around;
