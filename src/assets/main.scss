@@ -1710,3 +1710,37 @@ body{
         background-image: url(./santoro-logo-3x.png);
     }
   }
+
+  // LEGAL & PRIVACY
+
+  .privacy-section,
+  .legal-section{
+
+    li{
+      margin-left: 2em;
+  
+      &::before{
+        content: "\27F6";
+        width: 1px;
+        height: 1px;
+        position: relative;
+        top: 3em;
+        left: -2.2em;
+      }
+  
+      .p-after-h{
+        margin-top: 1em;
+      }
+    }
+    .title.not-bold{
+        margin-bottom: 2em;
+    }
+
+    .p-after-h{
+        margin-top: 1em;
+        margin-bottom: 2em;
+        a{
+            text-decoration: underline;
+        }
+    }
+  }

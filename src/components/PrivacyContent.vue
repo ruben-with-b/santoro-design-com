@@ -1,6 +1,6 @@
 <template>
 <div>
-    <section class="section webapps-section">
+    <section class="section privacy-section">
       <div class="container">
         <h1 class="title is-1 is-family-secondary not-bold">Datenschutz&shy;erkl&auml;rung</h1>
        
@@ -364,7 +364,7 @@
           vertraglich verboten, die in unserem Auftrag erhobenen Daten zu
           verkaufen.
           <br><br><br><br>
-          Quelle: <a href="https://www.e-recht24.de">eRecht24</a>
+          Quelle: <a href="https://www.e-recht24.de" target="_blank">eRecht24</a>
           <br><br><br><br>
         </p>
       </div>
@@ -404,25 +404,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  li{
-    margin-left: 2em;
 
-    &::before{
-      content: "\27F6";
-      width: 1px;
-      height: 1px;
-      position: relative;
-      top: 3em;
-      left: -2.2em;
-    }
-
-    .p-after-h{
-      margin-top: 1em;
-    }
-  }
-  .p-after-h{
-    a{
-      text-decoration: underline;
-    }
-  }
 </style>
