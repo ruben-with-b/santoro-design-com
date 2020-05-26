@@ -215,11 +215,19 @@ button{
 
 .button-santoro-secondary{
     border-radius: 0px;
+    border-bottom: 1px solid $secondary;
     font-size: $size-6;
     color: $secondary;
+    
     &:hover{
         color: $secondary;
-        text-decoration: underline;
+        padding-bottom: 0.3em;
+        transition: all 200ms ease-in;
+    }
+    
+    @include tablet{
+        border-bottom: 2px solid $secondary;
+        font-weight: 700;
     }
 }
 
@@ -496,6 +504,10 @@ body{
     height: 85vh;
     
     .back-button{
+        @include tablet{
+            margin-top: 5em;
+        }
+
         .navbar-item{
             color: $secondary !important;
             &:hover{
@@ -503,6 +515,10 @@ body{
             }
         }
     }
+}
+
+.column-sub-menu{
+    width: 100%;
 }
 
 .back-button{

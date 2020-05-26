@@ -38,13 +38,13 @@
           </icon-base>  
         </div>
         <div class="column is-flex menu-footer-navigation footer-navigation">
-          <div class="columns is-mobile is-marginless has-text-centered">
-            <div class="column has-text-white">
+          <div class="columns column-sub-menu is-mobile is-marginless">
+            <div class="column has-text-white has-text-centered">
               <router-link to="/legal" class="button-santoro-secondary">
                 Impressum
               </router-link>
             </div>
-            <div class="column has-text-white">
+            <div class="column has-text-white has-text-centered">
               <router-link to="/privacy" class="button-santoro-secondary">
                 Datenschutz
               </router-link>
