@@ -1134,6 +1134,9 @@ body{
         
         a{
             color: $secondary;
+                &:after{
+                    opacity: 0;
+                }
         }
 
         .next-to-icon{
