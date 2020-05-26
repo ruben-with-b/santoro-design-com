@@ -920,13 +920,15 @@ body{
     transform: translateX(-50%);
     height: 12em;
     display: flex;
-    // align-items: center;
     padding: 3em 0 0 2em;
     opacity: 0;
     transition: opacity 0.5s;
 
     a{
         color: $secondary;
+        &:after{
+            opacity: 0;
+        }
     }
 
     @include tablet {
