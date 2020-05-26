@@ -56,36 +56,5 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
 
- .navbar-santoro{
-    margin: 0 15px;
-    justify-content: space-between;
-    height: 6.28em;
-}
- .burger-santoro {
-  display: flex;
-  color: #0a0a0a;
-  align-items: center;
-  height: 6.25rem;
-  padding: 0.5rem 0.35rem;
-}
-
-.logo{
-  padding: 0.5rem 0.35rem;
-  color: #0a0a0a;
-}
-
-.logo-long{
-  margin: 0 auto;
-}
-
-.burger-santoro:hover {
-  background-color: unset;
-}
-
-.menu-compo{
-  position: fixed;
-  z-index: 100;
-  transform: translateX(100vw);
-  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-}
+ 
 </style>
