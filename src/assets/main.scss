@@ -78,6 +78,21 @@ $bezier-1: cubic-bezier(0.22, 0.61, 0.36, 1);
 // LINKS
 
 // reset
+input,
+textarea,
+button,
+select,
+svg,
+p,
+div,
+a {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+:focus{
+    outline: none;
+}
+
 a{
     color: unset;
     
@@ -87,6 +102,7 @@ a{
 
     &:focus{
         color: unset;
+        outline: none;
     }
 
     .navbar-item{
