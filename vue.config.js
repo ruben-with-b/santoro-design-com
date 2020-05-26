@@ -1,4 +1,5 @@
 module.exports = {
+    mode: 'production',
     chainWebpack: config => {
         config.module
             .rule("vue")
