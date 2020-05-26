@@ -31,6 +31,16 @@ $bezier-1: cubic-bezier(0.22, 0.61, 0.36, 1);
 
 // RESETS
 
+@mixin firefox-only {
+    @at-root {
+        @-moz-document url-prefix() {
+            & {
+                @content;
+            }
+        }
+    }
+}
+
 // Hooper
 .hooper{
     &:focus{
@@ -782,6 +792,13 @@ body{
         background: $secondary;
         color: $grey;
         position: relative;
+        
+        @include tablet{
+            @include firefox-only{
+                top: 3.55em;
+            }
+        }
+
         @include desktop {
             top: 109px;
             left: -30.25px;
@@ -793,17 +810,30 @@ body{
         width: 1px;
         height: 38px;
         background: $grey;
-        top: 37px;
-        left: -222px;
+        top: 2.35em;
+        left: -13.85em;
         position: relative;
+
+        @include firefox-only{
+            left: -14.35em;
+        }
+
         @include tablet {
-            top: 40px;
-            left: -221.5px;
+            top: 2.51em;
+            left: -13.83em;
+            @include firefox-only{
+                top: 2.35em;
+                left: -14.6em;
+            }
         }
         @include desktop{
-            top: 48px;
-            left: -281.5px;
+            top: 2.35em;
+            left: -14.1em;
             height: 50px;
+            @include firefox-only{
+                top: 2.41em;
+                left: -14.8em;
+            }
         }
     }
 }
@@ -826,10 +856,27 @@ body{
         }
     }
     &:after{
+
+        @include firefox-only{
+            top: 2.36em;
+            left: -13.25em;
+
+        }
+        @include tablet{
+            @include firefox-only{
+                top: 2.35em;
+                left: -13.53em;
+            }
+        }
+
         @include desktop{
-            top: 48px;
-            left: -259px;
+            top: 2.37em;
+            left: -12.95em;
             height: 50px;
+            @include firefox-only{
+                top: 2.41em;
+                left: -13.69em;
+            }
         }
     }
 }
@@ -846,6 +893,11 @@ body{
         background: $secondary;
         color: $grey;
         position: relative;
+        @include tablet{
+            @include firefox-only{
+                top: 4em;
+            }
+        }
         @include desktop {
             top: 124px;
             left: -30.25px;
