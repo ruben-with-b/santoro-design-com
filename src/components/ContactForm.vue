@@ -87,67 +87,29 @@ export default {
       data: null
     }
   },
-  mounted () {
-    // const user = document.getElementById('userField');
-    // const company = document.getElementById('companyField');
-    // const website = document.getElementById('siteField');
-    // const mail = document.getElementById('mailField');
-    // const subject = document.getElementById('subjectField');
-    // const message = document.getElementById('messageField');
-
-    // if (this.formData.name === "") {
-    //   user.classList.toggle("empty-input");
-    // } else user.classList.toggle("empty-input");
-
-    // if (this.formData.company === "") {
-    //   company.classList.toggle("empty-input");
-    // }
-    // if (this.formData.homepage === "") {
-    //   website.classList.toggle("empty-input");
-    // }
-    // if (this.formData.mail === "") {
-    //   mail.classList.toggle("empty-input");
-    // }
-    // if (this.formData.subject === "") {
-    //   subject.classList.toggle("empty-input");
-    // }
-    // if (this.formData.message === "") {
-    //   message.classList.toggle("empty-input");
-    // }
-  },
   methods: {
-    // async submitForm () {
-    //   // const sendMail = require('../../server/mail.js');
-    //   const sgMail = require('@sendgrid/mail');
-    //   sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+    async submitForm () {
+      const sgMail = require('@sendgrid/mail');
+      sgMail.setApiKey(process.env.SG_API_TOKEN);
 
-    //   const headers = {
-    //       "Access-Control-Allow-Origin" : "*", // better change this for production
-    //       "Access-Control-Allow-Methods": "POST",
-    //       "Access-Control-Allow-Headers": "Content-Type"
-    //   };
-
-    //   // finally everything is fine and we can send the mail
-    //   await sgMail.send({
-    //       to: 'hi@santoro-design.com',
-    //       from: this.formData.mail,
-    //       subject: this.formData.subject,
-    //       text: this.formData.message
-    //   });
-
-      // const url = '../server/mail.js';
-      // // if form is not without items
-      //   try{
-      //     // post json to server
-      //     await fetch(url, {
-      //       method: 'POST',
-      //       headers: {'Content-Type': 'application/json'},
-      //       body: JSON.stringify(this.formData),
-      //     });
-      //   } catch (error) {
-      //     console.error(error);
-      //   }    
-    //}
+      const msg = {
+        to: 'hi@santoro-design.com',
+        from: this.formData.mail,
+        subject: this.formData.subject,
+        text: this.formData.message,
+        // html: '<strong>and easy to do anywhere, even with Node.js</strong>',
+      };
+      
+      try {
+        await sgMail.send(msg);
+      } catch (error) {
+        console.error(error);
+    
+        if (error.response) {
+          console.error(error.response.body)
+        }
+      }
+    }
   }
 }
 </script>
