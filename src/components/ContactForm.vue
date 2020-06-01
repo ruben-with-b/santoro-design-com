@@ -6,28 +6,34 @@
       <div class="form-body">
         <form>
           <div class="input-group">
-            <input type="text" id="userField" v-model="formData.name"  class="input-area">
+            <input  type="text" id="userField" v-model="formData.name"
+                    class="input-area" placeholder=" ">
             <label for="userField" class="labelName">Vorname Nachname</label>
           </div>
           <div class="input-group">
-            <input type="text" id="companyField" v-model="formData.company" class="input-area">
+            <input  type="text" id="companyField" v-model="formData.company"
+                    class="input-area" placeholder=" ">
             <label for="companyField" class="labelCompany">Firma (optional)</label>
           </div>
           <div class="input-group">
-            <input type="url" id="siteField" v-model="formData.homepage" class="input-area">
+            <input  type="url" id="siteField" v-model="formData.homepage"
+                    class="input-area" placeholder=" ">
             <label for="siteField" class="labelSite">Homepage (optional)</label>
           </div>
           <div class="input-group">
-            <input type="email" id="mailField" v-model="formData.mail"  class="input-area">
+            <input  type="email" id="mailField" v-model="formData.mail"
+                    class="input-area" placeholder=" ">
             <label for="mailField" class="labelMail">E-Mail</label>
           </div>
           <div class="input-group">
-            <input type="text" id="subjectField" v-model="formData.subject"  class="input-area">
+            <input  type="text" id="subjectField" v-model="formData.subject"
+                    class="input-area" placeholder=" ">
             <label for="subjectField" class="labelSubject">Betreff</label>
           </div>
           <div class="input-group">
-            <textarea name="customerMessage" cols="50" rows="10" class="input-area text-area"
-            v-model="formData.message" placeholder="Ihre Anfrage"/>
+            <textarea name="customerMessage" cols="50" rows="10"
+            class="input-area text-area" v-model="formData.message"
+            placeholder="Ihre Anfrage"/>
             <label for="customerMessage" class="labelMessage">Nachricht</label>
           </div>
           <div v-if="responseNotOk" class="error-box">
@@ -82,6 +88,32 @@ export default {
     }
   },
   mounted () {
+    // const user = document.getElementById('userField');
+    // const company = document.getElementById('companyField');
+    // const website = document.getElementById('siteField');
+    // const mail = document.getElementById('mailField');
+    // const subject = document.getElementById('subjectField');
+    // const message = document.getElementById('messageField');
+
+    // if (this.formData.name === "") {
+    //   user.classList.toggle("empty-input");
+    // } else user.classList.toggle("empty-input");
+
+    // if (this.formData.company === "") {
+    //   company.classList.toggle("empty-input");
+    // }
+    // if (this.formData.homepage === "") {
+    //   website.classList.toggle("empty-input");
+    // }
+    // if (this.formData.mail === "") {
+    //   mail.classList.toggle("empty-input");
+    // }
+    // if (this.formData.subject === "") {
+    //   subject.classList.toggle("empty-input");
+    // }
+    // if (this.formData.message === "") {
+    //   message.classList.toggle("empty-input");
+    // }
   },
   methods: {
     // async submitForm () {

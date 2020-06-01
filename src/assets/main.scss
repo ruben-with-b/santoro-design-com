@@ -1082,91 +1082,93 @@ body{
     height: auto;
   
     .input-group{
-      display: flex;
-      flex-direction: column;
-      margin: 0 0 2em 0;
-      width: 18em;
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 2em 0;
+        width: 18em;
 
-      @include tablet {
-          width: 35em;
-      }
+        @include tablet {
+            width: 35em;
+        }
   
-      .input-area{
-        outline: none;
-        padding: 0.5em 0;
-        border: none;
-        background: none;
-        border-bottom: 1px solid $secondary;
-        font-family: $family-primary;
-        font-size: 1.1rem;
-        color: $secondary;
+        .input-area{
+            outline: none;
+            padding: 0.5em 0;
+            border: none;
+            background: none;
+            border-bottom: 1px solid $secondary;
+            font-family: $family-primary;
+            font-size: 1.1rem;
+            color: $secondary;
 
-        @include desktop{
-            font-size: 1.5rem;
+            @include desktop{
+                font-size: 1.5rem;
+            }
+
+            &:focus{
+                border-bottom: 1px solid $orange;
+            }
+
+            &:placeholder-shown + .labelName,
+            &:placeholder-shown + .labelMail,
+            &:placeholder-shown + .labelCompany,
+            &:placeholder-shown + .labelSite,
+            &:placeholder-shown + .labelSubject{
+                top: -2em;
+                font-size: 1.1rem;
+                
+                @include desktop{
+                    font-size: 1.5rem;
+                }
+            }
+
+            &:focus + .labelName,
+            &:focus + .labelMail,
+            &:focus + .labelCompany,
+            &:focus + .labelSite,
+            &:focus + .labelSubject{
+                top: -4em;
+                font-size: 0.9rem;
+
+                @include desktop{
+                    top: -4.8em;
+                }
+            }
         }
 
-        &:focus{
-          border-bottom: 1px solid $orange;
+        .text-area{
+            padding: 1em 0;
+            margin: 1.5em 0 0 0;
+            border-bottom: 1px solid $secondary;
+            resize: none;
         }
-        &:focus + .labelName,
-        &:focus + .labelMail,
-        &:focus + .labelCompany,
-        &:focus + .labelSite,
-        &:focus + .labelSubject{
-          top: -4em;
-          font-size: 0.9rem;
-
-          @include desktop{
-            top: -4.8em;
-          }
-        }
-        &:valid + .labelName,
-        &:valid + .labelMail,
-        &:valid + .labelSubject{
-          top: -4em;
-          font-size: 0.9rem;
-
-          @include desktop{
-            top: -4.8em;
-          }
-        }
-      }
-
-      .text-area{
-        padding: 1em 0;
-        margin: 1.5em 0 0 0;
-        border-bottom: 1px solid $secondary;
-        resize: none;
-
-        &:focus{
-            border-bottom: 1px solid $orange;
-        }
-      }
   
-      .labelName,
-      .labelMail,
-      .labelCompany,
-      .labelSite,
-      .labelSubject,
-      .labelMessage{
-        position: relative;
-        top: -2em;
-        font-family: $family-secondary;
-        font-size: 1.1rem;
-        transition: 100ms all ease-in-out;
+        .labelName,
+        .labelMail,
+        .labelCompany,
+        .labelSite,
+        .labelSubject,
+        .labelMessage{
+            position: relative;
+            font-family: $family-secondary;
+            transition: 100ms all ease-in-out;
+            top: -4em;
+            font-size: 0.9rem;
 
-        @include desktop{
-            font-size: 1.5rem;
+            @include desktop{
+                top: -4.8em;
+            }
         }
-      }
 
-      .labelMessage{
-        top: -14.5em;
+        .labelMessage{
+            font-size: 1.1rem;
+            top: -14.5em;
 
-        @include desktop{
-            top: -14em;
+            @include desktop{
+                top: -14em;
+                font-size: 1.5rem;
+            }
         }
-      }
     }
 
     button{
