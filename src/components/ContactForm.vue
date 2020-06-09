@@ -36,12 +36,6 @@
             placeholder="Ihre Anfrage"/>
             <label for="customerMessage" class="labelMessage">Nachricht</label>
           </div>
-          <div v-if="responseNotOk" class="error-box">
-            <p>
-              Ouch... Any input missing?<br>
-              <b>Try again!</b>
-            </p>
-          </div>
         </form>
         <button class="button button-santoro-white">
             <a @click="submitForm" class="menu-link is-secondary is-family-secondary">
@@ -55,6 +49,14 @@
               <span class="next-to-icon">Abschicken</span>
             </a>
           </button>
+          <div class="error-box">
+            <p v-if="responseNotOk">
+              <span v-for="error in errors" :key="error">{{ error }}</span>
+            </p>
+            <p v-else>
+              <span v-if="success">Prima, Ihre Nachricht kam an!</span>
+            </p>
+          </div>
       </div>
     </div>
   </section>
@@ -84,31 +86,47 @@ export default {
         message: ''
       },
       responseNotOk: false,
-      data: null
+      success: false,
+      data: null,
+      errors: []
     }
   },
   methods: {
     async submitForm () {
-      const sgMail = require('@sendgrid/mail');
-      sgMail.setApiKey(process.env.SG_API_TOKEN);
-
-      const msg = {
-        to: 'hi@santoro-design.com',
-        from: this.formData.mail,
-        subject: this.formData.subject,
-        text: this.formData.message,
-        // html: '<strong>and easy to do anywhere, even with Node.js</strong>',
-      };
-      
-      try {
-        await sgMail.send(msg);
-      } catch (error) {
-        console.error(error);
-    
-        if (error.response) {
-          console.error(error.response.body)
-        }
+      if (!this.formData.name || this.formData.name.length < 3) {
+        this.errors.push('Wie heißen Sie denn? ');
       }
+      const mailFormat = /\S+@\S+\.\S+/;
+      if (!this.formData.mail || !mailFormat.test(this.formData.mail)) {
+        this.errors.push('Stimmt die Mailadresse? ');
+      }
+      if (!this.formData.subject) {
+        this.errors.push('Fällt Ihnen noch ein Betreff ein? ');
+      }
+      if (!this.formData.message || this.formData.message.length < 10) {
+        this.errors.push('Schreiben Sie ruhig etwas. Frei raus!');
+      }
+
+      if (this.errors.length === 0) {
+        this.errors = [];
+        try{
+          const url = '../server/mailer.php';
+          // post json to server
+          await fetch(url, {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify(this.formData),
+          });
+          // clear formData
+          for (let input in this.formData){
+            this.formData[input] = "";
+          }
+          this.responseNotOk = false;
+          this.success = true;
+        } catch (error) {
+          console.error(error);
+        }
+      } else this.responseNotOk = true;
     }
   }
 }
