@@ -36,7 +36,12 @@
         <router-link to="/services/print">
           <div>
             <h1 class="hl-car is-size-4-touch is-size-3-desktop is-family-secondary
-            not-bold">Flyer und<br> Einladungen</h1>
+            not-bold">Flyer und<br> Einladungen
+              <icon-base width="15" height="15" viewBox="0 0 25.12 45"
+                class="go-arrow" icon-name="go-forward">
+                <icon-short-arrow />
+              </icon-base>
+            </h1>
           </div>
         </router-link>
       </slide>
@@ -44,7 +49,12 @@
         <router-link to="/services/corporate-design">
           <div>
             <h1 class="hl-car is-size-4-touch is-size-3-desktop is-family-secondary
-                not-bold">Logos und<br>Corporate Design</h1>
+                not-bold">Logos und<br>Corporate Design
+              <icon-base width="15" height="15" viewBox="0 0 25.12 45"
+                class="go-arrow" icon-name="go-forward">
+                <icon-short-arrow />
+              </icon-base>
+            </h1>
           </div>
         </router-link>
       </slide>
