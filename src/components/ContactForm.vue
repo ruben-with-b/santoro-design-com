@@ -93,6 +93,8 @@ export default {
   },
   methods: {
     async submitForm () {
+      this.errors = [];
+      
       if (!this.formData.name || this.formData.name.length < 3) {
         this.errors.push('Wie heißen Sie denn? ');
       }
@@ -108,7 +110,7 @@ export default {
       }
 
       if (this.errors.length === 0) {
-        this.errors = [];
+        
         try{
           const url = '../server/mailer.php';
           // post json to server
