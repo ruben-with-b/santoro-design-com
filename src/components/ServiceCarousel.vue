@@ -22,7 +22,13 @@
         <router-link to="/services/websites-and-apps">
           <div>
             <h1 class="hl-car is-size-4-touch is-size-3-desktop is-family-secondary
-            not-bold">Websites <br>und Apps</h1>
+            not-bold">
+              Websites <br>und Apps
+              <icon-base width="15" height="15" viewBox="0 0 25.12 45"
+              class="go-arrow" icon-name="go-forward">
+                <icon-short-arrow />
+              </icon-base>
+            </h1>
           </div>
         </router-link>
       </slide>
@@ -69,6 +75,7 @@
 <script>
 import IconBase from '../components/IconBase.vue'
 import IconArrowBack from '../components/icons/IconArrowBack.vue'
+import IconShortArrow from '../components/icons/IconShortArrow.vue'
 import {
   Hooper,
   Slide,
@@ -81,6 +88,7 @@ export default {
   name: 'ServiceCarousel',
   components: {
     IconArrowBack,
+    IconShortArrow,
     IconBase,
     Hooper,
     Slide,

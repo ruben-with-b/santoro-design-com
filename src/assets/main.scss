@@ -1312,9 +1312,25 @@ body{
             }
 
             .hl-car{
+
                 line-height: 1.5rem;
+
                 @include desktop{
                     line-height: 2rem;
+                }
+
+                .go-arrow{
+                    position: relative;
+                    animation: go 2s ease-in-out infinite;
+
+                    @include tablet {
+                        margin-bottom: 1px;
+                    }
+                }
+
+                @keyframes go {
+                    0% {    left: 0rem; opacity: 0; }
+                    100% {   left: 0.6rem; opacity: 1; }
                 }
             }
             
