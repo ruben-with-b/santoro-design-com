@@ -15,8 +15,9 @@ import VShowSlide from 'v-show-slide'
 import smoothscroll from 'smoothscroll-polyfill';
 import VueAnime from 'vue-animejs';
 import Hotjar from 'vue-hotjar'
+import VueMeta from 'vue-meta'
 
- 
+Vue.use(VueMeta)
 Vue.use(VueRouter)
 Vue.use(VShowSlide)
 Vue.use(VueAnime)
