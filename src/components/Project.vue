@@ -23,7 +23,7 @@
                         </h1>
                     </div>
                     <div class="columns">
-                        <div class="column is-hidden-mobile is-one-fifth"></div>
+                        <div class="column is-hidden-touch is-hidden-desktop-only is-1"></div>
                         <div class="column lottie-container is-flex vcenter hcenter">
                             <div class="lottie-vp">
                                 <lottie :options="defaultOptions" :height="auto" v-on:animCreated="loadAnimation"/>
@@ -37,7 +37,7 @@
                                 Videogespräch.
                             </p>
                         </div>
-                        <div class="column is-hidden-mobile is-one-fifth"></div>
+                        <div class="column is-hidden-touch is-hidden-desktop-only is-1"></div>
                     </div>
                 </div>
                 <div class="process-step">
@@ -50,7 +50,7 @@
                         </h1>
                     </div>
                     <div class="columns infogr-reverse">
-                        <div class="column is-hidden-mobile is-one-fifth"></div>
+                        <div class="column is-hidden-touch is-hidden-desktop-only is-1"></div>
                         <div class="column is-flex vcenter hcenter">
                             <div class="lottie-vp">
                                 <lottie :options="defaultOptionsTwo" :height="auto" v-on:animCreated="loadAnimation"/>
@@ -62,7 +62,7 @@
                                 ab, und dann kann es auch schon losgehen!
                             </p>
                         </div>
-                        <div class="column is-hidden-mobile is-one-fifth"></div>
+                        <div class="column is-hidden-touch is-hidden-desktop-only is-1"></div>
                     </div>
                 </div>
                 <div class="process-step">
@@ -75,7 +75,7 @@
                         </h1>
                     </div>
                     <div class="columns">
-                        <div class="column is-hidden-mobile is-one-fifth"></div>
+                        <div class="column is-hidden-touch is-hidden-desktop-only is-1"></div>
                         <div class="column is-flex vcenter hcenter">
                             <div class="lottie-vp">
                                 <lottie :options="defaultOptionsThree" :height="auto" v-on:animCreated="loadAnimation"/>
@@ -88,7 +88,7 @@
                                 wissen, Änderungswünsche äußern und Feedback geben können.
                             </p>
                         </div>
-                        <div class="column is-hidden-mobile is-one-fifth"></div>
+                        <div class="column is-hidden-touch is-hidden-desktop-only is-1"></div>
                     </div>
                 </div>
                 <div class="process-step">
@@ -101,7 +101,7 @@
                         </h1>
                     </div>
                     <div class="columns infogr-reverse">
-                        <div class="column is-hidden-mobile is-one-fifth"></div>
+                        <div class="column is-hidden-touch is-hidden-desktop-only is-1"></div>
                         <div class="column is-flex vcenter hcenter">
                             <div class="lottie-vp">
                                 <lottie :options="defaultOptionsFour" :height="auto" v-on:animCreated="loadAnimation"/>
@@ -112,7 +112,7 @@
                                 Nach regem Austausch und der Umsetzung Ihrer Bedürfnisse geht es an den letzten Feinschliff.
                             </p>
                         </div>
-                        <div class="column is-hidden-mobile is-one-fifth"></div>
+                        <div class="column is-hidden-touch is-hidden-desktop-only is-1"></div>
                     </div>
                 </div>
                 <div class="process-step">
@@ -125,7 +125,7 @@
                         </h1>
                     </div>
                     <div class="columns">
-                        <div class="column is-hidden-mobile is-one-fifth"></div>
+                        <div class="column is-hidden-touch is-hidden-desktop-only is-1"></div>
                         <div class="column is-flex vcenter hcenter">
                             <div class="lottie-vp">
                                 <lottie :options="defaultOptionsFive" :height="auto" v-on:animCreated="loadAnimation"/>
@@ -135,10 +135,10 @@
                             <p class="is-family-primary has-text-black p-after-h p-infographic">
                                 Im letzten Schritt erfolgt die Übergabe, beide Seiten sind
                                 zufrieden und stolz, ich konnte Ihnen hoffentlich weiterhelfen. <br><br>
-                                Darüber hinaus bleiben wir gerne weiter in Konatkt.
+                                Darüber hinaus bleiben wir gerne weiter in Kontakt.
                             </p>
                         </div>
-                        <div class="column is-hidden-mobile is-one-fifth"></div>
+                        <div class="column is-hidden-touch is-hidden-desktop-only is-1"></div>
                     </div>
                 </div>
             </div>

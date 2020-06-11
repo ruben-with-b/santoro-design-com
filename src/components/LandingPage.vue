@@ -10,7 +10,7 @@
         </div>
       </div>
       <p class="is-family-primary has-text-black p-after-h p-anim">
-        Zeigen Sie sich Ihren Kunden und lassen Sie Ihre Informationen auffindbar sein.
+        Zeigen Sie sich Ihren Kunden und lassen Sie Ihre Informationen auffindbar werden.
         Ein unverwechselbarer Look verhilft Ihnen zu einem respektablen
         Erscheinungsbild.
         <br><br>

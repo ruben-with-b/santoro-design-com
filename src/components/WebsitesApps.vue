@@ -179,6 +179,10 @@
             <icon-arrow-back />
           </icon-base>
         </div>
+        <icon-base width="120" height="120" viewBox="0 0 141.73 155.91"
+                  class="award-badge" icon-name="logo-design-award">
+          <icon-gute-gestaltung />
+        </icon-base>
         <h1 class="title title-step is-size-5 is-family-primary">
             Erinnerungsort 
         </h1>
@@ -271,7 +275,7 @@
           </slide>
         </hooper>
         <h1 class="title title-step is-size-5 is-family-primary">
-            iwishiknewithat – Webanwendung über die Speicherung von Spotify-Daten
+            iwishiknewthat – Webanwendung über die Speicherung von Spotify-Daten
         </h1>
         <p class="is-family-primary has-text-black p-after-h p-anim p-web-desc">
           Die Anwendung ist eine digitale Plattform, die modular aufgebaut ist. Die drei
@@ -418,6 +422,7 @@ import IconMapbox from '../components/icons/IconMapbox.vue'
 import IconVue from '../components/icons/IconVue.vue'
 import IconWebpack from '../components/icons/IconWebpack.vue'
 import IconBootstrap from '../components/icons/IconBootstrap.vue'
+import IconGuteGestaltung from '../components/icons/IconGuteGestaltung.vue'
 import IconArrow from '../components/icons/IconArrow.vue'
 import IconArrowBack from '../components/icons/IconArrowBack.vue'
 import {
@@ -437,6 +442,7 @@ export default {
     IconVue,
     IconWebpack,
     IconBootstrap,
+    IconGuteGestaltung,
     IconArrow,
     IconArrowBack,
     Hooper,

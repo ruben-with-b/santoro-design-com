@@ -26,7 +26,7 @@
                 <p class="is-family-primary has-text-black p-after-h p-anim p-person">
                     SANTORO Design, das ist mein kreatives Schaffen, das sind meine Ideen und
                     Lösungen für Sie. Ich bin bereits jetzt hochmotiviert, voller Leidenschaft
-                    und heiß darauf, Ihnen einen ästhetisch ansprechenden und gewinnbringenden
+                    und Vorfreude, Ihnen einen ästhetisch ansprechenden und gewinnbringenden
                     Dienst leisten zu können.
                 </p>
                 <div class="is-flex edu-logo hcenter">
@@ -51,7 +51,7 @@
                             </span>
                         </p>
                         <p>Hochschule Augsburg</p>
-                        <p class="has-text-grey">Master of Arts (07/2020)</p>
+                        <p class="has-text-grey">Master of Arts (09/2020)</p>
                     </div>
                 </div>
             </div>
