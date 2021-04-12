@@ -2,9 +2,9 @@
   <footer class="footer">
     <div class="content">
       <div class="is-size-7 has-text-white is-flex vcenter footer-body">
-        <p class="is-marginless">&#169; 2020 <span class="is-uppercase">Santoro</span> Design</p>
+        <p class="is-marginless">&#169; 2021 <span class="is-uppercase">Santoro</span> Design</p>
         <div>
-          <a href="https://github.com/ruben-with-b" target="_blank">
+          <a href="https://github.com/ruben-with-b" target="_blank" rel="noopener">
             <icon-base width="15" height="15" viewBox="0 0 32.58 31.77"
               class="github-logo" icon-name="Github">
               <icon-github />

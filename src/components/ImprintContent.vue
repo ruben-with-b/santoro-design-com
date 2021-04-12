@@ -83,7 +83,7 @@
           entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden 
           wir derartige Inhalte umgehend entfernen.
           <br><br><br><br>
-          Quelle: <a href="https://www.e-recht24.de/impressum-generator.html" target="_blank">e-recht24.de</a>
+          Quelle: <a href="https://www.e-recht24.de/impressum-generator.html" target="_blank" rel="noopener">e-recht24.de</a>
           <br><br><br><br>
         </p>
       </div>
