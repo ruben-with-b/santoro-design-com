@@ -8,6 +8,50 @@
         <p class="is-family-primary has-text-black p-after-h p-anim">
           Hier sehen Sie eine Auswahl an Projekten, die individuell von mir oder in Zusammenarbeit mit anderen lieben Menschen entstanden sind.
         </p>
+       <hooper ref="carouselRadraum" :settings="settingsSingle" class="one-device-carousel radraum">
+          <slide class="mockup-slide is-flex hcenter">
+            <video-mockup-mobile v-if="intersectedRadraum" class="mobile-mockup is-hidden-desktop"
+              videoUrl="radraum-mobile"
+              videoType="video/mp4"
+              posterUrl="radraum-mobile-poster"
+              width="200px"
+              height="400px"
+            />
+            <video-mockup-mobile v-if="intersectedRadraum" class="mobile-mockup is-hidden-touch"
+              videoUrl="radraum-mobile"
+              videoType="video/mp4"
+              posterUrl="radraum-mobile-poster"
+              width="250px"
+              height="500px"
+            />
+            <div v-else class="mockup-skeleton"></div>
+          </slide>
+        </hooper>
+        <h1 class="title title-step is-size-5 is-family-primary">
+            Radraum – Eine App zum Buchen & Teilen von Fahrrad-Boxen
+        </h1>
+        <p class="is-family-primary has-text-black p-after-h p-anim p-web-desc">
+          Mit der Radraum-App können Fahrrad-Boxen einmalig gebucht oder auch abonniert werden.
+          Über die App können die Boxen auch geteilt werden. Eine Kartenanwendung hilft bei der Box- & Sharing-Suche.
+          <br><br>
+          <a style="text-decoration: underline" href="https://vimeo.com/526021062" target="_blank" rel="noopener">Teaser auf vimeo anschauen</a>
+        </p>
+        <div class="tools">
+          <p>Frameworks</p>
+          <icon-base width="30" height="30" viewBox="0 0 256 290" icon-name="vue-logo">
+            <icon-webpack />
+          </icon-base>
+          <icon-base width="30" height="30" viewBox="0 0 256 221" icon-name="vue-logo">
+            <icon-vue />
+          </icon-base>
+          <icon-base width="30" height="30" viewBox="0 0 256 256" icon-name="mapbox">
+            <icon-mapbox />
+          </icon-base>
+        </div>
+         <div class="line-seperator is-flex vcenter">
+          <div class="line"></div>
+          <div class="line"></div>  
+        </div>
         <hooper ref="carouselSp" :settings="settings" class="three-device-carousel sweety">
           <slide class="mockup-slide is-flex hcenter">
             <video-mockup-mobile v-if="intersectedSweety" class="desktop-mockup is-hidden-tablet"
@@ -485,6 +529,7 @@ export default {
         }
       },
       observer: null,
+      intersectedRadraum: false,
       intersectedSweety: false,
       intersectedErinnerungsort: false,
       intersectedPick: false,
@@ -503,7 +548,9 @@ export default {
     this.observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          if (entry.target.className.includes('sweety')) {
+          if (entry.target.className.includes('radraum')) {
+            this.intersectedRadraum = true;
+          } else if (entry.target.className.includes('sweety')) {
             this.intersectedSweety = true;
           } else if (entry.target.className.includes('erinnerungsort')) {
             this.intersectedErinnerungsort = true;
