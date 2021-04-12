@@ -532,7 +532,7 @@ export default {
         this.$refs.carouselCookies.slidePrev();
       }
     },
-    slideNext() {
+    slideNext(event) {
       if (event.target.id === "sweety-pretty") {
         this.$refs.carouselSp.slideNext();  
       } else if (event.target.id === "erinnerungsort") {

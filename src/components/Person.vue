@@ -51,7 +51,7 @@
                             </span>
                         </p>
                         <p>Hochschule Augsburg</p>
-                        <p class="has-text-grey">Master of Arts (09/2020)</p>
+                        <p>Master of Arts (03/2021)</p>
                     </div>
                 </div>
             </div>
