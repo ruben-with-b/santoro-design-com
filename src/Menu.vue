@@ -9,16 +9,16 @@
         </a>
       </button>
       <div class="container has-text-centered container-navigation-menu">
-        <router-link to="/" class="menu-link-main menu-link ml-one" exact>
+        <router-link to="/" @click.native="toggleMenu" class="menu-link-main menu-link ml-one" exact>
           <h1 class="title is-1 is-family-secondary not-bold has-text-white">Home</h1>
         </router-link>
-        <router-link to="/about" class="menu-link-main menu-link ml-two" exact>
+        <router-link to="/about" @click.native="toggleMenu" class="menu-link-main menu-link ml-two" exact-path>
           <h1 class="title is-1 is-family-secondary not-bold has-text-white">Über</h1>
         </router-link>
-        <router-link to="/services" class="menu-link-main menu-link ml-three" exact>
+        <router-link to="/services" @click.native="toggleMenu" class="menu-link-main menu-link ml-three" exact-path>
           <h1 class="title is-1 is-family-secondary not-bold has-text-white">Leistungen</h1>
         </router-link>
-        <router-link to="/contact" class="menu-link-main menu-link ml-four" exact>
+        <router-link to="/contact" @click.native="toggleMenu" class="menu-link-main menu-link ml-four" exact>
           <h1 class="title is-1 is-family-secondary not-bold has-text-white">Kontakt</h1>
         </router-link>
       </div>
@@ -40,12 +40,12 @@
         <div class="column is-flex menu-footer-navigation footer-navigation">
           <div class="columns column-sub-menu is-mobile is-marginless">
             <div class="column has-text-white has-text-centered">
-              <router-link to="/legal" class="button-santoro-secondary">
+              <router-link to="/legal"  @click.native="toggleMenu" class="button-santoro-secondary">
                 Impressum
               </router-link>
             </div>
             <div class="column has-text-white has-text-centered">
-              <router-link to="/privacy" class="button-santoro-secondary">
+              <router-link to="/privacy" @click.native="toggleMenu" class="button-santoro-secondary">
                 Datenschutz
               </router-link>
             </div>
@@ -90,9 +90,9 @@ export default {
 }
 
 a.navbar-item:hover,
-a.navbar-item.router-link-exact-active,
+a.navbar-item.router-link-active,
 .navbar-link:hover,
-.navbar-link.router-link-exact-active {
+.navbar-link.router-link-active {
     background-color: unset;
     color: unset;
 }
