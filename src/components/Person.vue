@@ -9,7 +9,7 @@
             </h1>
         </div>
         <div v-show-slide="featuresOpen" class="features is-family-primary has-text-black">
-            <div class="container-features">
+            <div class="container-features" @mousemove="doubleExpo">
                 <div class="columns columns-head is-mobile">
                     <div class="column is-two-third">
                         <h1 class="title title-o-underline title-o-underline-toggle is-family-secondary not-bold">
@@ -80,15 +80,6 @@ export default {
         }
     },
     mounted () {
-        // document.addEventListener('mousemove', (e) => {
-        //     const x = e.pageX / (window.innerWidth * 10),
-        //             y = e.pageY / (window.innerHeight * 10);
-        //     const bg = document.querySelector('.layerOne');
-        //     let pos1 = -500 * x + 40;
-        //     let pos2 = 500 * y - 5;
-
-        //     bg.style.backgroundPosition = pos1 + '% ' + pos2 + '%';
-        // });
 
         let arrow = document.querySelector('.acc-arrow');
         let bg = document.querySelector('.body-bg');
@@ -117,6 +108,21 @@ export default {
                     bg.classList.remove('pure-bg');
                 }, 400);
             }
+        },
+        doubleExpo (e) {
+            
+            const x = e.pageX / (window.innerWidth * 10),
+                    y = e.pageY / (window.innerHeight * 10);
+            const bg = document.querySelector('.layerOne');
+            let pos1 = -500 * x + 40;
+            let pos2 = 500 * y + 5;
+
+             window.requestAnimationFrame(function(){
+
+                 bg.style.backgroundPosition = pos1 + '% ' + pos2 + '%';
+             });
+
+        
         }
     }
 }
