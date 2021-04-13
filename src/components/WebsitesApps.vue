@@ -3,7 +3,7 @@
     <section class="section webapps-section">
       <div class="container">
         <h1 class="is-family-secondary santoro-breadcrumb">
-           <router-link to="/services">Leistungen </router-link>
+           <router-link to="/services" class="breadcrumb-link">Leistungen</router-link>
            <span class="arrow-breadcrumb">&#10230;</span> Websites und Apps</h1>
         <p class="is-family-primary has-text-black p-after-h p-anim web-app-p">
           Hier sehen Sie eine Auswahl an Projekten, die individuell von mir oder in Zusammenarbeit mit anderen lieben Menschen entstanden sind.

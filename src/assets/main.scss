@@ -19,7 +19,7 @@ $footer-padding: 1rem 1.5rem 1rem;
 // ANIMATION
 
 .morph-section {
-  margin: 0 0 0 -2.5em;
+  margin: 0 0 2em -2.5em;
 }
 
 // orange underline
@@ -361,13 +361,18 @@ body {
 
 .santoro-breadcrumb,
 .santoro-breadcrumb-mobile {
-  margin-bottom: 2em;
+  margin-bottom: 4em;
   @include tablet {
     margin-bottom: 5em;
   }
 }
 
 .santoro-breadcrumb {
+  .breadcrumb-link {
+    text-decoration: underline;
+    margin-right: 0.25em;
+  }
+
   @include fullhd {
     margin-top: 4em;
   }
