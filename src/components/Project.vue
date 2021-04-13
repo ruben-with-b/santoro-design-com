@@ -26,7 +26,7 @@
                         <div class="column is-hidden-touch is-hidden-desktop-only is-1"></div>
                         <div class="column lottie-container is-flex vcenter hcenter">
                             <div class="lottie-vp">
-                                <lottie :options="defaultOptions" :height="auto" v-on:animCreated="loadAnimation"/>
+                                <lottie :options="defaultOptions"/>
                             </div>
                         </div>
                         <div class="column is-flex vcenter hcenter">
@@ -53,7 +53,7 @@
                         <div class="column is-hidden-touch is-hidden-desktop-only is-1"></div>
                         <div class="column is-flex vcenter hcenter">
                             <div class="lottie-vp">
-                                <lottie :options="defaultOptionsTwo" :height="auto" v-on:animCreated="loadAnimation"/>
+                                <lottie :options="defaultOptionsTwo"/>
                             </div>
                         </div>
                         <div class="column is-flex vcenter hcenter">
@@ -78,7 +78,7 @@
                         <div class="column is-hidden-touch is-hidden-desktop-only is-1"></div>
                         <div class="column is-flex vcenter hcenter">
                             <div class="lottie-vp">
-                                <lottie :options="defaultOptionsThree" :height="auto" v-on:animCreated="loadAnimation"/>
+                                <lottie :options="defaultOptionsThree" />
                             </div>
                         </div>
                         <div class="column is-flex vcenter hcenter">
@@ -104,7 +104,7 @@
                         <div class="column is-hidden-touch is-hidden-desktop-only is-1"></div>
                         <div class="column is-flex vcenter hcenter">
                             <div class="lottie-vp">
-                                <lottie :options="defaultOptionsFour" :height="auto" v-on:animCreated="loadAnimation"/>
+                                <lottie :options="defaultOptionsFour"/>
                             </div>
                         </div>
                         <div class="column is-flex vcenter hcenter">
@@ -128,7 +128,7 @@
                         <div class="column is-hidden-touch is-hidden-desktop-only is-1"></div>
                         <div class="column is-flex vcenter hcenter">
                             <div class="lottie-vp">
-                                <lottie :options="defaultOptionsFive" :height="auto" v-on:animCreated="loadAnimation"/>
+                                <lottie :options="defaultOptionsFive"/>
                             </div>
                         </div>
                         <div class="column is-flex vcenter hcenter">

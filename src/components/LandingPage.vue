@@ -5,7 +5,7 @@
       <h1 class="is-family-secondary santoro-breadcrumb is-hidden-touch">{{ msg }}</h1>
       <div class="morph-section">
         <div class="lottie-lp">
-          <lottie :options="defaultOptions" :height="auto" v-on:animCreated="loadAnimation"/>
+          <lottie :options="defaultOptions" />
         </div>
       </div>
       <h1 class="title is-1 is-family-secondary not-bold title-o-underline t-o-u-main">Legen Sie einen guten Auftritt hin!</h1>
