@@ -63,7 +63,7 @@ import IconLogoLong from './components/icons/IconLogoLong.vue'
 import IconArrowBack from './components/icons/IconArrowBack.vue'
 
 export default {
-  name: 'menu',
+  name: 'menu-santoro',
   props: {
     msg: String
   },

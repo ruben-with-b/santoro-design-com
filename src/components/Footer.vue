@@ -29,7 +29,7 @@ import IconShortArrow from '@/components/icons/IconShortArrow.vue'
 import IconGithub from '@/components/icons/IconGithub.vue'
 
 export default {
-  name: 'footer',
+  name: 'footer-santoro',
   components: {
     IconBase,
     IconShortArrow,
