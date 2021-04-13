@@ -5,7 +5,7 @@
         <h1 class="is-family-secondary santoro-breadcrumb">
            <router-link to="/services">Leistungen </router-link>
            <span class="arrow-breadcrumb">&#10230;</span> Websites und Apps</h1>
-        <p class="is-family-primary has-text-black p-after-h p-anim">
+        <p class="is-family-primary has-text-black p-after-h p-anim web-app-p">
           Hier sehen Sie eine Auswahl an Projekten, die individuell von mir oder in Zusammenarbeit mit anderen lieben Menschen entstanden sind.
         </p>
        <hooper ref="carouselRadraum" :settings="settingsSingle" class="one-device-carousel radraum">
@@ -224,7 +224,7 @@
           </icon-base>
         </div>
         <icon-base width="120" height="120" viewBox="0 0 141.73 155.91"
-                  class="award-badge" icon-name="logo-design-award">
+          class="award-badge" icon-name="logo-design-award">
           <icon-gute-gestaltung />
         </icon-base>
         <h1 class="title title-step is-size-5 is-family-primary">
@@ -593,7 +593,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  
+  .web-app-p{
+    margin-bottom: 2em;
+  }
+
   .contact-teaser{
     opacity: 1;
   }
