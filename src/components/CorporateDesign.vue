@@ -12,6 +12,15 @@
           dann treten Sie als starke Einheit auf.
         </p>
         <div class="tile is-ancestor cds-tile">
+          <div class="tile is-parent is-4">
+            <div class="tile ludd-logo-tile inner-tile is-child is-flex hcenter vcenter"></div>
+          </div>
+          <div class="tile is-parent">
+            <div class="tile vk-ludd-tile inner-tile hcenter is-child vcenter is-flex">
+            </div>
+          </div>
+        </div>
+        <div class="tile is-ancestor">
           <div class="tile is-parent is-8">
             <div class="tile cd-brecht-tile inner-tile is-child is-flex hcenter vcenter"></div>
           </div>
@@ -24,10 +33,10 @@
         </div>
         <div class="tile is-ancestor">
           <div class="tile is-parent is-4">
-            <div class="tile ludd-logo-tile inner-tile is-child is-flex hcenter vcenter"></div>
+            <div class="tile duo-logo-tile inner-tile is-child is-flex hcenter vcenter"></div>
           </div>
           <div class="tile is-parent">
-            <div class="tile vk-ludd-tile inner-tile hcenter is-child vcenter is-flex">
+            <div class="tile cd-duo-tile inner-tile hcenter is-child vcenter is-flex">
             </div>
           </div>
         </div>
@@ -56,25 +65,16 @@
 </template>
 
 <script>
-// import IconBase from '../components/IconBase.vue'
-// import IconArrow from '../components/icons/IconArrow.vue'
-// import IconArrowBack from '../components/icons/IconArrowBack.vue'
-
 
 export default {
   name: 'CorporateDesign',
   components: {
-    // IconBase,
-    // IconArrow,
-    // IconArrowBack
   },
   data () {
     return {
-
     }
   },
   computed: {
-    
   },
   mounted () {
     // if route
