@@ -2285,3 +2285,18 @@ body {
     }
   }
 }
+
+// COOKIE BANNER
+
+.santoro-cookie-button {
+  color: $secondary;
+  font-family: $family-secondary;
+  text-decoration: underline;
+  font-size: 1em;
+  cursor: pointer;
+
+  &:hover {
+    color: $primary;
+    text-decoration: none;
+  }
+}
