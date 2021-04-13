@@ -43,11 +43,11 @@ const routes = [
     component: About
   },
   { path: '/services',
-    name: 'services',
-    component: Services,
-    children: [
-      {
-        path: '',
+  component: Services,
+  children: [
+    {
+      path: '',
+      name: 'services',
         component: ServiceCarousel
       },
       {
