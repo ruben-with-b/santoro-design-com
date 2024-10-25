@@ -20,7 +20,7 @@
     "sass": "^1.32.8",
     "smoothscroll-polyfill": "^0.4.4",
     "v-show-slide": "^1.8.3",
-    "vue": "^2.6.11",
+    "vue": "^3.0.0",
     "vue-animejs": "^2.1.1",
     "vue-cookie-law": "^1.13.3",
     "vue-hotjar": "^1.1.2",
